@@ -1,0 +1,57 @@
+<sburb description='dickle'>
+
+<classes>
+	<animation class='dickle-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='dickle' name='dickle' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='dickleSheet' state='walkFront' facing='Front'></character>
+	
+	<action class='beDickle' name='Be Dickle.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>dickle</args>
+				<action command='playSong' noDelay='true'>
+					<args>dickleSong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='dickleSheet' type='graphic'>chars/dickle/dickle.png</asset>
+	<asset name='dickleSong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='dickle_airquotes' type='graphic'>dialogs/dickle/dickle-airquotes.png</asset>
+	<asset name='dickle_explaining' type='graphic'>dialogs/dickle/dickle-explaining.png</asset>
+	<asset name='dickle_fingerguns' type='graphic'>dialogs/dickle/dickle-fingerguns.png</asset>
+	<asset name='dickle_flustered' type='graphic'>dialogs/dickle/dickle-flustered.png</asset>
+	<asset name='dickle_happy' type='graphic'>dialogs/dickle/dickle-happy.png</asset>
+	<asset name='dickle_think' type='graphic'>dialogs/dickle/dickle-think.png</asset>
+	<asset name='dickle_normal' type='graphic'>dialogs/dickle/dickle-normal.png</asset>
+	<asset name='dickle_sad' type='graphic'>dialogs/dickle/DickleSad.png</asset>
+	<asset name='dickle_tears' type='graphic'>dialogs/dickle/DickleSadButWithTears.png</asset>
+	<asset name='dickle_glasses' type='graphic'>dialogs/dickle/DickleGlasses.png</asset>
+	<asset name='dickle_angryflustered' type='graphic'>dialogs/dickle/dickleAngryflustered.png</asset>
+	<asset name='dickle_smug' type='graphic'>dialogs/dickle/dicklesmug.png</asset>
+	<asset name='dickle_wipe' type='graphic'>dialogs/dickle/dicklewipingtears.png</asset>
+	<asset name='dickle_excited' type='graphic'>dialogs/dickle/dickle_excited.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  			<animation name='dickle_talk' class='dickle-dialog' sheet='dickle_normal' length='2'/>
+			<animation name='dickle_airquotes' class='dickle-dialog' sheet='dickle_airquotes' length='2'/>
+			<animation name='dickle_explaining' class='dickle-dialog' sheet='dickle_explaining' length='2'/>
+			<animation name='dickle_fingerguns' class='dickle-dialog' sheet='dickle_fingerguns' length='2'/>
+			<animation name='dickle_flustered' class='dickle-dialog' sheet='dickle_flustered' length='2'/>
+			<animation name='dickle_think' class='dickle-dialog' sheet='dickle_think' length='2'/>
+			<animation name='dickle_happy' class='dickle-dialog' sheet='dickle_happy' length='2'/>
+			<animation name='dickle_sad' class='dickle-dialog' sheet='dickle_sad' length='2'/>
+			<animation name='dickle_tears' class='dickle-dialog' sheet='dickle_tears' length='2'/>
+			<animation name='dickle_glasses' class='dickle-dialog' sheet='dickle_glasses' length='2'/>
+			<animation name='dickle_angryflustered' class='dickle-dialog' sheet='dickle_angryflustered' length='2'/>
+			<animation name='dickle_smug' class='dickle-dialog' sheet='dickle_smug' length='2'/>
+			<animation name='dickle_wipe' class='dickle-dialog' sheet='dickle_wipe' length='2'/>
+			<animation name='dickle_excited' class='dickle-dialog' sheet='dickle_excited' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

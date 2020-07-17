@@ -1,0 +1,3 @@
+need to scale the maps to 2x2 pixel size (double their size) for the flash
+
+still need to make the map for the lift in the cave, should be ez

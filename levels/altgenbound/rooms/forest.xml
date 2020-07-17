@@ -1,0 +1,349 @@
+﻿<!-- This file describes the first room. Normally I break each room into its
+own self-contained file. This isn't fundamentally necessary, but it's very
+natural. It also allows you to very easily load content only once a room 
+is entered for the first time. -->
+<sburb description="forest">
+
+<dependencies>
+	<dependency>chars/dickle.xml</dependency>
+	<dependency>chars/vrachne.xml</dependency>
+	<dependency>chars/quincy.xml</dependency>
+	<dependency>chars/karkat.xml</dependency> <!-- and karkat -->
+	<dependency>rooms/tree.xml</dependency>
+	<dependency>rooms/cave.xml</dependency>
+</dependencies>
+
+<assets>
+	<!-- This is the first half of a big optimization. Some people have a lot of
+	trouble rendering big images, even if only a small part is being requested. While
+	in development we often use the "full" image, but once we go into production we
+	slice up all the big background and foreground images into a grid so that it's
+	easier for end users' computer to pick out the parts we want.
+	All the images except for the bottom-most and right-most ones are 500x500. I
+	find that's a good compromise for performance/complexity. 
+	
+	utils/image_slice/ has a utility for doing this automatically. -->
+
+	<!--
+  <asset name='firstRoomBG_0_0' type='graphic'>backgrounds/slices/firstRoomBG_0_0.png</asset>
+	<asset name='firstRoomBG_0_1' type='graphic'>backgrounds/slices/firstRoomBG_0_1.png</asset>
+	<asset name='firstRoomBG_0_2' type='graphic'>backgrounds/slices/firstRoomBG_0_2.png</asset>
+	<asset name='firstRoomBG_1_0' type='graphic'>backgrounds/slices/firstRoomBG_1_0.png</asset>
+	<asset name='firstRoomBG_1_1' type='graphic'>backgrounds/slices/firstRoomBG_1_1.png</asset>
+	<asset name='firstRoomBG_1_2' type='graphic'>backgrounds/slices/firstRoomBG_1_2.png</asset>
+	<asset name='firstRoomBG_2_0' type='graphic'>backgrounds/slices/firstRoomBG_2_0.png</asset>
+	<asset name='firstRoomBG_2_1' type='graphic'>backgrounds/slices/firstRoomBG_2_1.png</asset>
+	<asset name='firstRoomBG_2_2' type='graphic'>backgrounds/slices/firstRoomBG_2_2.png</asset>
+	<asset name='firstRoomBG_3_0' type='graphic'>backgrounds/slices/firstRoomBG_3_0.png</asset>
+	<asset name='firstRoomBG_3_1' type='graphic'>backgrounds/slices/firstRoomBG_3_1.png</asset>
+	<asset name='firstRoomBG_3_2' type='graphic'>backgrounds/slices/firstRoomBG_3_2.png</asset>
+	-->
+	
+	<!-- note that there are missing images in the FG where transparent regions
+	have been discarded. This is handled correctly! -->
+
+	<!--
+	<asset name='firstRoomFG_1_0' type='graphic'>backgrounds/slices/firstRoomFG_1_0.png</asset>
+	<asset name='firstRoomFG_1_2' type='graphic'>backgrounds/slices/firstRoomFG_1_2.png</asset>
+	<asset name='firstRoomFG_2_0' type='graphic'>backgrounds/slices/firstRoomFG_2_0.png</asset>
+	<asset name='firstRoomFG_2_2' type='graphic'>backgrounds/slices/firstRoomFG_2_2.png</asset>
+	<asset name='firstRoomFG_3_0' type='graphic'>backgrounds/slices/firstRoomFG_3_0.png</asset>
+	<asset name='firstRoomFG_3_1' type='graphic'>backgrounds/slices/firstRoomFG_3_1.png</asset>
+	<asset name='firstRoomFG_3_2' type='graphic'>backgrounds/slices/firstRoomFG_3_2.png</asset>
+	-->
+
+	<asset name='firstRoomFG' type='graphic'>backgrounds/forest/foreground-2x.png</asset>
+	<asset name='firstRoomBG' type='graphic'>backgrounds/forest/background-2x.png</asset>
+	
+	<!-- The map is a special black-and-white image describing walkable areas in
+	a room. White pixels are walkable, black are unwalkable. This actually consumes
+	a very large amount of memory to use, so we keep the scaled down. I find 50%
+	scale is a good compromise for performance/accuracy. However in sufficiently
+	large rooms this is still too much, and 25% scale in necessary. This leads to
+	a substantial sarcifice in hit-detection quality, so avoid big rooms!-->
+
+	<asset name='firstRoomMap' type='graphic'>backgrounds/forest/collision-map.png</asset>
+  
+  <!-- an item to be found in a chest, nothing special about it-->
+  <asset name='item1' type='graphic'>objects/items/item1.png</asset>
+</assets>
+
+<!-- We create the sprite for this item outside of everything else
+because by default it isn't anywhere at all. We just want to be able to
+access it at some point in the future. This is a very common pattern. We
+do this for anything that will "eventually" be added to a room.
+
+Note: depthing='2' puts this in front of everything, including foreground elements! -->
+<sprite name='item1' depthing='3'>
+	<animation sheet='item1' x='-30' y='-30'/>
+</sprite>
+
+<!-- We wrap all room tags in the rooms tag. This is mostly useless since it's
+not good practice to keep multiple rooms in one file, but hey, better
+safe than sorry.-->
+<rooms>
+	<!-- Here we describe our room, note that here we are using the "map" we 
+	loaded in earlier. Also note the mapScale variable specifying how much this map
+	should be scaled up for it to reflect the actual room size. We also derive
+	the dimensions of the room from this, which is used to specify the area the
+	camera can see. However width and height can be explicitly
+	specified here if need be. The walkableMap is theoretically optional, but
+	it's incredibly useful and easy to use. -->
+  <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
+  
+  	<!-- here we drop in our character. Since we specified everything in 
+  	chars/meenah.xml, we don't have to do much here. We just need to specify
+  	her location. Note that class='meenah' will fill in all the values we
+  	didn't specify using the class in chars/meenah.xml, including any
+  	internal tags that may have been part of the class. Template classes
+  	are a great way to seperate logic and content, as well as recycle common
+  	patterns. -->
+  	<character class='dickle' x='692' y='2056'>
+  		<action class='beDickle'/>
+	<!--	<action command="talk" name="Ask a question.">
+				<args>
+					@vrachne_talk Vrachne: hey dickle
+					@dickle_talk Dickle: yeah vrachne do you need something?
+					@vrachne_smugairquotes Vrachne: i just have a few questions for you “partner”
+					@dickle_talk Dickle: uh alright? sure i can answer some questions
+					@dickle_talk Dickle: as long as they aren’t like weird ya know?			
+				</args>
+				<action command="presentAction">
+					<args>
+						<action command="talk" name="How old are you?">
+							<args>
+							@vrachne_shrug Vrachne: it’s not a weird question dickle i’d say it’s a pretty mundane one
+							@vrachne_smugcross Vrachne: how old do you happen to be?
+							@dickle_flustered Dickle: that’s a weird question!
+							@vrachne_smugcross Vrachne: what’s weird about me asking how old you are? what, are you self conscious about it or something
+							@dickle_flustered Dickle: no its just….  I don’t know it feels weird when YOU ask about it! Like you’re asking for weird reasons!
+							@vrachne_peevedcross Vrachne: it’s just a simple question you’ve asked me lots of dumb simple stuff and you didn’t hear me make such a fuss about it. So come on just tell me, it’s only fair after all
+							@dickle_flustered Dickle: I’m 16 alright! there are you happy?
+							@vrachne_surprised Vrachne: Sixteen?! Really? 
+							@vrachne_surprised Vrachne: that’s a bit young to be swinging around a porn sword don’t you think
+							@dickle_angry Dickle: well i wasn’t exactly spoiled for choice on what i could use for a weapon
+							@dickle_airquotes Dickle: what does it matter anyway?! are you a member of the “stasti” or something? gonna take me away for daring to construct a weapon that has a single nipple on it huh?!
+							@vrachne_talk Vrachne: you’re getting awfully defensive over a piece of glorified paper mache dickle
+							@vrachne_talk Vrachne: there’s worse things you could be doing at 16.
+							@dickle_angryflustered Dickle: yeah like what?
+							@vrachne_smug Vrachne: ...
+							@vrachne_shrug  Vrachne: can’t really remember but i was probably doing way “worse"
+							@dickle_angryflustered Dickle: whatever
+							@dickle_angryflustered Dickle: the only reason i care about it so much is because i made it okay.
+							@dickle_angryflustered Dickle: trust me it used to look way worse!
+							@vrachne_smugcross Vrachne: i don’t see how it could be any more embarrassing than what you already have dickle.
+							@dickle_angryflustered Dickle: you’ve never met my father then
+							@vrachne_smugcross Vrachne: yeah i haven’t.
+							@vrachne_talk Vrachne: i’ve only been “alive” for 2 hours at the most dickle.
+							@dickle_fingerguns Dickle: that’s a bit young to be putting people into chokeholds dont cha think
+							@dickle_fingerguns Dickle: HAH
+							@vrachne_smug Vrachne: i don’t know why you’re considering that a comeback, being put into a inescapable-chokehold by someone that much younger than you is pretttttty sadddddd (::.
+							@dickle_angryflustered Dickle: WELL….. I…. YOU….
+							@dickle_angryflustered Dickle: WHATEVER!!!!
+							</args>
+						</action>
+							<action command="talk" name="What's with the outfit?">
+							<args>
+							@vrachne_talk Vrachne: here’s something i’ve been curious about
+							@vrachne_talk Vrachne: where’d you happen to get that outfit you’re wearing? did you make it yourself?
+							@dickle_flustered Dickle: i’d uhhhh rather not say
+							@vrachne_talk Vrachne: and why’s that? are you embarrassed about where you buy clothes from or something?
+							@dickle_flustered Dickle: lets just say i had do things i’m not proud of to get these, alright?
+							@vrachne_surprised Vrachne: oh wow, i didn’t think you were that kind of person dickle! 
+							@vrachne_smugairquotes Vrachne: I thought the whole BF business was just something people called themselves when they wanted to feel better about selling their “services”
+							@dickle_airquotes Dickle: What’s a “BF”
+							@dickle_angryflustered Dickle: wait, are you calling me a prostitute or something?!
+							@vrachne_smug Vrachne: don’t worry about it dickle
+							@dickle_angryflustered Dickle: well for your informaton VRACHNE. it wasn’t anything physical at all, i just typed shitposty messages at her until she gave me a code that i threw into the game machine stuff
+							@vrachne_talk Vrachne: a lady gave you these?
+							@dickle_shrug Dickle: i dunno maybe? honestly i don’t know, people are really “confusing” nowadays so it’s hard to tell.
+							@dickle_talk Dickle: anyway even if i got these clothes by doing weird stuff, i like em a lot!
+							@vrachne_smugcross Vrachne: it’s pretty shabby knock off of my style but you do you dickle
+							@dickle_angryflustered Dickle: huh?! knock off? sorry i didn’t know you had the copyright on jackets and t-shirts
+							@vrachne_smugcross Vrachne: they didn’t even get pants right, and the shoes are all wrong
+							@dickle_angryflustered Dickle: it isn’t supposed to be anyones outfit! I’m done with the stupid cosplay stuff for today
+							@vrachne_smugcross Vrachne: if it isn’t “supposed to be anyone” then what’s with the horns?
+							@dickle_angryflustered Dickle: it’s a headband, if i look at myself in the mirror without one i just feel wrong. 
+							@vrachne_talk Vrachne: then just wear a normal headband.
+							@dickle_angryflustered Dickle: the horns make the entire thing vrachne! the outfit wouldn’t look nearly as good without em
+							@dickle_flustered Dickle: Plus without the horns i look like a chick….
+							@vrachne_smugcross Vrachne: i find that hard to believe, the horns really can’t make that much of a difference
+							@dickle_talk Dickle: you’d be surprised!
+							</args>
+						</action>
+						<action command="talk" name="How did you get here?">
+							<args>
+							@vrachne_talk Vrachne: how does someone like you even get mixed up in all of this?
+							@dickle_explaining Dickle: discord nonsense
+							@vrachne_confused Vrachne: whats a “discord”?
+							@dickle_explaining Dickle: it’s an instant messenger kinda thing
+							@dickle_explaining Dickle: just imagine if like pesterwhatever you use, a chatroom, a forum, and some voice communication service had a weird test tube vat baby grown by a bunch of people who don’t know how to talk without making a joke every few seconds
+							@dickle_explaining Dickle: that’s pretty much discord
+							@vrachne_talk Vrachne: sounds like a riot.
+							@dickle_happy Dickle: oh yeah it is, i mean that! it’s real nice i’ve met a lot of cool people through it!
+							@dickle_talk Dickle: last time i’ll ever try to solve a stupid ass ARG though 
+							@vrachne_talk Vrachne: maybe i’ll have to try it out sometime
+							@dickle_talk Dickle: that sounds like a disaster waiting to happen, but like in a fun way
+							@dickle_explaining Dickle: maybe i can help you set up an account or something once we’re done doing whatever we’re supposed to do here!
+							@vrachne_peevedcross Vrachne: i know how to use a computer dickle.
+							@dickle_talk Dickle: yeah you’re right sorry.
+							</args>
+						</action>
+					</args>
+				</action>
+		</action> -->
+  	</character>
+  
+  	<character class='karkat' x='670' y='1826'>
+  		<action class='beKarkat'/>
+  		<action command='talk' name='Dickle talksprite test.'>
+  			<args>
+  				@dickle_talk This text should be Dickle colored.
+  				@dickle_talk <font color='red'> This text should be red. </font>
+				@dickle_talk This word should be <font color='orange'> orange </font> and this word should be <font color='green'> green </font>.
+  			</args>
+  		</action>
+  	</character>
+			<action command="changeRoom" name="Move.">
+				<args>
+					tree,351,1198
+				</args>
+			</action>
+		</character>
+  	
+  	<character class='vrachne' name='vrachne' x='1024' y='2038'>
+			<action class="beVrachne"/>
+  		<action command='follow' sprite='dickle' name='Follow.'>
+  			<args>vrachne,dickle</args>
+  			<action command='removeAction' noDelay='true'>
+  				<args>vrachne,Follow.</args>
+  			</action>
+  		</action>
+			<action command='unfollow' sprite='dickle' name='Stop following.'>
+				<args>vrachne</args>
+				<action command='toggleCollisions'>
+					<args>vrachne</args>
+				</action>
+			</action>
+			<action command="talk" name="Ask a question.">
+				<args>
+					@dickle_talk Dickle: what should i ask about?
+				</args>
+				<action command="presentAction">
+					<args>
+						<action command="talk" name="What's being a sprite like?">
+							<args>
+								@dickle_talk Dickle: hey vrachne can i ask you about some stuff real quick
+								@vrachne_talk Vrachne: is this about your quest again? Its really simple dickle i don’t know how you cant get it into that tiny head of yours
+								@dickle_talk Dickle: no no it’s a question about you!
+								@vrachne_smug Vrachne: oh really now? Well go ahead then what do you wanna know about little ole me
+								@dickle_talk Dickle: welllll its a pretty broad question but like, what’s being a sprite like?
+								@vrachne_peeved Vrachne: what kind of question is that.
+								@dickle_talk Dickle: i don’t know! Im trying my hardest here, i mean you’re like a kinda ghost kinda goo person so i’m just really curious about some stuff!
+								@vrachne_peevedcross Vrachne: like what
+								@dickle_think Dickle: like uhhh do you have to eat! Or sleep ya know stuff like that!
+								@vrachne_peeved Vrachne: i’ll sleep when im dead dickle and as for me having to eat
+								@vrachne_airquotes Vrachne: i don’t think im “supposed” to feel hunger but you never know how things will work out
+								@vrachne_peevedcross Vrachne: things are pretty shoddy here if you couldn’t tell that already.
+								@dickle_think Dickle: huh?
+								@vrachne_armup Vrachne: this entire time we haven’t even run into a single underling! none. nada. ゼロ.
+								Vrachne: isn’t that a little weird to you?
+								@dickle_explaining Dickle: well i mean i just assumed we’d been really lucky so far! 
+								@dickle_explaining Dickle: honestly i’m kinda scared of what ya know enemies and stuff we’d run into yeah?
+								@dickle_explaining Dickle: because they like take after the first things we throw into the sprite thing right?
+								@vrachne_armup Vrachne: they’re called underlings dickle and yes they do take after whatever people throw into their kernelsprites
+								@vrachne_smugcross Vrachne: what, are you scared of getting assaulted by a long tongued poorly drawn imp? honestly the porn sword would probably scare them off or leave them too embarrassed to even fight properly HA
+								@dickle_flustered Dickle: it’s not that! i’m just scared of what the others are gonna put in when they get in ya know?
+								@vrachne_talk Vrachne: listen dickle i doubt they’ll put in anything TOO bad. If you think the worst possible thing is gonna happen every time you or someone else does something then you’ll never get anywhere
+								@dickle_talk Dickle: yeah i guess
+								@dickle_talk Dickle: thanks for the life advice vrachne
+								@vrachne_talk Vrachne: it’s on the house, this time.
+							</args>
+						</action>
+						<action command="talk" name="Do you remember anything from being your separate parts?">
+							<args>
+								@dickle_talk Dickle: oh actually i have another question
+								@dickle_explaining Dickle: it’s uh more personal this time if thats okay with you
+								@vrachne_explaining Vrachne: ask away dickle i’m an open book
+								@dickle_talk Dickle: well uh 
+								@dickle_talk Dickle: do you have memories from like the parts that make you up? You know what i mean by that right
+								@vrachne_shrug Vrachne: my memories are a big puddle of mush dickle, there’s some stuff that’s clear and some stuff that isn’t
+								@dickle_talk Dickle: do you remember fighting any big green bad guys or maybe some weird purple haired hero and his weird snake lover person
+								@vrachne_talk Vrachne: yeah i do, i wouldn’t forget those fights not by a long shot.
+								@dickle_talk Dickle: if you don’t mind me asking did you win those fights?
+								@vrachne_talk Vrachne: unfortunately i don’t remember how they ended just that i got into those fights.
+								@dickle_talk Dickle: awwww that sucks
+								@vrachne_smugcross Vrachne: knowing me though i probably came out on top!
+								@vrachne_smugcross Vrachne: i’d never lose to an overgrown time traveling child or some wannabe hero and his pet snake!
+								@dickle_talk Dickle: but uhhh what if you did?
+								@vrachne_peevedcross Vrachne: are you doubting me dickle?
+								@dickle_flustered Dickle: no no it’s just that since you can’t really remember we cant know for sure right?
+								@vrachne_peevedcross Vrachne: well dickle, even if i did die, it didn’t “stick”
+								@vrachne_smugcross Vrachne: it never does, i’ll always find a way back thats why im here, it’s one of those talents i told you about
+								@dickle_think Dickle: that’s a pretty busted talent vrachne
+								@vrachne_smug  Vrachne: i suppose it is but i’m not complaining
+								@dickle_think Dickle: yeahh i guess i shouldn’t be complaining about it either
+								@dickle_talk Dickle: anyway if you do remember could you tell me? I’m real curious!
+								@vrachne_smugcross Vrachne: sure, you’ll be the first to know dickle.
+								@dickle_talk Dickle: sweeeeeet!
+							</args>
+						</action>
+						<action command="talk" name="What's your favorite food?">
+							<args>
+								@dickle_talk Dickle: hey vrachne?
+								@vrachne_peevedcross Vrachne: what.
+								@dickle_talk Dickle: whats your favorite food?
+								@vrachne_peevedcross Vrachne: didn’t i tell you i don’t have to eat? Or shouldn’t have to anyway
+								@dickle_talk Dickle: yeah but not having to eat doesn’t mean you can’t eat stuff! You can eat for fun you know i do it all the time
+								@vrachne_smugcross Vrachne: well i guess that explains your figure heh
+								@dickle_angry Dickle: hey i’m trying my hardest to lose it okay! I just really haven’t gotten out of the house much before i got into this mess
+								@vrachne_smug Vrachne: you’re not fooling anyone dickle
+								@vrachne_think Vrachne: anyway, if i had to name a favorite food hmmmmm…. ham is pretty nice
+								@dickle_talk Dickle: ham? really?
+								@vrachne_peeved Vrachne: yes dickle, ham. whats wrong with liking ham?
+								@dickle_explaining Dickle: oh nothing! honestly i love a good ham sandwich especially if its like honey ham or something like that!
+								@dickle_explaining Dickle: any other foods you like a lot?
+								@vrachne_think Vrachne: well there is something i really REALLY like, though it’s a bit out there.
+								@dickle_flustered Dickle: you know on second thought you don’t have to answer that!
+								@dickle_flustered Dickle: i have a lot of ham back at home, maybe once we’re done here we can go back and eat some sandwiches or something yeah?
+								@dickle_flustered Dickle: a lunch break is always important! People might say breakfast is the most important meal of the day but they just say that to make people wake up earlier and buy cereal boxes!
+								@dickle_flustered Dickle: its a conspiracy i tell you!
+								@vrachne_peevedcross Vrachne: whatever you say dickle.
+							</args>
+						</action>
+					</args>
+				</action>
+			</action>
+  	</character>
+  	
+  	<!-- here we're adding a standard chest based on a template class found in
+  	etc/standardTemplates.xml -->
+
+  	<sprite class='chest1' name='chest1' x='400' y='2734'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest1,item1, @! You got a CAN OF TAB!
+				</args>
+			</action>
+		</sprite>
+
+   <!-- here we're adding in our BG and FG. This is the second half of our 
+   optimization. To avoid creating a dozen sprites for every single tile, we
+   specify that this image has been sliced up into tiles. Then we just specify
+   how many there are and how big they are, and the system will find all of them
+   and tile them correctly based on their names. This also makes it very easy
+   to transition from using one big image to a sliced up one. -->
+   
+   <!-- Note no depthing specification puts a sprite in the background. Not 
+   specifying coordinates also puts them at (0,0) by default (top-left corner). -->
+    <sprite name='firstRoomBG'>
+    	<animation sheet='firstRoomBG'/>
+    </sprite>
+
+		<!-- note depthing='2' is what puts this in the foreground -->
+		<sprite name='firstRoomFG' depthing='2'>
+    	<animation sheet='firstRoomFG'/>
+    </sprite>
+  </room>
+</rooms>
+</sburb>

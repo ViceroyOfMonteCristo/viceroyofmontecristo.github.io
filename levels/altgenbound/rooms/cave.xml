@@ -1,0 +1,27 @@
+<sburb description="cave">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="caveFG" type="graphic">backgrounds/cave/cave-x2-foreground.png</asset>
+    <asset name="caveBG" type="graphic">backgrounds/cave/cave-x2-bg.png</asset>
+    <asset name="caveMap" type="graphic">backgrounds/cave/cave-map.png</asset>
+  </assets>
+  <rooms>
+    <room name="cave" walkableMap="caveMap" mapScale="2">
+      <sprite name="caveFG" depthing="2">
+        <animation sheet="caveFG" />
+      </sprite>
+      <sprite name="caveBG">
+        <animation sheet="caveBG" />
+      </sprite>
+
+      <character class='karkat' name='dialogueTest' x='1110' y='200'>
+        <action command="changeRoom" name="Move.">
+          <args>
+            firstRoom,692,2056
+          </args>
+        </action>
+      </character>
+    </room>
+  </rooms>
+</sburb>
