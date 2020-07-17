@@ -203,7 +203,6 @@ safe than sorry.-->
 				@dickle_talk This word should be <font color='orange'> orange </font> and this word should be <font color='green'> green </font>.
   			</args>
   		</action>
-  	</character>
 			<action command="changeRoom" name="Move.">
 				<args>
 					tree,351,1198
