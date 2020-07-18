@@ -11,8 +11,8 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='625' y='150' width='126' height='446' collidable='true'>
-	  <animation sheet='lift_object' x='-10' y='-10'/>
+	<sprite name='lift_object' x='600' y='160' width='126' height='446' collidable='true'>
+	  <animation sheet='lift_object' x='0' y='0'/>
 	  <action command='talk' name='Use lift.' sprite='dickle'>
 	    <args>
 		@dickle_glasses Dickle: oh nice wood
@@ -30,7 +30,7 @@
 		@dickle_talk Dickle: you’d be surprised! I’ve looked at myself in the mirror before without them and it’s NOT PRETTY
 		@vrachne_peevedcross Vrachne: prove it then! Take em off
 		@dickle_talk Dickle: alright fine but don’t say i didn’t warn you!
-		@dickle_(something?) Dickle: (sprite of dickle taking the glasses off and having the funniest thing you can think of under them) BAM
+		@dickle_horror Dickle:  BAM
 		@vrachne_peeved Vrachne: i’ve seen worse.
 		@dickle_talk Dickle: yeah you probably have, but plenty of other people haven’t!
 		@dickle_talk Dickle: so i’ll keep them on

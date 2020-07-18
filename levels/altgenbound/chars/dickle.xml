@@ -34,6 +34,7 @@
 	<asset name='dickle_smug' type='graphic'>dialogs/dickle/dicklesmug.png</asset>
 	<asset name='dickle_wipe' type='graphic'>dialogs/dickle/dicklewipingtears.png</asset>
 	<asset name='dickle_excited' type='graphic'>dialogs/dickle/dickle_excited.png</asset>
+	<asset name='dickle_horror' type='graphic'>dialogs/dickle/dickle_horror.png</asset>
 </assets>
 
 <hud>
@@ -52,6 +53,7 @@
 			<animation name='dickle_smug' class='dickle-dialog' sheet='dickle_smug' length='2'/>
 			<animation name='dickle_wipe' class='dickle-dialog' sheet='dickle_wipe' length='2'/>
 			<animation name='dickle_excited' class='dickle-dialog' sheet='dickle_excited' length='2'/>
+			<animation name='dickle_horror' class='dickle-dialog' sheet='dickle_horror' length='2'/>
   </dialogsprites>
 </hud>
 </sburb>
