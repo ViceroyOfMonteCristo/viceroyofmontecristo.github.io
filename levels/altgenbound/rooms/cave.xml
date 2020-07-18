@@ -19,11 +19,11 @@
       <character class='karkat' name='dialogueTest' x='1110' y='200'>
         <action command="changeRoom" name="Move.">
           <args>
-            toolbooth,1020,2400
+            booth,1020,2400
           </args>
         </action>
       </character>
-	<sprite name="tablet" x='1045' y='1200' width='36' height='76' collidable='true'>
+	<sprite name="tabletOne" x='1045' y='1200' width='36' height='76' collidable='true'>
 	  <animation sheet='tablet' x='0' y='0'/>
 	  <action command='talk' name='Examine tablet.'>
 	    <args>
@@ -64,7 +64,7 @@
 	    </action>
 	    </action>
 	  </sprite>
-	<sprite name="tablet" x='1600' y='1025' width='36' height='76' collidable='true'>
+	<sprite name="tabletTwo" x='1600' y='1025' width='36' height='76' collidable='true'>
 	  <animation sheet='tablet' x='0' y='0'/>
 	  <action command='talk' name='Examine tablet.'>
 	    <args>
