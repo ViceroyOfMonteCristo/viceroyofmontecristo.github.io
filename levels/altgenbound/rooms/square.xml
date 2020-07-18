@@ -2,11 +2,15 @@
   <dependencies>
   </dependencies>
   <assets>
+    <asset name="squareFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2_fg.png</asset>
     <asset name="squareBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2.png</asset>
     <asset name="squareMap" type="graphic">backgrounds/wallflower_exterior/map2coll.png</asset>
   </assets>
   <rooms>
 	<room name='square' walkableMap='squareMap' mapScale="1">
+	  <sprite name="squareFG" depthing="2">
+	    <animation sheet="squareFG"/>
+	  </sprite>
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
