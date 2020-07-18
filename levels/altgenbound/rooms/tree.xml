@@ -25,10 +25,10 @@
 		@dickle_talk Dickle: this thing sure looks different up close eh vrachne?
 		@vrachne_explaining Vrachne: distance is a hell of a thing, the glasses probably didn’t help that much either.
 		@dickle_talk Dickle: you got that right
-		@dickle_talkcrossed Dickle: thing looks like a modern art sculpture hehehehe
-		@dickle_talkcrossed Dickle: whole lot of nothing around here though, are you sure this is the place we’re looking for?
-		@vrachne_explaining Vrachne: trees don’t just grow like this dickle, someone or something must’ve made it like this.
-		@vrachne_explaining Vrachne: maybe you should try actually looking around before declaring there’s “nothing” here.
+		@dickle_smug Dickle: thing looks like a modern art sculpture hehehehe
+		@dickle_smug Dickle: whole lot of nothing around here though, are you sure this is the place we’re looking for?
+		@vrachne_armup Vrachne: trees don’t just grow like this dickle, someone or something must’ve made it like this.
+		@vrachne_armup Vrachne: maybe you should try actually looking around before declaring there’s “nothing” here.
 		@dickle_talk Dickle: alright alright fine let’s look around then
 	  </args>
 	</action>
@@ -67,6 +67,7 @@
 		@vrachne_smugcross Vrachne: you first, dickle.
 		@dickle_talk Dickle: wouldn’t have it any other way
 	    </args>
+	  </action>
 	</trigger>
     </triggers>
 
