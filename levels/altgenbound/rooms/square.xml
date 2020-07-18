@@ -1,0 +1,15 @@
+<sburb description="square">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="squareBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2.png</asset>
+    <asset name="squareMap" type="graphic">backgrounds/wallflower_exterior/map2coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='square' walkableMap='squareMap' mapScale="1">
+	  <sprite name='squareBG'>
+	    <animation sheet='squareBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>

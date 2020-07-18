@@ -12,6 +12,8 @@ is entered for the first time. -->
 	<dependency>rooms/tree.xml</dependency>
 	<dependency>rooms/cave.xml</dependency>
         <dependency>rooms/booth.xml</dependency>
+	<dependency>rooms/lift.xml</dependency>
+	<dependency>rooms/square.xml</dependency>
 </dependencies>
 
 <assets>
@@ -109,6 +111,18 @@ safe than sorry.-->
 	</triggers>
   	<character class='dickle' x='692' y='2056'>
   		<action class='beDickle'/>
+		<action command='follow' sprite='vrachne' name='Follow.'>
+  			<args>dickle,vrachne</args>
+  			<action command='removeAction' noDelay='true'>
+  				<args>dickle,Follow.</args>
+  			</action>
+  		</action>
+			<action command='unfollow' sprite='vrachne' name='Stop following.'>
+				<args>dickle</args>
+				<action command='toggleCollisions'>
+					<args>dickle</args>
+				</action>
+			</action>
 			<action command="talk" name="Ask a question.">
 				<args>
 					@vrachne_talk Vrachne: hey dickle

@@ -8,9 +8,135 @@
   <rooms>
 	<room name='booth' walkableMap='boothMap' mapScale="1">
 	  <sprite name='boothBG'>
-	    <animation sheet='boothBG' />
+	    <animation sheet='boothBG'/>
 	  </sprite>
-	</room>
+	<triggers>
+	<trigger detonate='true'>
+          <args>spriteProperty,char,y &lt; 1240</args>
+            <action command='talk' sprite='dickle'>
+	    <args>
+		@quincy_gruff ???: hey!!!
+		@quincy_gruff ???: you two!
+		@quincy_gruff ???: what’s your business here?!
+		@dickle_smug Dickle: lemme handle this, i’ve got a real way with words
+		@vrachne_smug Vrachne: mhm whatever you say dickle.
+		@vrachne_smugcross Vrachne: try not to embarrass yourself too bad
+		@dickle_smug Dickle: i’ll be fine!
+		@quincy_gruff ???: HEY! 
+		@quincy_gruff ???: is one of you gonna answer or what?!
+		@dickle_talk Dickle: sorry sorry i was just talking to my friend here
+		@dickle_talk Dickle: is this wallflower?
+		@quincy_armscrossed ???: yeah it is, you can see the sign over there
+		@quincy_armscrossed ???: you two tourists?
+		@dickle_talk Dickle: i don’t think so, why?
+		@quincy_armscrossed ???: we’ve gotten a lot of tourists round here recently
+		@quincy_armscrossed ???: pitch black and pitch white you know
+		@quincy_armscrossed ???: don’t know where they came from
+		@dickle_explaining Dickle: ahhhh
+		@dickle_explaining Dickle: me and my friend here aren’t tourists we’re looking for something related to the sun i think!
+		@dickle_explaining Dickle: we met a nice guy who told us to come here, he went by da-niver i think
+		@quincy_talk ???: that weirdo with the speech impediment?
+		@dickle_talkcrossed Dickle: that’s not a very nice thing to say about him but yeah that guy!
+		@quincy_talk ???: oh no don’t worry we’re good pals, he likes to riff on me for working at the gate so i like to riff on him by making fun of the silly way he talks
+		@dickle_talk Dickle: ohhhhh you sound like good buds
+		@quincy_talk???: ahahha yeah
+		@quincy_friendly ???: well any friend of da-niver is a friend of mine!
+		@quincy_friendly ???: i’m Quincy, nice to meet you folk!
+		@dickle_happy Dickle: nice to meet you quincy
+		@dickle_explaining Dickle: i’m Dickle and this is Vrachne!
+		@vrachne_concerned(or something along those lines) Vrachne: ...
+		@dickle_talk Dickle: she uhhh doesn’t talk much
+		@dickle_talk Dickle: anyway, this is a beautiful town you got here! 
+		@quincy_friendly Quincy: it sure is, guess that’s why we’re getting so many tourists now!
+		@quincy_friendly Quincy: you two said you were looking for something sun related yeah?
+		@dickle_explaining Dickle: yep we’ve got important business relating to it, i think.
+		@quincy_friendly Quincy: you must be looking for the #f6b26b Church of Lindas ## then! it’s the best church on the planet!
+		@quincy_friendly Quincy: Mostly because it’s the only one that’s actually still running heh!
+		@dickle_excited Dickle: yeah that sounds like the place!
+		@quincy_talk Quincy: it’s the big building up north you can’t miss it! 
+		@quincy_talk Quincy: it’s run by some great people, i’m sure they’ll be able to help you out with whatever you need!
+		@dickle_excited Dickle: gotcha! Thanks for all your help quincy!
+		@quincy_talk Quincy: no problem! just promise me something okay?
+		@quincy_talk Quincy: please don’t destroy anyone’s property 
+		@quincy_talk Quincy: most of the tourist people have been pretty nice but some are just… lets just say they’re TOO MUCH
+		@quincy_talk Quincy: if anything else gets broken i might be out of a job!
+		@dickle_talk Dickle: we’ll be on our best behaviour i promise!
+		@quincy_friendly Quincy: alright thats all i needed to hear
+		@quincy_friendly Quincy: let me get that gate for you
+		@quincy_friendly Quincy: there you go!
+		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
+		@dickle_friendly Dickle: thanks man! Lindas be with you too
+		@dickle_explaining Dickle: Whatever that means.
+	    </args>
+	  </action>
+	  <action command='talk' sprite='vrachne'>
+	    <args>
+		@quincy_gruff ???: hey!!!
+		@quincy_gruff ???: you two!
+		@quincy_gruff ???: what’s your business here?!
+		@vrachne_peevedcross Vrachne: ……
+		@dickle_peeved Dickle: hey are you gonna say something or what?
+		@vrachne_airquotes Vrachne: i’m not gonna talk to “it” dickle.
+		@dickle_peeved Dickle: What? Why?!
+		@vrachne_peeved Vrachne: it’s degrading. the little thing thinks its so high and mighty because it sits in a booth all day, it makes me sick.
+		@dickle_angry Dickle: are you serious?! We’ve been walking for hours and you’re pulling this now?!
+		@vrachne_peevedcross Vrachne: why don’t you try talking to it, i don’t have to do everything for you.
+		@dickle_flustered Dickle: fine! you’d leave a bad impression anyway!
+		@quincy_gruff ???: HEY! 
+		@quincy_gruff ???: is one of you gonna answer or what?!
+		@quincy_gruff ???: the last thing we need right now is more rude tourists! 
+		@quincy_gruff ???: so if you won’t even be decent enough to introduce yourselves then take a hike!
+		@dickle_talk Dickle: sorry sorry i was just talking to my friend here
+		@dickle_talk Dickle: is this wallflower?
+		@quincy_armscrossed ???: yeah it is, you can see the sign over there
+		@quincy_armscrossed ???: you two tourists?
+		@dickle_talk Dickle: i don’t think so, why?
+		@quincy_armscrossed ???: we’ve gotten a lot of tourists round here recently
+		@quincy_armscrossed ???: pitch black and pitch white you know
+		@quincy_armscrossed ???: don’t know where they came from
+		@dickle_explaining Dickle: ahhhh
+		@dickle_explaining Dickle: me and my friend here aren’t tourists we’re looking for something related to the sun i think!
+		@dickle_explaining Dickle: we met a nice guy who told us to come here, he went by da-niver i think
+		@quincy_talk ???: that weirdo with the speech impediment?
+		@dickle_talkcrossed Dickle: that’s not a very nice thing to say about him but yeah that guy!
+		@quincy_talk ???: oh no don’t worry we’re good pals, he likes to riff on me for working at the gate so i like to riff on him by making fun of the silly way he talks
+		@dickle_talk Dickle: ohhhhh you sound like good buds
+		@quincy_talk???: ahahha yeah
+		@quincy_friendly ???: well any friend of da-niver is a friend of mine!
+		@quincy_friendly ???: i’m Quincy, nice to meet you folk!
+		@dickle_happy Dickle: nice to meet you quincy
+		@dickle_explaining Dickle: i’m Dickle and this is Vrachne!
+		@vrachne_concerned(or something along those lines) Vrachne: ...
+		@dickle_talk Dickle: she uhhh doesn’t talk much
+		@dickle_talk Dickle: anyway, this is a beautiful town you got here! 
+		@quincy_friendly Quincy: it sure is, guess that’s why we’re getting so many tourists now!
+		@quincy_friendly Quincy: you two said you were looking for something sun related yeah?
+		@dickle_explaining Dickle: yep we’ve got important business relating to it, i think.
+		@quincy_friendly Quincy: you must be looking for the #f6b26b Church of Lindas ## then! it’s the best church on the planet!
+		@quincy_friendly Quincy: Mostly because it’s the only one that’s actually still running heh!
+		@dickle_excited Dickle: yeah that sounds like the place!
+		@quincy_talk Quincy: it’s the big building up north you can’t miss it! 
+		@quincy_talk Quincy: it’s run by some great people, i’m sure they’ll be able to help you out with whatever you need!
+		@dickle_excited Dickle: gotcha! Thanks for all your help quincy!
+		@quincy_talk Quincy: no problem! just promise me something okay?
+		@quincy_talk Quincy: please don’t destroy anyone’s property 
+		@quincy_talk Quincy: most of the tourist people have been pretty nice but some are just… lets just say they’re TOO MUCH
+		@quincy_talk Quincy: if anything else gets broken i might be out of a job!
+		@dickle_talk Dickle: we’ll be on our best behaviour i promise!
+		@quincy_friendly Quincy: alright thats all i needed to hear
+		@quincy_friendly Quincy: let me get that gate for you
+		@quincy_friendly Quincy: there you go!
+		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
+		@dickle_friendly Dickle: thanks man! Lindas be with you too
+		@dickle_explaining Dickle: Whatever that means.
+	      </args>
+            </action>
+	  <action command="changeRoom">
+		<args>square,1010,2400</args>
+	  </action>
+	</trigger>
+	</triggers>
+        </room>
   </rooms>
 </sburb>
 		

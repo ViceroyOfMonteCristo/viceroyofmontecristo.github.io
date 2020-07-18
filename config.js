@@ -20,7 +20,8 @@ var SburbConfig = {
     "vice":"#cc0a0a",
     "vrachne":"#1025C3",
     "bowman":"#720720",
-    "makin":"#AA72C0"
+    "makin":"#AA72C0",
+    "quincy":"#2a4e6a"
   },
 
   "characterAnimation": {
