@@ -103,7 +103,7 @@ safe than sorry.-->
 			<args>spriteProperty,char,y &lt; 800</args>
 			<action command="changeRoom">
 				<args>
-					tree,351,1198
+					tree,351,1150
 				</args>
 			</action>
 		</trigger>
@@ -209,8 +209,8 @@ safe than sorry.-->
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
   				@dickle_talk This text should be Dickle colored.
-  				@dickle_talk /0xa10000 This text should be red.
-				@dickle_talk This word should be /0xa17000 orange /0x/ and this word should be /0x416600 green /0x/.
+  				@dickle_talk //0xa10000 This text should be red.
+				@dickle_talk This word should be //0xa17000 orange //0x// and this word should be //0x416600 green //0x//.
   			</args>
   		</action>
 			<action command="changeRoom" name="Move.">

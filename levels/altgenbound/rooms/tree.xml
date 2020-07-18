@@ -16,12 +16,12 @@
       </sprite>
     <triggers>
       <trigger>
-        <args>spriteProperty,char,y &gt; 1220</args>
-	<action command="changeRoom">
+        	<args>spriteProperty,char,y &gt; 1200</args>
+			<action command="changeRoom">
 				<args>
 					forest,2130,900
 				</args>
-	</action>
+			</action>
 	</trigger>
       <trigger detonate='true'>
         <args>spriteProperty,char,y &lt; 800</args>
