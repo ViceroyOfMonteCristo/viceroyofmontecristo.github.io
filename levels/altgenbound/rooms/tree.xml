@@ -5,7 +5,7 @@
     <asset name="treeFG" type="graphic">backgrounds/tree/foreground.png</asset>
     <asset name="treeBG" type="graphic">backgrounds/tree/background.png</asset>
     <asset name="treeMap" type="graphic">backgrounds/tree/collision-map.png</asset>
-    <asset name="moveTrigger" type="graphic">objects/movetrigger.png</asset>
+    <asset name="moveTrigger" type="graphic">objects/misc/movetrigger.png</asset>
   </assets>
   <rooms>
     <room name="tree" walkableMap="treeMap" mapScale="2">
