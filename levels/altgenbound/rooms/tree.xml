@@ -47,7 +47,7 @@
 		@dickle_talk Dickle: alright alright fine let’s look around then
 	  </args>
 	</action>
-	<action command='talk' sprite='vrachne'>
+	<action command='talk' sprite='!dickle'>
 	  <args>
 		@vrachne_talk Vrachne: this is it, we’re here.
 		@vrachne_talk Vrachne: took us long enough.
@@ -97,7 +97,7 @@
 		@dickle_talk Dickle: wouldn’t have it any other way
 	    </args>
 	  </action>
-	<action command='talk' sprite='vrachne'>
+	<action command='talk' sprite='!dickle'>
 	  <args>
 		@dickle_sad Dickle: ugh my socks are all wet now...
 		@dickle_sad Dickle: thank god im wearing shorts.
