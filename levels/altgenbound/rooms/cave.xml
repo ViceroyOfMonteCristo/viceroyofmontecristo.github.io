@@ -24,7 +24,7 @@
         </action>
       </character>
 	<sprite name="tablet" x='1045' y='1200' width='36' height='76' collidable='true'>
-	  <animation sheet='tablet' x='-50' y='-50'/>
+	  <animation sheet='tablet' x='0' y='0'/>
 	  <action command='talk' name='Examine tablet.'>
 	    <args>
               @! There seems to be a bunch of stuff written on this tablet.
@@ -34,17 +34,17 @@
 		<args>
 			<action command="talk" name="Yes">
 			  <args>
-				@! #2e4a6a vf guvf jung v’ir orra erqhprq gb /n
-				           gur yvtug jvguva zr vf qrnq /n
-					   ebggvat R /n
-					   jvgurevat njnl vagb gur rgure /n
-					   va n qrfcrengr ubcr gung vg’yy or hfrshy ntnva /n
-					   O /n
-					   tebja vafnar ol ahzoref /n
-					   nf vgf ubfg'f jvyy qvrf, fb gbb qbrf vg /n
-					   vgf pevrf nyy ohg zbnaf /n
-					   n fbsg, ohg pehry gbar T /n
-					   fheryl vg jvyy or bire va qhr gvzr. /n
+				@! #2e4a6a vf guvf jung v’ir orra erqhprq gb
+				gur yvtug jvguva zr vf qrnq
+				ebggvat
+				jvgurevat njnl vagb gur rgure
+				va n qrfcrengr ubcr gung vg’yy or hfrshy ntnva
+				
+				tebja vafnar ol ahzoref
+				nf vgf ubfg'f jvyy qvrf, fb gbb qbrf vg
+				vgf pevrf nyy ohg zbnaf
+				n fbsg, ohg pehry gbar
+				fheryl vg jvyy or bire va qhr gvzr.
 				@dickle_glasses Dickle: this…. what is this?
 				@vrachne_shrug Vrachne: looks like a bunch of gibberish to me.
 				@dickle_glasses Dickle: but why is it here? Who puts something like this in the middle of a cave?!
@@ -55,6 +55,31 @@
 				@vrachne_talk Vrachne: maybe. 
 				@vrachne_explaining Vrachne: but i’m sure we won’t find any answers by just standing in this cave all day, let’s just get a move on and worry about it on the way out.
 				@dickle_talk Dickle: that sounds fine.
+			  </args>
+			</action>
+			<action command="talk" name="No">
+			  <args></args>
+			</action>
+		</args>
+	    </action>
+	    </action>
+	  </sprite>
+	<sprite name="tablet" x='1600' y='1025' width='36' height='76' collidable='true'>
+	  <animation sheet='tablet' x='0' y='0'/>
+	  <action command='talk' name='Examine tablet.'>
+	    <args>
+              @! There seem to be a bunch of things written on this stone
+	      @! Care to take a look?
+	    </args>
+	    <action command="presentAction">
+		<args>
+			<action command="talk" name="Yes">
+			  <args>
+				@! #2e4a6a Bar zber jnfgr va guvf jbeyq bs ## #ff9900 "Yvtug" ##
+				#2e4a6a v ubcr #a4c2f4 fur'f ## unccl.
+
+				gur fha vf pehry. naq guebhtu vg'f pehrygl jr ner erobea. fb vg tbrf.
+				@! There appears to be two spiders craved onto the tablet one with longer scruffy hair and one with shorter hair. How odd.
 			  </args>
 			</action>
 			<action command="talk" name="No">
