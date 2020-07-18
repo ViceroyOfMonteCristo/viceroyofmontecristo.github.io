@@ -19,7 +19,7 @@
       <character class='karkat' name='dialogueTest' x='1110' y='200'>
         <action command="changeRoom" name="Move.">
           <args>
-            firstRoom,692,2056
+            toolbooth,1020,2400
           </args>
         </action>
       </character>

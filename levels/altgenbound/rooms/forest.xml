@@ -102,7 +102,7 @@ safe than sorry.-->
 		<trigger>
 			<args>spriteProperty,char,y &lt; 800</args>
 			<action command="changeRoom">
-				<args>cave,1015,2494</args>
+				<args>tree,351,1198</args> 
 			</action>
 		</trigger>
 	</triggers>
@@ -224,7 +224,7 @@ safe than sorry.-->
   		</action>
 			<action command="changeRoom" name="Move.">
 				<args>
-					tree,351,1198
+					cave,1015,2494
 				</args>
 			</action>
 	</character>

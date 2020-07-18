@@ -32,7 +32,7 @@
 	</trigger>
       <trigger detonate='true'>
         <args>spriteProperty,char,y &lt; 800</args>
-        <action command='talk'>
+        <action command='talk' sprite='dickle'>
 	  <args>
 		@dickle_glasses Dickle: oh god is this it
 		@vrachne_talk Vrachne: judging by the fact that it’s a big tree, i’d say yes.
@@ -47,10 +47,24 @@
 		@dickle_talk Dickle: alright alright fine let’s look around then
 	  </args>
 	</action>
+	<action command='talk' sprite='vrachne'>
+	  <args>
+		@vrachne_talk Vrachne: this is it, we’re here.
+		@vrachne_talk Vrachne: took us long enough.
+		@dickle_excited Dickle: woooooo finally!
+		@dickle_glasses Dickle: uhhhhh….
+		@dickle_glasses Dickle: hey are you sure this is the place vrachne? there seems to be a whole lot of nothing aside from the big modern art sculpture
+		@vrachne_peeved Vrachne: Dickle. it’s a giant tree with webs on it, in the middle of its own little important looking pond in an open clearing.
+		@vrachne_peeved Vrachne: this is the most obvious environmental sign posting i’ve ever seen.
+		@vrachne_amrup Vrachne: there’s gonna be something around here that’ll lead us where we need to go, probably a switch or maybe a hole who knows.
+		@vrachne_talk Vrachne: let’s look around.
+		@dickle_talk Dickle: alright lead the way!
+	  </args>
+	</action>
       </trigger>
       <trigger detonate='true'>
 	<args>spriteProperty,char,y &lt; 675</args>
-	<action command='talk'>
+	<action command='talk' sprite='dickle'>
 	  <args>
 		@dickle_happy Dickle: oh hey wait there’s a hole here vrachne!
 		@vrachne_peeved Vrachne: i’m right behind you dickle you don’t need to yell
@@ -81,6 +95,21 @@
 		@dickle_talk Dickle: it’s time for cave explore!
 		@vrachne_smugcross Vrachne: you first, dickle.
 		@dickle_talk Dickle: wouldn’t have it any other way
+	    </args>
+	  </action>
+	<action command='talk' sprite='vrachne'>
+	  <args>
+		@dickle_sad Dickle: ugh my socks are all wet now...
+		@dickle_sad Dickle: thank god im wearing shorts.
+		@dickle_talk Dickle: hey have you found anything yet?
+		@vrachne_talk Vrachne: found it.
+		@vrachne_smug Vrachne: see? i told you there was more to this place!
+		@dickle_happy Dickle: oh niceeee 
+		@dickle_excited Dickle: it’s a hole!
+		@dickle_glasses Dickle: wait can we actually even fit in there?
+		@vrachne_armup Vrachne: i’d say it’s about the size of an overgrown spider that’s gotten the bright idea to stand on two of its legs so yes, might be a bit of a squeeze though
+		@dickle_fingerguns Dickle: alright let’s go, ladies first though eh?
+		@vrachne_peeved Vrachne: how courteous. 
 	    </args>
 	  </action>
 	</trigger>

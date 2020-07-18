@@ -1,0 +1,16 @@
+<sburb description="tollbooth">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="boothBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1.png</asset>
+    <asset name="boothMap" type="graphic">backgrounds/wallflower_exterior/map1coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='booth' walkableMap='boothMap' mapScale="2">
+	  <sprite name='boothBG'>
+	    <animation sheetp='boothBG' />
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>
+		
