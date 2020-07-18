@@ -208,9 +208,20 @@ safe than sorry.-->
   		<action class='beKarkat'/>
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
-  				@dickle_talk This text should be Dickle colored.
-  				@dickle_talk #a10000 This text should be red.
-				@dickle_talk This word should be #a17000 orange ## and this word should be #416600 green ##.
+  				@dickle_talk Test.
+				@dickle_airquotes Test.
+				@dickle_explaining Test.
+				@dickle_fingerguns Test.
+				@dickle_flustered Test.
+				@dickle_think Test.
+				@dickle_happy Test.
+				@dickle_sad Test.
+				@dickle_tears Test.
+				@dickle_glasses Test.
+				@dickle_angryflustered Test.
+				@dickle_smug Test.
+				@dickle_wipe Test.
+				@dickle_excited Test.
   			</args>
   		</action>
 			<action command="changeRoom" name="Move.">

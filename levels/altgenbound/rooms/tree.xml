@@ -5,6 +5,7 @@
     <asset name="treeFG" type="graphic">backgrounds/tree/foreground.png</asset>
     <asset name="treeBG" type="graphic">backgrounds/tree/background.png</asset>
     <asset name="treeMap" type="graphic">backgrounds/tree/collision-map.png</asset>
+    <asset name="moveTrigger" type="graphic">objects/movetrigger.png</asset>
   </assets>
   <rooms>
     <room name="tree" walkableMap="treeMap" mapScale="2">
@@ -78,12 +79,15 @@
 	  </action>
 	</trigger>
     </triggers>
-
-      <character class='karkat' name='dialogueTest' x='241' y='745'>
-        <action command="changeRoom" name="Move.">
-          <args>cave,1015,2494</args>
-        </action>
-      </character>
+	<sprite name='moveTrigger'> x='350' y='580' width='50' height='50'>
+          <action command='talk' name='Enter.'>
+		<args>
+			<action command="changeRoom">
+          		<args>cave,1015,2494</args>
+			</action>
+		</args>
+       	 </action>
+	</sprite>
     </room>
   </rooms>
 </sburb>
