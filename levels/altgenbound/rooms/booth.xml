@@ -15,12 +15,13 @@
           <args>spriteProperty,char,y &lt; 1240</args>
             <action command='talk' sprite='dickle'>
 	    <args>
+		@dickle_glasses Dickle: is this a tollbooth?
 		@quincy_gruff ???: hey!!!
 		@quincy_gruff ???: you two!
 		@quincy_gruff ???: what’s your business here?!
 		@dickle_smug Dickle: lemme handle this, i’ve got a real way with words
 		@vrachne_smug Vrachne: mhm whatever you say dickle.
-		@vrachne_smugcross Vrachne: try not to embarrass yourself too bad
+		@vrachne_smugcross Vrachne: try not to embarrass yourself too bad.
 		@dickle_smug Dickle: i’ll be fine!
 		@quincy_gruff ???: HEY! 
 		@quincy_gruff ???: is one of you gonna answer or what?!
