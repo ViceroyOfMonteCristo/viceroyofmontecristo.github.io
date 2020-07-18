@@ -98,9 +98,19 @@ safe than sorry.-->
   	internal tags that may have been part of the class. Template classes
   	are a great way to seperate logic and content, as well as recycle common
   	patterns. -->
+	<triggers>
+		<trigger>
+			<args>spriteProperty,char,y &lt; 800</args>
+			<action command="changeRoom">
+				<args>
+					tree,351,1198
+				</args>
+			</action>
+		</trigger>
+	</triggers>
   	<character class='dickle' x='692' y='2056'>
   		<action class='beDickle'/>
-	<action command="talk" name="Ask a question.">
+			<action command="talk" name="Ask a question.">
 				<args>
 					@vrachne_talk Vrachne: hey dickle
 					@dickle_talk Dickle: yeah vrachne do you need something?
@@ -199,8 +209,8 @@ safe than sorry.-->
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
   				@dickle_talk This text should be Dickle colored.
-  				@dickle_talk <font color='red'> This text should be red. </font>
-				@dickle_talk This word should be <font color='orange'> orange </font> and this word should be <font color='green'> green </font>.
+  				@dickle_talk /0xa10000 This text should be red.
+				@dickle_talk This word should be /0xa17000 orange /0x/ and this word should be /0x416600 green /0x/.
   			</args>
   		</action>
 			<action command="changeRoom" name="Move.">
