@@ -24,7 +24,7 @@
         </action>
       </character>
 	<sprite name="tabletOne" x='1045' y='1200' width='36' height='76' collidable='true'>
-	  <animation sheet='tabletOne' x='-50' y='-50'/>
+	  <animation sheet='tablet-x2' x='-50' y='-50'/>
 	  <action command='talk' name='Examine tablet.'>
 	    <args>
               @! There seems to be a bunch of stuff written on this tablet.
