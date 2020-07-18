@@ -8,7 +8,7 @@
   <rooms>
 	<room name='booth' walkableMap='boothMap' mapScale="1">
 	  <sprite name='boothBG'>
-	    <animation sheetp='boothBG' />
+	    <animation sheet='boothBG' />
 	  </sprite>
 	</room>
   </rooms>
