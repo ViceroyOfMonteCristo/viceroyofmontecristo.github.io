@@ -11,6 +11,7 @@ is entered for the first time. -->
 	<dependency>chars/karkat.xml</dependency> <!-- and karkat -->
 	<dependency>rooms/tree.xml</dependency>
 	<dependency>rooms/cave.xml</dependency>
+        <dependency>rooms/booth.xml</dependency>
 </dependencies>
 
 <assets>
@@ -89,7 +90,7 @@ safe than sorry.-->
 	camera can see. However width and height can be explicitly
 	specified here if need be. The walkableMap is theoretically optional, but
 	it's incredibly useful and easy to use. -->
-  <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
+  <room name='firstRoom' walkableMap='firstRoomMap' mapScale='1'>
   
   	<!-- here we drop in our character. Since we specified everything in 
   	chars/meenah.xml, we don't have to do much here. We just need to specify

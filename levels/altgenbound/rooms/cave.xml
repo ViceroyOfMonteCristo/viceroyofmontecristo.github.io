@@ -9,7 +9,7 @@
     <asset name="brokentablet" type="graphic">objects/misc/brokentablet.png</asset>
   </assets>
   <rooms>
-    <room name="cave" walkableMap="caveMap" mapScale="2">
+    <room name="cave" walkableMap="caveMap" mapScale="1">
       <sprite name="caveFG" depthing="2">
         <animation sheet="caveFG" />
       </sprite>

@@ -8,7 +8,7 @@
     <asset name="moveTrigger" type="graphic">objects/misc/movetrigger.png</asset>
   </assets>
   <rooms>
-    <room name="tree" walkableMap="treeMap" mapScale="2">
+    <room name="tree" walkableMap="treeMap" mapScale="1">
       <sprite name="treeFG" depthing="2">
         <animation sheet="treeFG" />
       </sprite>

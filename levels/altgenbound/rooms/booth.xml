@@ -6,7 +6,7 @@
     <asset name="boothMap" type="graphic">backgrounds/wallflower_exterior/map1coll.png</asset>
   </assets>
   <rooms>
-	<room name='booth' walkableMap='boothMap' mapScale="2">
+	<room name='booth' walkableMap='boothMap' mapScale="1">
 	  <sprite name='boothBG'>
 	    <animation sheetp='boothBG' />
 	  </sprite>
