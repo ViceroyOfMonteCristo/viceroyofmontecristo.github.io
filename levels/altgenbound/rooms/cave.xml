@@ -23,7 +23,7 @@
           </args>
         </action>
       </character>
-	<sprite name="tabletOne" x='1045' y='1200'>
+	<sprite name="tabletOne" x='1045' y='1200' width='36' height='76'>
 	  <action command='talk' name='Examine tablet.'>
 	    <args>
               @! There seems to be a bunch of stuff written on this tablet.
