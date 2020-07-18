@@ -16,12 +16,18 @@
         <animation sheet="treeBG" />
       </sprite>
     <triggers>
-      <trigger>
+      <trigger detonate='true'>
         	<args>spriteProperty,char,y &gt; 1200</args>
 			<action command="changeRoom">
 				<args>
 					forest,2130,900
 				</args>
+			</action>
+	</trigger>
+	<trigger detonate='true'>
+        	<args>spriteProperty,char,y &lt; 650</args>
+			<action command="changeRoom">
+				<args>cave,1015,2494</args>
 			</action>
 	</trigger>
       <trigger detonate='true'>
@@ -79,7 +85,7 @@
 	  </action>
 	</trigger>
     </triggers>
-	<sprite name='moveTrigger'> x='350' y='580' width='50' height='50'>
+	<sprite name='moveTrigger'> x='350' y='625' width='50' height='50'>
           <action command='talk' name='Enter.'>
 		<args>
 			<action command="changeRoom">
