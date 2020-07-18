@@ -5,6 +5,7 @@
     <asset name="caveFG" type="graphic">backgrounds/cave/cave-x2-foreground.png</asset>
     <asset name="caveBG" type="graphic">backgrounds/cave/cave-x2-bg.png</asset>
     <asset name="caveMap" type="graphic">backgrounds/cave/cave-map.png</asset>
+    <asset name="tablet" type="graphic">objects/misc/tablet-x2.png</asset>
   </assets>
   <rooms>
     <room name="cave" walkableMap="caveMap" mapScale="2">
@@ -22,6 +23,45 @@
           </args>
         </action>
       </character>
+	<sprite name="tabletOne" x='1045' y='1200'>
+	  <action command='talk' name='Examine tablet.'>
+	    <args>
+              @! There seems to be a bunch of stuff written on this tablet.
+	      @! Read it?
+	    </args>
+	    <action command="presentAction">
+		<args>
+			<action command="talk" name="Yes">
+			  <args>
+				@! #2e4a6a vf guvf jung v’ir orra erqhprq gb /n
+				           gur yvtug jvguva zr vf qrnq /n
+					   ebggvat R /n
+					   jvgurevat njnl vagb gur rgure /n
+					   va n qrfcrengr ubcr gung vg’yy or hfrshy ntnva /n
+					   O /n
+					   tebja vafnar ol ahzoref /n
+					   nf vgf ubfg'f jvyy qvrf, fb gbb qbrf vg /n
+					   vgf pevrf nyy ohg zbnaf /n
+					   n fbsg, ohg pehry gbar T /n
+					   fheryl vg jvyy or bire va qhr gvzr. /n
+				@dickle_glasses Dickle: this…. what is this?
+				@vrachne_shrug Vrachne: looks like a bunch of gibberish to me.
+				@dickle_glasses Dickle: but why is it here? Who puts something like this in the middle of a cave?!
+				@vrachne_shrug Vrachne: probably some kind of generation error or something who knows
+				@vrachne_smugshrug Vrachne: we’re in a pretty topsy turvy world dickle.
+				@dickle_glasses Dickle:  i guess… it just feels like there has to be something more to it though ya know?
+				@dickle_think Dickle: maybe this is like some sorta weird spider language or something? 
+				@vrachne_talk Vrachne: maybe. 
+				@vrachne_explaining Vrachne: but i’m sure we won’t find any answers by just standing in this cave all day, let’s just get a move on and worry about it on the way out.
+				@dickle_talk Dickle: that sounds fine.
+			  </args>
+			</action>
+			<action command="talk" name="No">
+			  <args></args>
+			</action>
+		</args>
+	    </action>
+	  </sprite>
     </room>
   </rooms>
 </sburb>
