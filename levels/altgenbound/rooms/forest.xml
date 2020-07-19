@@ -110,11 +110,12 @@ safe than sorry.-->
   	patterns. -->
 	<triggers>
 		<trigger>
-			<args>spriteProperty,char,y &lt; 800</args>
-			<action command="changeRoom">
-				<args>tree,351,1198</args> 
+  			<args>inBox2,char,1900,800,2400,700</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/tree.xml,tree,351,1198</args>
 			</action>
-		</trigger>
+  		</trigger>
+
 	</triggers>
   	<character class='dickle' x='692' y='2056'>
   		<action class='beDickle'/>

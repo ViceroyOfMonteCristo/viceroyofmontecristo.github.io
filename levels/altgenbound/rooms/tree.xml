@@ -16,14 +16,12 @@
         <animation sheet="treeBG" />
       </sprite>
     <triggers>
-      <trigger detonate='true'>
-        	<args>spriteProperty,char,y &gt; 1200</args>
-			<action command="changeRoom">
-				<args>
-					forest,2130,900
-				</args>
+	<trigger>
+  		<args>inBox2,char,300,1250,450,1200</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/forest.xml,forest,2125,900</args>
 			</action>
-	</trigger>
+  	</trigger>
 	<trigger detonate='true'>
         	<args>spriteProperty,char,y &lt; 650</args>
 			<action command="changeRoom">
