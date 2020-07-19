@@ -1,5 +1,6 @@
 <sburb description="tree">
   <dependencies>
+	<dependency>rooms/forest.xml</dependency>
   </dependencies>
   <assets>
     <asset name="treeFG" type="graphic">backgrounds/tree/foreground.png</asset>
@@ -22,12 +23,12 @@
          			 <args>rooms/forest.xml,forest,2125,900</args>
 			</action>
   	</trigger>
-	<trigger detonate='true'>
-        	<args>spriteProperty,char,y &lt; 650</args>
-			<action command="changeRoom">
-				<args>cave,1015,2494</args>
+	<trigger>
+  		<args>inBox2,char,300,650,450,600</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/cave.xml,cave,1015,2475</args>
 			</action>
-	</trigger>
+  	</trigger>
       <trigger detonate='true'>
         <args>spriteProperty,char,y &lt; 800</args>
         <action sprite='dickle' command='talk'>

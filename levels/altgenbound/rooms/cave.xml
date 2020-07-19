@@ -1,5 +1,6 @@
 <sburb description="cave">
   <dependencies>
+	<dependency>rooms/tree.xml</dependency>
   </dependencies>
   <assets>
     <asset name="caveFG" type="graphic">backgrounds/cave/cave-x2-foreground.png</asset>
@@ -16,14 +17,20 @@
       <sprite name="caveBG">
         <animation sheet="caveBG" />
       </sprite>
-	<triggers>
-		<trigger>
-			<args>spriteProperty,char,y &lt; 170</args>
-			<action command="changeRoom">
-				<args>lift,600,830</args> 
+      <triggers>
+	<trigger>
+  		<args>inBox2,char,970,2600,1060,2560</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/tree.xml,tree,350,700</args>
 			</action>
-		</trigger>
-	</triggers>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,1050,180,1180,150</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/lift.xml,lift,600,830</args>
+			</action>
+  	</trigger>
+      </triggers>
 	<sprite name="tabletOne" x='1045' y='1200' width='36' height='76' collidable='true'>
 	  <animation sheet='tablet' x='-10' y='-10'/>
 	  <action command='talk' name='Examine tablet.'>
