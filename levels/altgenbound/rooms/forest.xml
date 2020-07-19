@@ -14,6 +14,9 @@ is entered for the first time. -->
         <dependency>rooms/booth.xml</dependency>
 	<dependency>rooms/lift.xml</dependency>
 	<dependency>rooms/square.xml</dependency>
+	<dependency>rooms/shop.xml</dependency>
+	<dependency>rooms/church.xml</dependency>
+	<dependency>rooms/houses.xml</dependency>
 </dependencies>
 
 <assets>

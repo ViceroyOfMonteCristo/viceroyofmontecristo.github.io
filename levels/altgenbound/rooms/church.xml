@@ -1,0 +1,15 @@
+<sburb description="church">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="churchBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5.png</asset>
+    <asset name="churchMap" type="graphic">backgrounds/wallflower_exterior/map5coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='church' walkableMap='churchMap' mapScale="1">
+	  <sprite name='churchBG'>
+	    <animation sheet='churchBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>

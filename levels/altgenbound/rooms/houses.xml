@@ -1,0 +1,15 @@
+<sburb description="houses">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="housesBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map4.png</asset>
+    <asset name="housesMap" type="graphic">backgrounds/wallflower_exterior/map4coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='houses' walkableMap='housesMap' mapScale="1">
+	  <sprite name='housesBG'>
+	    <animation sheet='housesBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>
