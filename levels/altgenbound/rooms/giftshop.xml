@@ -1,0 +1,15 @@
+<sburb description="giftshop">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="giftshopBG" type="graphic">backgrounds/wallflower_interior/giftshop.png</asset>
+    <asset name="giftshopMap" type="graphic">backgrounds/wallflower_interior/giftshopcoll.png</asset>
+  </assets>
+  <rooms>
+	<room name='giftshop' walkableMap='giftshopMap' mapScale="1">
+	  <sprite name='giftshopBG'>
+	    <animation sheet='giftshopBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>

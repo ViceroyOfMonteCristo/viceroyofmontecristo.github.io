@@ -1,0 +1,15 @@
+<sburb description="sisshop">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="sisshopBG" type="graphic">backgrounds/wallflower_interior/sisshop.png</asset>
+    <asset name="sisshopMap" type="graphic">backgrounds/wallflower_interior/sisshopcoll.png</asset>
+  </assets>
+  <rooms>
+	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
+	  <sprite name='sisshopBG'>
+	    <animation sheet='sisshopBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>

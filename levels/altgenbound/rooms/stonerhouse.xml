@@ -1,0 +1,15 @@
+<sburb description="stonerhouse">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="stonerhouseBG" type="graphic">backgrounds/wallflower_interior/stonerhouse.png</asset>
+    <asset name="stonerhouseMap" type="graphic">backgrounds/wallflower_interior/stonerhousecoll.png</asset>
+  </assets>
+  <rooms>
+	<room name='stonerhouse' walkableMap='stonerhouseMap' mapScale="1">
+	  <sprite name='stonerhouseBG'>
+	    <animation sheet='stonerhouseBG'/>
+	  </sprite>
+	</room>
+  </rooms>
+</sburb>

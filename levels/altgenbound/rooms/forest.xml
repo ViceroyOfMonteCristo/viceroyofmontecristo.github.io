@@ -17,6 +17,10 @@ is entered for the first time. -->
 	<dependency>rooms/shop.xml</dependency>
 	<dependency>rooms/church.xml</dependency>
 	<dependency>rooms/houses.xml</dependency>
+	<dependency>rooms/anticanon.xml</dependency>
+	<dependency>rooms/giftshop.xml</dependency>
+	<dependency>rooms/sisshop.xml</dependency>
+	<dependency>rooms/stonerhouse.xml</dependency>
 </dependencies>
 
 <assets>
