@@ -2,6 +2,8 @@
   <dependencies>
   </dependencies>
   <assets>
+    <asset name="gateopen" type="graphic">objects/misc/gateopen_object.png</asset>
+    <asset name="gateclosed" type="graphic">objects/misc/gate_object.png</asset>
     <asset name="boothBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1.png</asset>
     <asset name="boothMap" type="graphic">backgrounds/wallflower_exterior/map1coll.png</asset>
   </assets>
@@ -9,6 +11,12 @@
 	<room name='booth' walkableMap='boothMap' mapScale="1">
 	  <sprite name='boothBG'>
 	    <animation sheet='boothBG'/>
+	  </sprite>
+	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='true'>
+		<animation sheet='gateclosed'/>
+	  </sprite>
+	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
+		<animation sheet='gateopen'/>
 	  </sprite>
 	<triggers>
 	<trigger detonate='true'>
@@ -132,10 +140,19 @@
 		@dickle_explaining Dickle: Whatever that means.
 	      </args>
             </action>
-	  <action command="changeRoom">
-		<args>square,1010,2400</args>
-	  </action>
+	<action command='removeSprite'>
+        <args>secondRoomDoor,secondRoom</args>
+	</action>
+	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
+		<animation sheet='gateopen'/>
+	  </sprite>
 	</trigger>
+	<trigger>
+  		<args>inBox2,char,880,45,1140,0</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1008,2370</args>
+			</action>
+  	</trigger>
 	</triggers>
         </room>
   </rooms>

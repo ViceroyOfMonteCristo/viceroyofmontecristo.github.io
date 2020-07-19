@@ -10,6 +10,15 @@
 	  <sprite name='churchBG'>
 	    <animation sheet='churchBG'/>
 	  </sprite>
+	<triggers>
+		<trigger detonate='true'>
+			<args>spriteProperty,char,y &lt; 800</args>
+			<action command='talk'>
+				<args>@! Entering the Church is the end of the flash!
+					If you have more you want to explore, go do that first!</args>
+			</action>
+		</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>

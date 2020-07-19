@@ -115,7 +115,13 @@ safe than sorry.-->
          			 <args>rooms/tree.xml,tree,351,1150</args>
 			</action>
   		</trigger>
-
+		<trigger detonate='true'>
+			<args>spriteProperty,char,y &lt; 900</args>
+			<action command='talk'>
+				<args>@! Is Vrachne following you? (Or Dickle, if you're Vrachne.)
+					If not, go back and grab them!</args>
+			</action>
+		</trigger>
 	</triggers>
   	<character class='dickle' x='692' y='2056'>
   		<action class='beDickle'/>
