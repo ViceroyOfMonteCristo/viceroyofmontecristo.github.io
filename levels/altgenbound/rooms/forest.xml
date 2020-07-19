@@ -239,7 +239,7 @@ safe than sorry.-->
   		</action>
 			<action command="changeRoom" name="Move.">
 				<args>
-					booth,1010,2400
+					square,1010,2400
 				</args>
 			</action>
 	</character>

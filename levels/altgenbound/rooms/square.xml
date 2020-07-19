@@ -14,6 +14,26 @@
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
+	<triggers>
+		<trigger>
+			<args>spriteProperty,char,x &lt; 15</args>
+			<action command="changeRoom">
+				<args>shop,2400,1000</args> 
+			</action>
+		</trigger>
+		<trigger>
+			<args>spriteProperty,char,y &lt; 15</args>
+			<action command="changeRoom">
+				<args>church,1600,2575</args> 
+			</action>
+		</trigger>
+		<trigger>
+			<args>spriteProperty,char,x &gt; 15</args>
+			<action command="changeRoom">
+				<args>houses,30,800</args> 
+			</action>
+		</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>
