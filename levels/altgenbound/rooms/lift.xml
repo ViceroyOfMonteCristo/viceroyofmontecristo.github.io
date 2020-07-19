@@ -11,7 +11,7 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='530' y='154' width='126' height='446' collidable='true'>
+	<!--<sprite name='lift_object' x='530' y='154' width='126' height='446' collidable='true'>
 	  <animation sheet='lift_object' x='50' y='-50'/>
 	  <action command='talk' name='Use lift.' sprite='dickle'>
 	    <args>
@@ -109,7 +109,7 @@
 		</action>
 	    </args>
 	  </action>
-	</sprite>
+	</sprite>-->
 	</room>
   </rooms>
 </sburb>
