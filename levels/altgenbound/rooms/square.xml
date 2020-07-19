@@ -28,7 +28,7 @@
 			</action>
 		</trigger>
 		<trigger>
-			<args>spriteProperty,char,x &gt; 15</args>
+			<args>spriteProperty,char,x &gt; 1960</args>
 			<action command="changeRoom">
 				<args>houses,30,800</args> 
 			</action>
