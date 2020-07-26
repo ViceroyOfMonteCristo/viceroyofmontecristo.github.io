@@ -3,7 +3,7 @@
 <classes>
 	<animation class='vrachne-dialog' frameInterval='6' x='-150' y='-450'/>
 	
-	<character class='vrachne' name='vrachne' sx='-29' sy='-115' sWidth='58' sHeight='96' width='30' height='30' sheet='vrachneSheet' state='walkFront' facing='Front'></character>
+	<character class='vrachne' name='vrachne' sx='-29' sy='-95' sWidth='58' sHeight='96' width='30' height='30' sheet='vrachneSheet' state='walkFront' facing='Front'></character>
 	
 	<action class='beVrachne' name='Be Vrachnesprite.' command='macro'>
 		<args>
