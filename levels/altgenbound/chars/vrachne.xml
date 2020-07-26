@@ -37,7 +37,7 @@
 	<asset name='vrachne_smug' type='graphic'>dialogs/vrachne/vrachnesmug.png</asset>
 	<asset name='vrachne_surprised' type='graphic'>dialogs/vrachne/VrachneSurprised.png</asset>
 	<asset name='vrachne_two' type='graphic'>dialogs/vrachne/vrachnetwofingersup.png</asset>
-	<asset name='vrachne_anti' type='graphic'>dialogs/vrachne/vrachneanti.png</asset>
+	<asset name='vrachne_anti' type='graphic'>dialogs/vrachne/vrachneAnti.png</asset>
 </assets>
 
 <hud>

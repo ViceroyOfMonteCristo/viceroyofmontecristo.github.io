@@ -35,7 +35,7 @@
 	<asset name='dickle_wipe' type='graphic'>dialogs/dickle/dicklewipingtears.png</asset>
 	<asset name='dickle_excited' type='graphic'>dialogs/dickle/dickle_excited.png</asset>
 	<asset name='dickle_horror' type='graphic'>dialogs/dickle/dickle_horror.png</asset>
-	<asset name='dickle_anti' type='graphic'>dialogs/dickle/dickleanti.png</asset>
+	<asset name='dickle_anti' type='graphic'>dialogs/dickle/dickleANTI.png</asset>
 </assets>
 
 <hud>
