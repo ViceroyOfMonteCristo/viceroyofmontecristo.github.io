@@ -14,6 +14,14 @@
 	  <sprite name='housesBG'>
 	    <animation sheet='housesBG'/>
 	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,20,940,70,690</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1909,902</args>
+			</action>
+  	</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>
