@@ -1,9 +1,9 @@
 <sburb description='mal'>
 
 <classes>
-	<animation class='mal-dialog' frameInterval='6' x='-150' y='-450'/>
+	<animation class='mal-dialog' frameInterval='6' x='-150' y='-500'/>
 	
-	<character class='mal' name='mal' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='mal_sheet' state='walkFront' facing='Front'></character>
+	<character class='mal' name='mal' sx='-29' sy='-98' sWidth='58' sHeight='96' width='30' height='30' sheet='mal_sheet' state='walkFront' facing='Front'></character>
 	
 	<action class='bemal' name='Be Mal.' command='macro'>
 		<args>
