@@ -13,7 +13,7 @@
 	</room>
 	<triggers>
 	<trigger>
-  		<args>inBox2,char,400,555,457,555</args>
+  		<args>inBox2,char,400,555,457,515</args>
   			<action command='changeRoomRemote'>
          			 <args>rooms/shop.xml,shop,1012,910</args>
 			</action>

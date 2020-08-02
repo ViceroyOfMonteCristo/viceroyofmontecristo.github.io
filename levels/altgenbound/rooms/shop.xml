@@ -20,7 +20,7 @@
 		<trigger>
 			<args>inBox2,char,985,837,1043,786</args>
   			<action command='changeRoomRemote'>
-         			 <args>rooms/giftshop.xml,giftshop,431,508</args>
+         			 <args>rooms/giftshop.xml,giftshop,431,475</args>
 			</action>
 		</trigger>
 	</triggers>
