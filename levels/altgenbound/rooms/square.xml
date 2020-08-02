@@ -16,21 +16,21 @@
 	  </sprite>
 	<triggers>
 		<trigger>
-			<args>spriteProperty,char,x &lt; 15</args>
-			<action command="changeRoom">
-				<args>shop,2400,1000</args> 
+			<args>inBox2,char,0,1024,65,770</args>
+			<action command="changeRoomRemote">
+				<args>rooms/shop.xml,shop,2300,1000</args> 
 			</action>
 		</trigger>
 		<trigger>
-			<args>spriteProperty,char,y &lt; 15</args>
-			<action command="changeRoom">
-				<args>church,1600,2575</args> 
+			<args>inBox2,char,880,60,1135,0</args>
+			<action command="changeRoomRemote">
+				<args>rooms/church.xml,church,1600,2475</args> 
 			</action>
 		</trigger>
 		<trigger>
-			<args>spriteProperty,char,x &gt; 1960</args>
-			<action command="changeRoom">
-				<args>houses,30,800</args> 
+			<args>inBox2,char,1950,1027,1995,775</args>
+			<action command="changeRoomRemote">
+				<args>rooms/houses.xml,houses,50,800</args> 
 			</action>
 		</trigger>
 	</triggers>

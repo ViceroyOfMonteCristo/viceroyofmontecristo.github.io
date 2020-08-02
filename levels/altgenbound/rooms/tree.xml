@@ -20,7 +20,7 @@
 	<trigger>
   		<args>inBox2,char,300,1250,450,1200</args>
   			<action command='changeRoomRemote'>
-         			 <args>rooms/forest.xml,forest,2125,900</args>
+         			 <args>rooms/forest.xml,forest,2125,1000</args>
 			</action>
   	</trigger>
 	<trigger>

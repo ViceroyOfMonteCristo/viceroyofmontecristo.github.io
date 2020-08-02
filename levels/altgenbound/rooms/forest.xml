@@ -112,7 +112,7 @@ safe than sorry.-->
 		<trigger>
   			<args>inBox2,char,1900,800,2400,700</args>
   			<action command='changeRoomRemote'>
-         			 <args>rooms/tree.xml,tree,351,1150</args>
+         			 <args>rooms/tree.xml,tree,351,1050</args>
 			</action>
   		</trigger>
 		<trigger detonate='true'>
