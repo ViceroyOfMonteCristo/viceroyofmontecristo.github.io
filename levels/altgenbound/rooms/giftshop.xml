@@ -19,5 +19,24 @@
 			</action>
   	</trigger>
 	</triggers>
+	<character class='mal' x='408' y='342'>
+		<action command='talk' name='Talk to Gift Shop Clerk.'>
+		<args>
+			@mal_talk ???: hello there sir, how are you this fine overcast
+			@dickle_ talk Dickle: i’m pretty good! this is a nice little shop place you have here!
+			@mal_talk ???: thank you, tourism is in this season so i thought what better way to make a good buck than to open up a gift shop, we got everything here you could want 
+			@mal_talk ???: clothes, a gun or two, attunements, fraymotiffs, tacky nonsense barely relating to anything here.
+			@mal_talk ???: you know the good stuff. 
+			@mal_talk ???: all of it is “locally sourced” by that i mean i just find it when i’m diving around and decide what to sell and what to throw back into the lake i found it in.
+			@dickle_talk Dickle: wow that’s pretty cool
+			@mal_talk ???: yep. now are you here to buy something?
+			@dickle_talk Dickle: uh i actually don’t have any money.
+			@mal_peeved ???: oh. you can leave then.
+			@dickle_confused Dickle: excuse me?
+			@mal_peeved ???: door's right behind you. thank you for coming to “Mal’s gift emporium”.
+			@mal_peeved Mal: shpxvat gbhevfgf v fjrne…
+		</args>
+		</action>
+	</character>
   </rooms>
 </sburb>
