@@ -4,6 +4,7 @@
   <assets>
     <asset name="giftshopBG" type="graphic">backgrounds/wallflower_interior/giftshop.png</asset>
     <asset name="giftshopMap" type="graphic">backgrounds/wallflower_interior/giftshopcoll.png</asset>
+    <asset name="mal" type="graphic">objects/npcs/malsprite.png</asset>
   </assets>
   <rooms>
 	<room name='giftshop' walkableMap='giftshopMap' mapScale="1">
@@ -19,7 +20,8 @@
 			</action>
   	</trigger>
 	</triggers>
-	<character class='mal' x='408' y='342'>
+	<sprite name='mal' x='408' y='342'>
+          <animation sheet='mal'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
