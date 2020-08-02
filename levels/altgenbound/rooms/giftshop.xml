@@ -39,7 +39,7 @@
 		</args>
 		</action>
 	</sprite>
-	<!--<character class='dersite1' x='525' y='287'>
+	<character class='dersite1' x='525' y='287'>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! Dersite: I’ve always wanted one of these old timey diving suits but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
@@ -61,7 +61,7 @@ Ugh, I feel like I just took part in a back alley drug deal or something; this�
 			
 		</args>
 		</action>
-	</character>-->
+	</character>
 	</room>
   </rooms>
 </sburb>
