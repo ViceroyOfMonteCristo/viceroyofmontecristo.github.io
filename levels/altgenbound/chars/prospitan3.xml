@@ -1,0 +1,10 @@
+<sburb description='prospitan3'>
+
+<classes>	
+	<character class='prospitan3' name='prospitan3' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='prospitan3_sheet' state='walkFront' facing='Front'></character>
+</classes>
+
+<assets>
+	<asset name='prospitan3_Sheet' type='graphic'>chars/prospitan3/prospitan3_sheet.png</asset>
+</assets>
+</sburb>
