@@ -10,7 +10,6 @@ is entered for the first time. -->
 	<dependency>chars/dersite1.xml</dependency>
 	<dependency>chars/dersite2.xml</dependency>
 	<dependency>chars/dersite3.xml</dependency>
-	<dependency>chars/mal.xml</dependency>
 	<dependency>chars/langley.xml</dependency>
 	<dependency>chars/log.xml</dependency>
 	<dependency>chars/prospitan1.xml</dependency>
@@ -19,6 +18,7 @@ is entered for the first time. -->
 	<dependency>chars/squatter.xml</dependency>
 	<dependency>chars/waverly.xml</dependency>-->
 
+	<dependency>chars/mal.xml</dependency>
 	<dependency>chars/quincy.xml</dependency>
 	<dependency>chars/dickle.xml</dependency>
 	<dependency>chars/vrachne.xml</dependency>
