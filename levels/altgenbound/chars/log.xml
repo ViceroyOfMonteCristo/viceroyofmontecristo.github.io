@@ -1,0 +1,33 @@
+<sburb description='log'>
+
+<classes>
+	<animation class='log-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='log' name='log' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='log_sheet' state='walkFront' facing='Front'></character>
+	
+	<action class='belog' name='Be log.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>log</args>
+				<action command='playSong' noDelay='true'>
+					<args>logSong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='log_Sheet' type='graphic'>chars/log/log_sheet.png</asset>
+	<asset name='logSong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='log_talk' type='graphic'>dialogs/log/logsheet.png</asset>
+
+
+</assets>
+
+<hud>
+	<dialogsprites>	
+  	<animation name='log_talk' class='log-dialog' sheet='log_talk' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

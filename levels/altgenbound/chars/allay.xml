@@ -1,0 +1,36 @@
+<sburb description='allay'>
+
+<classes>
+	<animation class='allay-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='allay' name='allay' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='allay_sheet' state='walkFront' facing='Front'></character>
+	
+	<action class='beallay' name='Be Allay.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>allay</args>
+				<action command='playSong' noDelay='true'>
+					<args>allaySong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='allay_Sheet' type='graphic'>chars/allay/allay_sheet.png</asset>
+	<asset name='allaySong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='allay_talk' type='graphic'>dialogs/allay/allaysheet.png</asset>
+ 	<asset name='allay_aster' type='graphic'>dialogs/allay/allayaster.png</asset>
+	<asset name='allay_flustered' type='graphic'>dialogs/allay/allayflustered.png</asset>
+
+</assets>
+
+<hud>
+	<dialogsprites>	
+  	<animation name='allay_talk' class='allay-dialog' sheet='allay_talk' length='2'/>
+      <animation name='allay_aster' class='allay-dialog' sheet='allay_aster' length='2'/>
+	 <animation name='allay_flustered' class='allay-dialog' sheet='allay_flustered' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

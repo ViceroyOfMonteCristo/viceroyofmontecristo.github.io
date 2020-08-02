@@ -1,0 +1,33 @@
+<sburb description='waverly'>
+
+<classes>
+	<animation class='waverly-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='waverly' name='waverly' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='waverly_sheet' state='walkFront' facing='Front'></character>
+	
+	<action class='bewaverly' name='Be waverly.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>waverly</args>
+				<action command='playSong' noDelay='true'>
+					<args>waverlySong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='waverly_Sheet' type='graphic'>chars/waverly/waverly_sheet.png</asset>
+	<asset name='waverlySong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='waverly_talk' type='graphic'>dialogs/waverly/waverlysheet.png</asset>
+	<asset name='waverly_squint' type='graphic'>dialogs/waverly/waverlysquint.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  	<animation name='waverly_talk' class='waverly-dialog' sheet='waverly_talk' length='2'/>
+      <animation name='waverly_squint' class='waverly-dialog' sheet='waverly_squint' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>
