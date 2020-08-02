@@ -16,8 +16,8 @@ is entered for the first time. -->
 	<dependency>chars/squatter.xml</dependency>
 	<dependency>chars/waverly.xml</dependency>-->
 
-	<dependency>chars/prospitan2.xml</dependency>
-	<dependency>chars/dersite1.xml</dependency>
+	<!--<dependency>chars/prospitan2.xml</dependency>
+	<dependency>chars/dersite1.xml</dependency>-->
 	<dependency>chars/mal.xml</dependency>
 	<dependency>chars/quincy.xml</dependency>
 	<dependency>chars/dickle.xml</dependency>

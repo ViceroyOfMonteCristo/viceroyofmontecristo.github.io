@@ -38,7 +38,7 @@
 		</args>
 		</action>
 	</character>
-	<character class='dersite1' x='525' y='287' facing='Back'>
+	<!--<character class='dersite1' x='525' y='287'>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! Dersite: I’ve always wanted one of these old timey diving suits but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
@@ -49,7 +49,7 @@
 		</args>
 		</action>
 	</character>
-	<character class='prospitan2' x='525' y='287' facing='Back'>
+	<character class='prospitan2' x='525' y='287'>
 		<action command='talk' name='Talk to Prospitan.'>
 		<args>
 			@! Prospitan: Man, the lady who runs this place is a scam artist! I blew a whole #f360f4 BOONBUCK ## on a “mystery box” and all I got was this lousy T-shirt and some “attunements”, and I don’t even know what the hell an “attunement” is!
@@ -60,6 +60,6 @@ Ugh, I feel like I just took part in a back alley drug deal or something; this�
 			
 		</args>
 		</action>
-	</character>
+	</character>-->
   </rooms>
 </sburb>
