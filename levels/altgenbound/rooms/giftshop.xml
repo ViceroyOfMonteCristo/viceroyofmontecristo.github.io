@@ -19,7 +19,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<character class='mal' x='408' y='342'>
+	<!--<character class='mal' x='408' y='342'>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
@@ -38,7 +38,7 @@
 		</args>
 		</action>
 	</character>
-	<!--<character class='dersite1' x='525' y='287'>
+	<character class='dersite1' x='525' y='287'>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! Dersite: I’ve always wanted one of these old timey diving suits but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
