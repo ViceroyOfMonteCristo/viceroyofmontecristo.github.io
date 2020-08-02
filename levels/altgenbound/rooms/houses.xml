@@ -21,6 +21,18 @@
          			 <args>rooms/square.xml,square,1909,902</args>
 			</action>
   	</trigger>
+	<trigger>
+  		<args>inBox2,char,1036,623,1089,576</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/sisshop.xml,sisshop,437,565</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,910,1026,958,983</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/stonerhouse.xml,stonerhouse,409,365</args>
+			</action>
+  	</trigger>
 	</triggers>
 	</room>
   </rooms>

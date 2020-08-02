@@ -13,9 +13,9 @@
 	</room>
 	<triggers>
 	<trigger>
-  		<args>inBox2,char,2370,1130,2410,980</args>
+  		<args>inBox2,char,400,555,457,555</args>
   			<action command='changeRoomRemote'>
-         			 <args>rooms/square.xml,square,100,900</args>
+         			 <args>rooms/shop.xml,shop,1012,910</args>
 			</action>
   	</trigger>
 	</triggers>

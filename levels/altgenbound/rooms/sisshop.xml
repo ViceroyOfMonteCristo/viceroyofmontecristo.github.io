@@ -10,6 +10,14 @@
 	  <sprite name='sisshopBG'>
 	    <animation sheet='sisshopBG'/>
 	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,411,627,465,589</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/houses.xml,houses,1065,714</args>
+			</action>
+  	</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>

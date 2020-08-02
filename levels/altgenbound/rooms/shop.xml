@@ -10,6 +10,20 @@
 	  <sprite name='shopBG'>
 	    <animation sheet='shopBG'/>
 	  </sprite>
+	<triggers>
+		<trigger>
+  			<args>inBox2,char,2370,1130,2410,980</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,100,900</args>
+			</action>
+  		</trigger>
+		<trigger>
+			<args>inBox2,char,985,837,1043,786/args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/giftshop.xml,giftshop,431,508</args>
+			</action>
+		</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>
