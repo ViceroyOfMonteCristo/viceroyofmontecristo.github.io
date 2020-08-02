@@ -246,7 +246,6 @@ safe than sorry.-->
   	</character>
   
   	<character class='karkat' x='670' y='1826'>
-  		<action class='beKarkat'/>
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
   				@dickle_talk Test.
@@ -273,7 +272,6 @@ safe than sorry.-->
 	</character>
   	
   	<character class='vrachne' name='vrachne' x='1024' y='2038'>
-			<action class="beVrachne"/>
   		<action command='follow' sprite='dickle' name='Follow.'>
   			<args>vrachne,dickle</args>
   			<action command='removeAction' noDelay='true'>
