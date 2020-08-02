@@ -20,8 +20,8 @@
 <assets>
 	<asset name='langley_Sheet' type='graphic'>chars/langley/langley_sheet.png</asset>
 	<asset name='langleySong' type='audio'>audio/music/grudge.mp3</asset>
-	<asset name='langley_talk' type='graphic'>dialogs/langley/langleysheet.png</asset>
-	<asset name='langley_frustrated' type='graphic'>dialogs/langley/langley_frustrated.png</asset>
+	<asset name='langley_talk' type='graphic'>dialogs/Langley/langleysheet.png</asset>
+	<asset name='langley_frustrated' type='graphic'>dialogs/Langley/langley_frustrated.png</asset>
 </assets>
 
 <hud>

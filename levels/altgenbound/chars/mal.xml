@@ -20,8 +20,8 @@
 <assets>
 	<asset name='mal_Sheet' type='graphic'>chars/mal/mal_sheet.png</asset>
 	<asset name='malSong' type='audio'>audio/music/grudge.mp3</asset>
-	<asset name='mal_talk' type='graphic'>dialogs/mal/Mal_regular.png</asset>
-	<asset name='mal_peeved' type='graphic'>dialogs/mal/Mal_Peeved.png</asset>
+	<asset name='mal_talk' type='graphic'>dialogs/Mal/Mal_regular.png</asset>
+	<asset name='mal_peeved' type='graphic'>dialogs/Mal/Mal_Peeved.png</asset>
 </assets>
 
 <hud>

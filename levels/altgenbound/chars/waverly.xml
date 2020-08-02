@@ -20,8 +20,8 @@
 <assets>
 	<asset name='waverly_Sheet' type='graphic'>chars/waverly/waverly_sheet.png</asset>
 	<asset name='waverlySong' type='audio'>audio/music/grudge.mp3</asset>
-	<asset name='waverly_talk' type='graphic'>dialogs/waverly/waverlysheet.png</asset>
-	<asset name='waverly_squint' type='graphic'>dialogs/waverly/waverlysquint.png</asset>
+	<asset name='waverly_talk' type='graphic'>dialogs/Waverly/waverlysheet.png</asset>
+	<asset name='waverly_squint' type='graphic'>dialogs/Waverly/waverlysquint.png</asset>
 </assets>
 
 <hud>

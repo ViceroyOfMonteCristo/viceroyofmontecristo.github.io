@@ -20,9 +20,9 @@
 <assets>
 	<asset name='allay_Sheet' type='graphic'>chars/allay/allay_sheet.png</asset>
 	<asset name='allaySong' type='audio'>audio/music/grudge.mp3</asset>
-	<asset name='allay_talk' type='graphic'>dialogs/allay/allaysheet.png</asset>
- 	<asset name='allay_aster' type='graphic'>dialogs/allay/allayaster.png</asset>
-	<asset name='allay_flustered' type='graphic'>dialogs/allay/allayflustered.png</asset>
+	<asset name='allay_talk' type='graphic'>dialogs/Allay/allaysheet.png</asset>
+ 	<asset name='allay_aster' type='graphic'>dialogs/Allay/allayaster.png</asset>
+	<asset name='allay_flustered' type='graphic'>dialogs/Allay/allayflustered.png</asset>
 
 </assets>
 
