@@ -17,8 +17,8 @@ is entered for the first time. -->
 	<dependency>chars/waverly.xml</dependency>-->
 
 	<!--<dependency>chars/prospitan2.xml</dependency>
-	<dependency>chars/dersite1.xml</dependency>
-	<dependency>chars/mal.xml</dependency>-->
+	<dependency>chars/dersite1.xml</dependency>-->
+	<dependency>chars/mal.xml</dependency>
 	<dependency>chars/quincy.xml</dependency>
 	<dependency>chars/dickle.xml</dependency>
 	<dependency>chars/vrachne.xml</dependency>
@@ -132,8 +132,8 @@ safe than sorry.-->
 		<trigger detonate='true'>
 			<args>spriteProperty,char,y &lt; 900</args>
 			<action command='talk'>
-				<args>@! Is Vrachne following you? (Or Dickle, if you're Vrachne.)
-					If not, go back and grab them!</args>
+				<args>@! Is Vrachne following you?
+					If not, go back and grab her!</args>
 			</action>
 		</trigger>
 	</triggers>
@@ -145,12 +145,6 @@ safe than sorry.-->
   				<args>dickle,Follow.</args>
   			</action>
   		</action>
-			<action command='unfollow' sprite='vrachne' name='Stop following.'>
-				<args>dickle</args>
-				<action command='toggleCollisions'>
-					<args>dickle</args>
-				</action>
-			</action>
 			<action command="talk" name="Ask a question.">
 				<args>
 					@vrachne_talk Vrachne: hey dickle
