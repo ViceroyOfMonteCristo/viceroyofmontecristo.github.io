@@ -1,7 +1,7 @@
 <sburb description='prospitan2'>
 
 <classes>	
-	<character class='prospitan2' name='prospitan2' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='prospitan2_sheet' state='walkFront' facing='Front'></character>
+	<character class='prospitan2' name='prospitan2' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='prospitan2_sheet' state='idleFront' facing='Front'></character>
 </classes>
 
 <assets>
