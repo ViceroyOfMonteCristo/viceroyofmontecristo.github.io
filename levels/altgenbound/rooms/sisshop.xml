@@ -20,8 +20,8 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='allayPlace' x='445' y='420' width='30' height='102'>
-          <animation sheet='allay' x='-10' y='-10'/>
+	<sprite name='allayPlace' x='445' y='400' width='30' height='102'>
+          <animation sheet='allay' x='-10' y='10'/>
 		<action command='talk' name='Talk to Shop Clerk.'>
 		<args>
 			@allay_talk ???: hello there! Welcome to the allay aster plushie parlor!
@@ -71,8 +71,8 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='asterPlace' x='704' y='510' width='30' height='102'>
-          <animation sheet='aster' x='-10' y='-10'/>
+	<sprite name='asterPlace' x='704' y='490' width='30' height='102'>
+          <animation sheet='aster' x='-10' y='10'/>
 	</sprite>
 	</room>
   </rooms>

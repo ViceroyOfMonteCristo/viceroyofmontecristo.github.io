@@ -22,7 +22,7 @@
   	</trigger>
 	</triggers>
 	<sprite name='malPlace' x='408' y='342' width='30' height='102'>
-          <animation sheet='mal' x='-10' y='-10'/>
+          <animation sheet='mal' x='-10' y='10'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
