@@ -21,8 +21,8 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='malPlace' x='408' y='352' width='30' height='102'>
-          <animation sheet='mal' x='0' y='0'/>
+	<sprite name='malPlace' x='408' y='342' width='30' height='102'>
+          <animation sheet='mal' x='-10' y=-10'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
@@ -41,19 +41,19 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='dersite1Place' x='539' y='297' width='22' height='56' collidable='true'>
+	<sprite name='dersite1Place' x='539' y='297' width='22' height='96' collidable='true'>
 		<animation sheet='dersite1' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
-			@! Dersite: I’ve always wanted one of these old timey diving suits but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
+			@! Dersite: I’ve always wanted one of these old timey diving suits, but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
 
 			With that kinda moolah you could make your own diving suit, give it some cool mechanical parts and stuff too! 
 
-			Maybe that’s what i’ll do with my leftover war bonds, i’ve come to find out that traveling around like this really ain’t my sorta thing.
+			Maybe that’s what I’ll do with my leftover war bonds; I’ve come to find out that traveling around like this really ain’t my sorta thing.
 		</args>
 		</action>
 	</sprite>
-	<sprite name='prospitan2Place' x='810' y='416' width='22' height='52' collidable='true'>
+	<sprite name='prospitan2Place' x='810' y='436' width='22' height='92' collidable='true'>
 		<animation sheet='prospitan2' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Prospitan.'>
 		<args>
@@ -61,7 +61,7 @@
 
 The lady running the shop says they’re just some sort of medical thing, but what kind of medicine is called “#6aa84f Blooming## #a64d79 Love## #cfe2f3 White##“ or “#f6b26b Lightworkers## #fce5cd Blessings##“. Maybe it’s herbal or something? I don’t know.
 
-Ugh, I feel like I just took part in a back alley drug deal or something; this’ll be the last time I ever spend money at a gift shop, that’s for sure.
+Ugh, I feel like I just took part in a back alley drug deal or something. This’ll be the last time I ever spend money at a gift shop, that’s for sure.
 			
 		</args>
 		</action>

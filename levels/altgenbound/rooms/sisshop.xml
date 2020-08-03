@@ -4,6 +4,8 @@
   <assets>
     <asset name="sisshopBG" type="graphic">backgrounds/wallflower_interior/sisshop.png</asset>
     <asset name="sisshopMap" type="graphic">backgrounds/wallflower_interior/sisshopcoll.png</asset>
+    <asset name="allay" type="graphic">objects/npcs/allaysprite.png</asset>
+    <asset name="aster" type="graphic">objects/npcs/astersprite.png</asset>
   </assets>
   <rooms>
 	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
@@ -18,6 +20,60 @@
 			</action>
   	</trigger>
 	</triggers>
+	<sprite name='allayPlace' x='445' y='420' width='30' height='102'>
+          <animation sheet='allay' x='-10' y=-10'/>
+		<action command='talk' name='Talk to Shop Clerk.'>
+		<args>
+			@allay_talk ???: hello there! Welcome to the allay aster plushie parlor!
+@allay_talk ???: I’m Allay and she’s Aster!
+@allay_talk Allay: what can we help you with today!
+@dickle_talk Dickle: hallo! This is a pretty nice place you got here! 
+@dickle_confused Dickle: though uh shouldn’t you have like an “and” in the name?
+@allay_flustered Allay: about that we sorta uhhh…
+@allay_flustered Allay: how do i put this...
+@aster_talk: Aster: We ran out of A’s!
+@allay_aster Allay: get back to work aster or we’ll never get all these orders finished in time!
+@aster_talk Aster: alright but we’re swapping places after this one remember!
+@allay_aster Allay: i know i know.
+@allay_think Allay: now where was i?
+@allay_talk Allay: oh yeah! You two are tourists right? you gotta be!
+@dickle_talk Dickle: uhhh yeah sure i guess you could say that! though it’s more of a business sorta trip heh 
+@allay_talk Allay: ooooo if you don’t mind me asking, what sort of business is it?
+@dickle_talk Dickle: i’m sorta in the process of figuring that out myself but i think it’s pretty important
+@allay_talk Allay: well whatever kind of business it is i wish you the best of luck with it!
+@allay_talk Allay: now is there anything you’d like?
+@dickle_talk Dickle: uhhhhh i’m not sure! what do you guys sell here
+@aster_talk Aster: right what it says on the tin baby! Plush and plush accessories all day every day!
+@allay_aster Allay: Aster….
+@allay_flustered Allay: sorry about her she gets rowdy when she works the back
+@allay_talk Allay: we mostly make and sell our own plushies here!
+@dickle_excited Dickle: you make all these by hand?!
+@dickle_excited Dickle: that’s pretty cool!
+@aster_talk Aster: you bet your ass it is! hey Allay these are the coolest customers we’ve gotten in weeks!
+@allay_aster Allay: Aster! what did i tell you about using that kind of language in the workplace!
+@aster_talk Aster: sorry “boss” hehehehhehehe
+@allay_flustered Allay: again i’m so sorry about her i don’t know why she’s like this….
+@dickle_talk Dickle: it’s all good i’m used to that kinda talk anyway!
+@dickle_talk Dickle: anyway i’d love to get a plush but i’m sadly out of cash.
+@allay_talk Allay: awwww that’s too bad
+@allay_talk Allay: still feel free to look around! touching the merchandise is free after all! the only thing that costs money is taking it home!
+@allay_talk Allay: that and getting a custom made plush!
+@dickle_excited Dickle: whoa really?!
+@allay_talk Allay: mhm! actually most of our business comes from making custom plushies for people!
+@allay_talk  Allay: it’s a real hit with the kids and the tourists too! 
+@dickle_excited Dickle: that’s awesome!
+@dickle_talk Dickle: well if i ever do get some cash i’ll be sure to come back and take you up on that offer!
+@allay_flustered Allay: that would be lovely! It’d be so nice to work off of someone who looks so well “different” 
+@allay_talk Allay: actually if you don’t mind me asking whats your name?
+@dickle_talk Dickle: just call me Dickle! It’s what everyone calls me
+@allay_talk Allay: well it was a pleasure to meet you dickle feel free to come back anytime!
+@allay_talkAster: later dickie!
+		</args>
+		</action>
+	</sprite>
+	<sprite name='asterPlace' x='704' y='510' width='30' height='102'>
+          <animation sheet='aster' x='-10' y=-10'/>
+	</sprite>
 	</room>
   </rooms>
 </sburb>
