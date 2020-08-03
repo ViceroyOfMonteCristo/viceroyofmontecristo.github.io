@@ -5,9 +5,7 @@ is entered for the first time. -->
 <sburb description="forest">
 
 <dependencies>
-	<!--<dependency>chars/allay.xml</dependency>
-	<dependency>chars/aster.xml</dependency>
-	<dependency>chars/dersite2.xml</dependency>
+	<!--<dependency>chars/dersite2.xml</dependency>
 	<dependency>chars/dersite3.xml</dependency>
 	<dependency>chars/langley.xml</dependency>
 	<dependency>chars/log.xml</dependency>
@@ -16,6 +14,8 @@ is entered for the first time. -->
 	<dependency>chars/squatter.xml</dependency>
 	<dependency>chars/waverly.xml</dependency>-->
 
+	<dependency>chars/allay.xml</dependency>
+	<dependency>chars/aster.xml</dependency>
 	<dependency>chars/prospitan2.xml</dependency>
 	<dependency>chars/dersite1.xml</dependency>
 	<dependency>chars/mal.xml</dependency>
