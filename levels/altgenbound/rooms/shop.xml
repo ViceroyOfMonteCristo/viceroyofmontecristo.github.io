@@ -4,6 +4,7 @@
   <assets>
     <asset name="shopBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3.png</asset>
     <asset name="shopMap" type="graphic">backgrounds/wallflower_exterior/map3coll.png</asset>
+    <asset name="log" type="graphic">objects/npcs/logsprite.png</asset>
   </assets>
   <rooms>
 	<room name='shop' walkableMap='shopMap' mapScale="1">
@@ -24,6 +25,34 @@
 			</action>
 		</trigger>
 	</triggers>
+	<sprite name='allayPlace' x='445' y='400' width='30' height='102'>
+          <animation sheet='allay' x='-10' y='10'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
+@log_talk ???: Same story as all the other fires recently, someone pushed their lights too hard and  then poof! up in smoke.
+@log_talk ???: Perhaps we were never meant to hold the power of the sun in such small glass prisons….
+@log_talk ???: hey wait a second you’re not from around here are you!? are you another tourist?
+@dickle_talkcrossed Dickle: uh no i’m just here on business i guess
+@dickle_talk Dickle: lots of talk in this town about tourists and stuff though do you get a lot of them around here?
+@log_talk ???: until recently this place was pretty quiet but nowadays you can’t even go a day without some rowdy rockers causing a scene! heck that’s the reason the pub is closed.
+@log_talk ???: real shame too, you never really know how much you’d miss happy hour until it’s gone.
+@dickle_talk Dickle: oof that sounds pretty rough, got any idea what caused the uptick in tourism? I’m curious
+@log_talk ???: they keep talking about some “war being called off” or something like that it’s wild stuff
+@log_talk ???: i’ve never heard about any wars! outside of like the old history stories and stuff
+@log_talk ???: but then again i’ve never really stepped foot out of town before so what do i know!
+@dickle_talk Dickle: the worlds a big place it’s crazy!
+@dickle_talk Dickle: hey do you mind if i ask you what your name is?
+@log_talk ???: only if you tell me yours first, that’s common courtesy!
+@dickle_happy Dickle: oh of course! I’m Dickle nice to meet cha
+@log_talk ???: I’m Logly but people just call me Log for short
+@log_talk Log: i make sure the buildings around here are up to snuff so to speak, if you want your buildings well kept i’m your guy!
+@dickle_talk Dickle: well i’ll give you if my house ever starts creaking heh
+@dickle_excited Dickle: it was nice talking to you man!  hope for your sake that things stop catching on fire.
+@log_talk Log: you and me both!
+		</args>
+		</action>
+	</sprite>
 	</room>
   </rooms>
 </sburb>

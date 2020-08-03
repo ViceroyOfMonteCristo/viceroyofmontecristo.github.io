@@ -8,12 +8,12 @@ is entered for the first time. -->
 	<!--<dependency>chars/dersite2.xml</dependency>
 	<dependency>chars/dersite3.xml</dependency>
 	<dependency>chars/langley.xml</dependency>
-	<dependency>chars/log.xml</dependency>
 	<dependency>chars/prospitan1.xml</dependency>
 	<dependency>chars/prospitan3.xml</dependency>
 	<dependency>chars/squatter.xml</dependency>
 	<dependency>chars/waverly.xml</dependency>-->
 
+	<dependency>chars/log.xml</dependency>
 	<dependency>chars/allay.xml</dependency>
 	<dependency>chars/aster.xml</dependency>
 	<dependency>chars/prospitan2.xml</dependency>
@@ -242,7 +242,7 @@ safe than sorry.-->
   	<character class='karkat' x='670' y='1826'>
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
-  				@dickle_talk This is version 0.13.
+  				@dickle_talk This is version 0.14.
 				@dickle_airquotes Test.
 				@dickle_explaining Test.
 				@dickle_fingerguns Test.
