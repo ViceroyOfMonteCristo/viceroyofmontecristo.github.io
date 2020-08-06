@@ -141,7 +141,6 @@ safe than sorry.-->
 		</trigger>
 	</triggers>
   	<character class='dickle' x='310' y='2720'>
-  		<action class='beDickle'/>
 		<action command='follow' sprite='vrachne' name='Follow.'>
   			<args>dickle,vrachne</args>
   			<action command='removeAction' noDelay='true'>
