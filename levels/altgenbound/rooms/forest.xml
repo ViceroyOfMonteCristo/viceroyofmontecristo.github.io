@@ -8,7 +8,7 @@ is entered for the first time. -->
 	<!--
 	<dependency>chars/squatter.xml</dependency>
 	-->
-
+	<dependency>chars/tt.xml</dependency>
 	<dependency>chars/dersite2.xml</dependency>
 	<dependency>chars/dersite3.xml</dependency>
 	<dependency>chars/prospitan1.xml</dependency>

@@ -1,0 +1,25 @@
+<sburb description='tt'>
+
+<classes>
+	<animation class='tt-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='tt' name='tt' sx='-29' sy='-95' sWidth='58' sHeight='96' width='30' height='30' sheet='ttSheet' state='walkFront' facing='Front'></character>
+</classes>
+
+<assets>
+	<asset name='ttSheet' type='graphic'>chars/tt/ttsheet.png</asset>
+	<asset name='tt_talk' type='graphic'>dialogs/tt/tt_talk.png</asset>
+	<asset name='tt_wtf' type='graphic'>dialogs/tt/tt_wtf.png</asset>
+	<asset name='tt_exasperated' type='graphic'>dialogs/tt/tt_exasperated.png</asset>
+	<asset name='tt_frustrated' type='graphic'>dialogs/tt/tt_frustrated.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  			<animation name='tt_talk' class='tt-dialog' sheet='tt_talk' length='1'/>
+			<animation name='tt_wtf' class='tt-dialog' sheet='tt_wtf' length='1'/>
+			<animation name='tt_exasperated' class='tt-dialog' sheet='tt_exasperated' length='1'/>
+			<animation name='tt_frustrated' class='tt-dialog' sheet='tt_frustrated' length='1'/>
+  </dialogsprites>
+</hud>
+</sburb>
