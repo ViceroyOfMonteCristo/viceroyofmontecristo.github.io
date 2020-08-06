@@ -33,8 +33,8 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='langleyPlace' x='800' y='310' width='40' height='80' collidable='true'>
-          <animation sheet='langley' x='-10' y='-10'/>
+	<sprite name='waverlyPlace' x='790' y='310' width='40' height='80' collidable='true'>
+          <animation sheet='waverly' x='-10' y='-10'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 		@dickle_awkward Dickle: uhhh heyyyyyy..
