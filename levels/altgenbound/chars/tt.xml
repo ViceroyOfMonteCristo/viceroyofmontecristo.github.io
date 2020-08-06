@@ -7,7 +7,7 @@
 </classes>
 
 <assets>
-	<asset name='ttSheet' type='graphic'>chars/tt/ttsheet.png</asset>
+	<asset name='ttSheet' type='graphic'>chars/tt/tt_sheet.png</asset>
 	<asset name='tt_talk' type='graphic'>dialogs/tt/tt_talk.png</asset>
 	<asset name='tt_wtf' type='graphic'>dialogs/tt/tt_wtf.png</asset>
 	<asset name='tt_exasperated' type='graphic'>dialogs/tt/tt_exasperated.png</asset>
