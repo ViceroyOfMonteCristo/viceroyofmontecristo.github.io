@@ -4,8 +4,10 @@
   <assets>
     <asset name="sisshopBG" type="graphic">backgrounds/wallflower_interior/sisshop.png</asset>
     <asset name="sisshopMap" type="graphic">backgrounds/wallflower_interior/sisshopcoll.png</asset>
-    <asset name="allay" type="graphic">objects/npcs/allaysprite.png</asset>
+    <asset name="allay" type="graphic">objects/npcs/allaysprite2.png</asset>
     <asset name="aster" type="graphic">objects/npcs/astersprite.png</asset>
+    <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
+    <asset name="prospitan2" type="graphic">objects/npcs/prospitan2sprite.png</asset>
   </assets>
   <rooms>
 	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
@@ -20,7 +22,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='allayPlace' x='445' y='400' width='30' height='102'>
+	<sprite name='allayPlace' x='445' y='400' width='30' height='102' collidable='true'>
           <animation sheet='allay' x='-10' y='10'/>
 		<action command='talk' name='Talk to Shop Clerk.'>
 		<args>
@@ -71,8 +73,100 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='asterPlace' x='704' y='490' width='30' height='102'>
+	<sprite name='asterPlace' x='704' y='470' width='30' height='102'>
           <animation sheet='aster' x='-10' y='10'/>
+	</sprite>
+	<sprite name='dersite1Place' x='576' y='430' width='30' height='60' collidable='true'>
+          <animation sheet='dersite1' x='-10' y='10'/>
+		<action command='talk' name='Talk to Dersite & Prospitan.'>
+		<args>
+		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
+
+@! #f1c232 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #f1c232 too ##
+
+@! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
+
+@! #f1c232 I mean there’s lots of nice local places in #674ea7 ONYX ## #f1c232 you just gotta know where to look. ##
+
+@! #f1c232 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+
+@! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
+
+@! #f1c232 What?! What’s so scary about a dude living his dre- ##
+
+@! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
+
+@! #f1c232 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+
+@! #f1c232 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+
+@! #f1c232 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+
+@! #f1c232 And lemme tell you, they learned how to make that thing crash proof. ##
+
+@! #f1c232 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #f1c232 and went “shit could that happen to us? We should do something about that”  ##
+
+@! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
+
+@! #f1c232 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+
+@! #f1c232 These guys don’t strike me as the type to have realtors or whatever ##
+
+@! #9900ff ... ##
+
+@! #f1c232 Cheer up bud, i’m telling you it isn’t that bad ##
+
+@! #f1c232 Besides, anything’s better than the ## Battlefield, #f1c232 right? ##
+
+@! #9900ff You got that right. ##
+		</args>
+		</action>
+	</sprite>
+	<sprite name='prospitan2Place' x='610' y='430' width='30' height='60' collidable='true'>
+          <animation sheet='prospitan2' x='-10' y='10'/>
+		<action command='talk' name='Talk to Dersite & Prospitan.'>
+		<args>
+		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
+
+@! #f1c232 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #f1c232 too ##
+
+@! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
+
+@! #f1c232 I mean there’s lots of nice local places in #674ea7 ONYX ## #f1c232 you just gotta know where to look. ##
+
+@! #f1c232 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+
+@! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
+
+@! #f1c232 What?! What’s so scary about a dude living his dre- ##
+
+@! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
+
+@! #f1c232 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+
+@! #f1c232 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+
+@! #f1c232 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+
+@! #f1c232 And lemme tell you, they learned how to make that thing crash proof. ##
+
+@! #f1c232 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #f1c232 and went “shit could that happen to us? We should do something about that”  ##
+
+@! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
+
+@! #f1c232 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+
+@! #f1c232 These guys don’t strike me as the type to have realtors or whatever ##
+
+@! #9900ff ... ##
+
+@! #f1c232 Cheer up bud, i’m telling you it isn’t that bad ##
+
+@! #f1c232 Besides, anything’s better than the ## Battlefield, #f1c232 right? ##
+
+@! #9900ff You got that right. ##
+		</args>
+		</action>
 	</sprite>
 	</room>
   </rooms>

@@ -6,7 +6,7 @@
     <asset name="giftshopMap" type="graphic">backgrounds/wallflower_interior/giftshopcoll.png</asset>
     <asset name="mal" type="graphic">objects/npcs/malsprite.png</asset>
     <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
-    <asset name="prospitan2" type="graphic">objects/npcs/prospitan2sprite.png</asset>
+    <asset name="prospitan3" type="graphic">objects/npcs/prospitan3sprite.png</asset>
   </assets>
   <rooms>
 	<room name='giftshop' walkableMap='giftshopMap' mapScale="1">
@@ -53,8 +53,8 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='prospitan2Place' x='810' y='436' width='22' height='92' collidable='true'>
-		<animation sheet='prospitan2' x='-10' y='-10'/>
+	<sprite name='prospitan3Place' x='810' y='436' width='22' height='92' collidable='true'>
+		<animation sheet='prospitan3' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Prospitan.'>
 		<args>
 			@! Prospitan: Man, the lady who runs this place is a scam artist! I blew a whole #f360f4 BOONBUCK ## on a “mystery box” and all I got was this lousy T-shirt and some “attunements”, and I don’t even know what the hell an “attunement” is!
