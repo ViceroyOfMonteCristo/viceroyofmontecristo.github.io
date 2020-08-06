@@ -29,8 +29,7 @@
 			</action>
 		</trigger>
 	</triggers>
-	<sprite name='logPlace' x='1742' y='867' width='30' height='40'>
-          <animation sheet='log' x='-10' y='0'/>
+	<character name='logPlace' x='1742' y='867'>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?

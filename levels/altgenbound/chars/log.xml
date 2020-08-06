@@ -3,7 +3,7 @@
 <classes>
 	<animation class='log-dialog' frameInterval='6' x='-150' y='-450'/>
 	
-	<character class='log' name='log' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='log_sheet' state='walkFront' facing='Front'></character>
+	<character class='log' name='log' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='log_sheet' state='idleBack' facing='Front'></character>
 	
 	<action class='belog' name='Be log.' command='macro'>
 		<args>
