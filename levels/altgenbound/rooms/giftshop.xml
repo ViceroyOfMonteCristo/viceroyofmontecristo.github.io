@@ -21,7 +21,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='malPlace' x='380' y='352' width='122' height='104'>
+	<sprite name='malPlace' x='384' y='352' width='122' height='104'>
           <animation sheet='mal' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>

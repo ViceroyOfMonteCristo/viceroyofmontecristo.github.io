@@ -15,7 +15,7 @@
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
-	<sprite name="statuePlaque" x='1000' y='900' width='36' height='76' collidable='true'>
+	<sprite name="statuePlaque" x='1000' y='920' width='36' height='76' collidable='true'>
 	  <animation sheet='brokentablet' x='-10' y='0'/>
 	  <action command='talk' name='Examine statue.'>
 	    <args>
