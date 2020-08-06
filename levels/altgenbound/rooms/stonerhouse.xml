@@ -20,7 +20,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='langleyPlace' x='600' y='310' width='40' height='80' collidable='true'>
+	<sprite name='langleyPlace' x='600' y='310' width='40' height='90' collidable='true'>
           <animation sheet='langley' x='-10' y='-10'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
@@ -33,7 +33,7 @@
 		</args>
 		</action>
 	</sprite>
-	<sprite name='waverlyPlace' x='790' y='310' width='40' height='80' collidable='true'>
+	<sprite name='waverlyPlace' x='790' y='310' width='40' height='90' collidable='true'>
           <animation sheet='waverly' x='-10' y='-10'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
