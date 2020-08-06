@@ -78,7 +78,7 @@
 	</sprite>
 	<sprite name='dersite1Place' x='576' y='430' width='30' height='60' collidable='true'>
           <animation sheet='dersite1' x='-10' y='10'/>
-		<action command='talk' name='Talk to Dersite & Prospitan.'>
+		<action command='talk' name='Talk to Dersite and Prospitan.'>
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
@@ -124,7 +124,7 @@
 	</sprite>
 	<sprite name='prospitan2Place' x='610' y='430' width='30' height='60' collidable='true'>
           <animation sheet='prospitan2' x='-10' y='10'/>
-		<action command='talk' name='Talk to Dersite & Prospitan.'>
+		<action command='talk' name='Talk to Dersite and Prospitan.'>
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
