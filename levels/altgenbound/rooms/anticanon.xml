@@ -10,6 +10,14 @@
 	  <sprite name='anticanonBG'>
 	    <animation sheet='anticanonBG'/>
 	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,514,328,572,300</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/anticanonoutside.xml,anticanonoutside,728,400</args>
+			</action>
+  	</trigger>
+	</triggers>
 	</room>
   </rooms>
 </sburb>

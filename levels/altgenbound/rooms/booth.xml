@@ -5,10 +5,14 @@
     <asset name="gateopen" type="graphic">objects/misc/gateopen_object.png</asset>
     <asset name="gateclosed" type="graphic">objects/misc/gate_object.png</asset>
     <asset name="boothBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1.png</asset>
+    <asset name="boothFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1_fg.png</asset>
     <asset name="boothMap" type="graphic">backgrounds/wallflower_exterior/map1coll.png</asset>
   </assets>
   <rooms>
 	<room name='booth' walkableMap='boothMap' mapScale="1">
+	  <sprite name="boothFG" depthing="2">
+        <animation sheet="boothFG" />
+      </sprite>
 	  <sprite name='boothBG'>
 	    <animation sheet='boothBG'/>
 	  </sprite>

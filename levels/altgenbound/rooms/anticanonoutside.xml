@@ -1,0 +1,29 @@
+<sburb description="anticanonoutside">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="anticanonoutside" type="graphic">backgrounds/wallflower_exterior/anticanon_map.png</asset>
+    <asset name="anticanonMapOuter" type="graphic">backgrounds/wallflower_exterior/anticanon_map_coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='anticanonoutside' walkableMap='anticanonMapOuter' mapScale="1">
+	  <sprite name='anticanonoutside'>
+	    <animation sheet='anticanonoutside'/>
+	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,670,50,785,0</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/houses.xml,houses,1836,1917</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,671,641,778,521</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/anticanon.xml,anticanon,540,370</args>
+			</action>
+  	</trigger>
+	</triggers>
+	</room>
+  </rooms>
+</sburb>

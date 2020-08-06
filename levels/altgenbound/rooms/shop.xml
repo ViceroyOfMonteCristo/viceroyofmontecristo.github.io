@@ -4,10 +4,14 @@
   <assets>
     <asset name="shopBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3.png</asset>
     <asset name="shopMap" type="graphic">backgrounds/wallflower_exterior/map3coll.png</asset>
+    <asset name="shopFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3_fg.png</asset>
     <asset name="log" type="graphic">objects/npcs/logsprite.png</asset>
   </assets>
   <rooms>
 	<room name='shop' walkableMap='shopMap' mapScale="1">
+	<sprite name="shopFG" depthing="2">
+        <animation sheet="shopFG" />
+      </sprite>
 	  <sprite name='shopBG'>
 	    <animation sheet='shopBG'/>
 	  </sprite>

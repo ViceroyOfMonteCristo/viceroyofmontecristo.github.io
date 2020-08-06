@@ -33,6 +33,12 @@
          			 <args>rooms/stonerhouse.xml,stonerhouse,409,365</args>
 			</action>
   	</trigger>
+	<trigger>
+  		<args>inBox2,char,1780,1999,1894,1966</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/anticanonoutide.xml,anticanonoutside,730,100</args>
+			</action>
+  	</trigger>
 	</triggers>
 	</room>
   </rooms>
