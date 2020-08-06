@@ -22,7 +22,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='allayPlace' x='405' y='400' width='114' height='84' collidable='true'>
+	<sprite name='allayPlace' x='405' y='420' width='114' height='84' collidable='true'>
           <animation sheet='allay' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Shop Clerk.'>
 		<args>

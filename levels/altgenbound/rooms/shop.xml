@@ -17,7 +17,7 @@
 	  </sprite>
 	<triggers>
 		<trigger>
-  			<args>inBox2,char,2370,1130,2410,980</args>
+  			<args>inBox2,char,2370,1130,2410,870</args>
   			<action command='changeRoomRemote'>
          			 <args>rooms/square.xml,square,150,900</args>
 			</action>
@@ -29,8 +29,8 @@
 			</action>
 		</trigger>
 	</triggers>
-	<sprite name='logPlace' x='1742' y='867' width='30' height='102'>
-          <animation sheet='log' x='-10' y='-10'/>
+	<sprite name='logPlace' x='1742' y='867' width='30' height='40'>
+          <animation sheet='log' x='-10' y='0'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
