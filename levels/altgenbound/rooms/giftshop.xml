@@ -25,8 +25,8 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='malPlace' x='384' y='352' width='122' height='104'>
-          <animation sheet='mal' x='0' y='0'/>
+	<sprite name='malPlace' x='384' y='352' width='122' height='104' collidable='true'>
+          <animation sheet='mal' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
