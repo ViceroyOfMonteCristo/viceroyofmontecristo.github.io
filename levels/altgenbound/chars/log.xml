@@ -3,7 +3,7 @@
 <classes>
 	<animation class='log-dialog' frameInterval='6' x='-150' y='-450'/>
 	
-	<character class='log' name='log' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='log_sheet' state='idleBack' facing='Front'></character>
+	<character class='log' name='log' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='log_sheet' state='idleFront' facing='Front'></character>
 	
 	<action class='belog' name='Be log.' command='macro'>
 		<args>
@@ -18,7 +18,7 @@
 </classes>
 
 <assets>
-	<asset name='log_Sheet' type='graphic'>chars/log/log_sheet.png</asset>
+	<asset name='log_sheet' type='graphic'>chars/log/log_sheet.png</asset>
 	<asset name='logSong' type='audio'>audio/music/grudge.mp3</asset>
 	<asset name='log_talk' type='graphic'>dialogs/log/logsheet.png</asset>
 
