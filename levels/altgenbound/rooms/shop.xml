@@ -30,7 +30,7 @@
 		</trigger>
 	</triggers>
 	<sprite name='log' x='1742' y='867' width='30' height='48' collidable='true'>
-		<animation sheet='log' x='-10' y='0'/>
+		<animation sheet='log' x='0' y='0'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?

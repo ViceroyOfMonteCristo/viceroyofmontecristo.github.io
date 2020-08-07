@@ -7,12 +7,16 @@
     <asset name="mal" type="graphic">objects/npcs/malsprite.png</asset>
     <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
     <asset name="prospitan3" type="graphic">objects/npcs/prospitan3sprite.png</asset>
+    <asset name="giftshopFG" type="graphic">backgrounds/wallflower_interior/giftshop_fg.png</asset>
   </assets>
   <rooms>
 	<room name='giftshop' walkableMap='giftshopMap' mapScale="1">
 	  <sprite name='giftshopBG'>
 	    <animation sheet='giftshopBG'/>
 	  </sprite>
+	<sprite name="giftshopFG" depthing="2">
+        <animation sheet="giftshopFG" />
+      </sprite>
 	<triggers>
 	<trigger>
   		<args>inBox2,char,400,555,457,500</args>
@@ -22,7 +26,7 @@
   	</trigger>
 	</triggers>
 	<sprite name='malPlace' x='384' y='352' width='122' height='104'>
-          <animation sheet='mal' x='-10' y='-10'/>
+          <animation sheet='mal' x='0' y='0'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
