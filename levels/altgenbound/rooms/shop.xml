@@ -5,6 +5,7 @@
     <asset name="shopBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3.png</asset>
     <asset name="shopMap" type="graphic">backgrounds/wallflower_exterior/map3coll.png</asset>
     <asset name="shopFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3_fg.png</asset>
+    <asset name="log" type="graphic">objects/npcs/logsheet.png</asset>
   </assets>
   <rooms>
 	<room name='shop' walkableMap='shopMap' mapScale="1">
@@ -28,7 +29,8 @@
 			</action>
 		</trigger>
 	</triggers>
-	<character name='log' x='1742' y='867'>
+	<sprite name='log' x='1742' y='867' width='30' height='48' collidable='true'>
+		<animation sheet='log' x='-10' y='0'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
@@ -54,7 +56,7 @@
 @log_talk Log: you and me both!
 		</args>
 		</action>
-	</character>
+	</sprite>
 	</room>
   </rooms>
 </sburb>
