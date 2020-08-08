@@ -2,6 +2,7 @@
 
 <dependencies>
 	<dependency>rooms/forest.xml</dependency>
+	<dependency>chars/dickle.xml</dependency>
 </dependencies>
 
 <assets>
