@@ -140,7 +140,7 @@ safe than sorry.-->
 			</action>
 		</trigger>
 	</triggers>
-  	<character class='dickle' x='310' y='2720'>
+  	<character class='dickle'>
 		<action command='follow' sprite='vrachne' name='Follow.'>
   			<args>dickle,vrachne</args>
   			<action command='removeAction' noDelay='true'>

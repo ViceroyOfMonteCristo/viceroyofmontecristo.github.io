@@ -12,8 +12,8 @@
 	    <animation sheet='liftBG'/>
 	  </sprite>
 	<sprite name='lift_object' x='430' y='254' width='126' height='446' collidable='true'>
-	  <animation sheet='lift_object' x='50' y='-50'/>
-	  <action command='talk' name='Use lift.' sprite='dickle'>
+	  <animation sheet='lift_object' x='0' y='0'/>
+	  <action command='talk' name='Use lift.'>
 	    <args>
 		@dickle_glasses Dickle: oh nice wood
 		@dickle_talk Dickle: just the thing i’d expect inside of a tree
