@@ -26,7 +26,7 @@
   	</trigger>
 	</triggers>
 	<sprite name='malPlace' x='384' y='352' width='122' height='104' collidable='true'>
-          <animation sheet='mal' x='0' y='0'/>
+          <animation sheet='mal' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@mal_talk ???: hello there sir, how are you this fine overcast
@@ -46,7 +46,7 @@
 		</action>
 	</sprite>
 	<sprite name='dersite1Place' x='539' y='297' width='22' height='96' collidable='true'>
-		<animation sheet='dersite1' x='-10' y='0'/>
+		<animation sheet='dersite1' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! I’ve always wanted one of these old timey diving suits, but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
@@ -58,7 +58,7 @@
 		</action>
 	</sprite>
 	<sprite name='prospitan3Place' x='810' y='436' width='22' height='62' collidable='true'>
-		<animation sheet='prospitan3' x='-10' y='0'/>
+		<animation sheet='prospitan3' x='-10' y='-10'/>
 		<action command='talk' name='Talk to Prospitan.'>
 		<args>
 			@! Man, the lady who runs this place is a scam artist! I blew a whole #f360f4 BOONBUCK ## on a “mystery box” and all I got was this lousy T-shirt and some “attunements”, and I don’t even know what the hell an “attunement” is!
