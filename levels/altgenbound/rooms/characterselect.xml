@@ -30,7 +30,7 @@
 			</action>
 	</trigger>
 	</triggers>
-	<character name="dickle" x="1" y="1">
+	<character class="dickle" name='dickle' x="1" y="1">
 	</character>
 	</room>
 </rooms>
