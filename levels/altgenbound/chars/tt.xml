@@ -3,7 +3,7 @@
 <classes>
 	<animation class='tt-dialog' frameInterval='6' x='-150' y='-450'/>
 	
-	<character class='tt' name='tt' sx='-29' sy='-95' sWidth='58' sHeight='96' width='30' height='30' sheet='ttSheet' state='walkFront' facing='Front'></character>
+	<character class='tt' name='tt' sx='-29' sy='-95' sWidth='58' sHeight='96' width='30' height='30' sheet='ttSheet' state='idleFront' facing='Front'></character>
 </classes>
 
 <assets>
