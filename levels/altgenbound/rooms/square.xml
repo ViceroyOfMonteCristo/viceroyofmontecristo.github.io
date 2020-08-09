@@ -15,7 +15,7 @@
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
-	<sprite name="statuePlaque" x='1000' y='920' width='36' height='76' collidable='false' depthing="1">
+	<sprite name="statuePlaque" x='1000' y='920' width='36' height='76' collidable='false' depthing="0">
 	  <animation sheet='brokentablet' x='-10' y='0'/>
 	  <action command='talk' name='Examine statue.'>
 	    <args>
@@ -28,7 +28,7 @@ URE CERFRAPR OEVATF HF PBHENTR. GUR FGERATGU GB PNEEL BA QRFCVGR GUBFR JUB JBHYQ
 
 URE CERFRAPR OEVATF HF UBCR. GUR UBCR GB BAR QNL FRR GUR FHA EVFR VA NYY VGF TYBEL BAPR NTNVA.
 
-URE CERFRAPR OEVATF HF YVTUG. N TYBJVAT ORNPBA VA GUR QNEXRFG BS UBHEF QRFGVARQ GB ERGHEA NAQ FUVAR HCBA HF BAPR ZBER.
+@! #9900ff URE CERFRAPR OEVATF HF YVTUG. N TYBJVAT ORNPBA VA GUR QNEXRFG BS UBHEF QRFGVARQ GB ERGHEA NAQ FUVAR HCBA HF BAPR ZBER.
 
 FB VG TBRF.##
 		@! ... You have no idea what any of this gibberish means. What a lousy plaque.
