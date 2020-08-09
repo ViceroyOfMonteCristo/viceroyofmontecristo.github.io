@@ -7,7 +7,6 @@ is entered for the first time. -->
 <dependencies>
 	<!--
 	<dependency>chars/squatter.xml</dependency>
-	-->
 	<dependency>chars/tt.xml</dependency>
 	<dependency>chars/dersite2.xml</dependency>
 	<dependency>chars/dersite3.xml</dependency>
@@ -22,6 +21,8 @@ is entered for the first time. -->
 	<dependency>chars/dersite1.xml</dependency>
 	<dependency>chars/mal.xml</dependency>
 	<dependency>chars/quincy.xml</dependency>
+	-->
+	<dependency>chars/dickle.xml</dependency>
 	<dependency>chars/vrachne.xml</dependency>
 	<dependency>chars/karkat.xml</dependency> <!-- and karkat -->
 	<dependency>rooms/tree.xml</dependency>
