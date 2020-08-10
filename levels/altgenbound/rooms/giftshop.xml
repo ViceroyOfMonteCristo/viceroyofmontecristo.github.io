@@ -26,8 +26,8 @@
   	</trigger>
 	</triggers>
 
-	<sprite name='malPlace' x='364' y='302' width='122' height='104' collidable='true'>
-          <animation sheet='mal' x='-10' y='-30'/>
+	<sprite name='malPlace' x='375' y='322' width='122' height='104' collidable='true'>
+          <animation sheet='mal' x='-30' y='-40'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@dickle_talk Dickle: hi!
@@ -48,8 +48,8 @@
 		</action>
 	</sprite>
 	
-	<sprite name='dersite1Place' x='539' y='297' width='22' height='96' collidable='true'>
-		<animation sheet='dersite1' x='-10' y='-10'/>
+	<sprite name='dersite1Place' x='550' y='297' width='22' height='96' collidable='true'>
+		<animation sheet='dersite1' x='10' y='10'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! I’ve always wanted one of these old timey diving suits, but she’s asking for a whole #f360f4 BOONCASE! ## What a ripoff.
