@@ -11,7 +11,7 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='620' y='250' width='126' height='446' collidable='true'>
+	<sprite name='lift_object' x='620' y='400' width='126' height='446' collidable='true'>
 	  <animation sheet='lift_object' x='-100' y='-200'/>
 	  <action command='talk' name='Use lift.'>
 	    <args>
