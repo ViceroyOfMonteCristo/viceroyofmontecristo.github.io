@@ -26,7 +26,7 @@
   	</trigger>
 	</triggers>
 
-	<sprite name='malPlace' x='425' y='362' width='122' height='104' collidable='true'>
+	<sprite name='malPlace' x='430' y='380' width='122' height='104' collidable='true'>
           <animation sheet='mal' x='-60' y='-50'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
@@ -48,7 +48,7 @@
 		</action>
 	</sprite>
 	
-	<sprite name='dersite1Place' x='530' y='297' width='22' height='96' collidable='true'>
+	<sprite name='dersite1Place' x='535' y='297' width='22' height='96' collidable='true'>
 		<animation sheet='dersite1' x='-10' y='-20'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>

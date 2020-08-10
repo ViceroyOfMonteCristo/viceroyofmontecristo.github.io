@@ -11,8 +11,8 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='550' y='250' width='126' height='446' collidable='true'>
-	  <animation sheet='lift_object' x='-90' y='-90'/>
+	<sprite name='lift_object' x='620' y='250' width='126' height='446' collidable='true'>
+	  <animation sheet='lift_object' x='-100' y='-100'/>
 	  <action command='talk' name='Use lift.'>
 	    <args>
 		@dickle_glasses Dickle: oh nice wood
