@@ -27,7 +27,7 @@
 	</triggers>
 
 	<sprite name='malPlace' x='375' y='322' width='122' height='104' collidable='true'>
-          <animation sheet='mal' x='-30' y='-40'/>
+          <animation sheet='mal' x='-60' y='-50'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
 			@dickle_talk Dickle: hi!
