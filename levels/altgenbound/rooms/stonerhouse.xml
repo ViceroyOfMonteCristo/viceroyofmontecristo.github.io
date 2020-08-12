@@ -21,20 +21,20 @@
   	</trigger>
 	</triggers>
 	<sprite name='langleyPlace' x='600' y='310' width='40' height='90' collidable='true'>
-          <animation sheet='langley' x='-10' y='-10'/>
+          <animation sheet='langley' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 		@dickle_talk Dickle: hey there
 @langley_talk ???: .....
-@dickle_awkward Dickle: uhhhhh is it alright for me to be in here
+@dickle_explaining Dickle: uhhhhh is it alright for me to be in here
 @langley_talk ???: dunno, ask her, she owns the place. 
 @langley_talk  ???: she gets pissy if i lock the door.
-@dickle_awkard Dickle: uh… okay.
+@dickle_explaining Dickle: uh… okay.
 		</args>
 		</action>
 	</sprite>
 	<sprite name='waverlyPlace' x='790' y='310' width='40' height='90' collidable='true'>
-          <animation sheet='waverly' x='-10' y='-10'/>
+          <animation sheet='waverly' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 		@dickle_awkward Dickle: uhhh heyyyyyy..

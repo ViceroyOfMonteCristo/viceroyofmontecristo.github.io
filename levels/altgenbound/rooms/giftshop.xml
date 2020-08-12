@@ -7,16 +7,12 @@
     <asset name="mal" type="graphic">objects/npcs/malsprite.png</asset>
     <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
     <asset name="prospitan3" type="graphic">objects/npcs/prospitan3sprite.png</asset>
-    <asset name="giftshopFG" type="graphic">backgrounds/wallflower_interior/giftshop_fg.png</asset>
   </assets>
   <rooms>
 	<room name='giftshop' walkableMap='giftshopMap' mapScale="1">
 	  <sprite name='giftshopBG'>
 	    <animation sheet='giftshopBG'/>
 	  </sprite>
-	<sprite name="giftshopFG" depthing="2">
-        <animation sheet="giftshopFG" />
-      </sprite>
 	<triggers>
 	<trigger>
   		<args>inBox2,char,400,555,457,500</args>
