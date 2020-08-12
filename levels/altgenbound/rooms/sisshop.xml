@@ -22,8 +22,8 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='allayPlace' x='405' y='420' width='114' height='84' collidable='true'>
-          <animation sheet='allay' x='-10' y='-10'/>
+	<sprite name='allayPlace' x='455' y='470' width='114' height='84' collidable='true'>
+          <animation sheet='allay' x='-60' y='-50'/>
 		<action command='talk' name='Talk to Shop Clerk.'>
 		<args>
 			@allay_talk ???: hello there! Welcome to the allay aster plushie parlor!
@@ -82,41 +82,41 @@
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
-@! #f1c232 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #f1c232 too ##
+@! #ebb719 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #ebb719 too ##
 
 @! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
 
-@! #f1c232 I mean there’s lots of nice local places in #674ea7 ONYX ## #f1c232 you just gotta know where to look. ##
+@! #ebb719 I mean there’s lots of nice local places in #674ea7 ONYX ## #ebb719 you just gotta know where to look. ##
 
-@! #f1c232 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+@! #ebb719 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
 
 @! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
 
-@! #f1c232 What?! What’s so scary about a dude living his dre- ##
+@! #ebb719 What?! What’s so scary about a dude living his dre- ##
 
 @! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
 
-@! #f1c232 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+@! #ebb719 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
 
-@! #f1c232 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+@! #ebb719 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
 
-@! #f1c232 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+@! #ebb719 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
 
-@! #f1c232 And lemme tell you, they learned how to make that thing crash proof. ##
+@! #ebb719 And lemme tell you, they learned how to make that thing crash proof. ##
 
-@! #f1c232 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #f1c232 and went “shit could that happen to us? We should do something about that”  ##
+@! #ebb719 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #ebb719 and went “shit could that happen to us? We should do something about that”  ##
 
 @! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
 
-@! #f1c232 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+@! #ebb719 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
 
-@! #f1c232 These guys don’t strike me as the type to have realtors or whatever ##
+@! #ebb719 These guys don’t strike me as the type to have realtors or whatever ##
 
 @! #9900ff ... ##
 
-@! #f1c232 Cheer up bud, i’m telling you it isn’t that bad ##
+@! #ebb719 Cheer up bud, i’m telling you it isn’t that bad ##
 
-@! #f1c232 Besides, anything’s better than the ## Battlefield, #f1c232 right? ##
+@! #ebb719 Besides, anything’s better than the ## Battlefield, #ebb719 right? ##
 
 @! #9900ff You got that right. ##
 		</args>
@@ -128,41 +128,41 @@
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
-@! #f1c232 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #f1c232 too ##
+@! #ebb719 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #ebb719 too ##
 
 @! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
 
-@! #f1c232 I mean there’s lots of nice local places in #674ea7 ONYX ## #f1c232 you just gotta know where to look. ##
+@! #ebb719 I mean there’s lots of nice local places in #674ea7 ONYX ## #ebb719 you just gotta know where to look. ##
 
-@! #f1c232 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+@! #ebb719 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
 
 @! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
 
-@! #f1c232 What?! What’s so scary about a dude living his dre- ##
+@! #ebb719 What?! What’s so scary about a dude living his dre- ##
 
 @! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
 
-@! #f1c232 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+@! #ebb719 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
 
-@! #f1c232 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+@! #ebb719 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
 
-@! #f1c232 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+@! #ebb719 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
 
-@! #f1c232 And lemme tell you, they learned how to make that thing crash proof. ##
+@! #ebb719 And lemme tell you, they learned how to make that thing crash proof. ##
 
-@! #f1c232 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #f1c232 and went “shit could that happen to us? We should do something about that”  ##
+@! #ebb719 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #ebb719 and went “shit could that happen to us? We should do something about that”  ##
 
 @! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
 
-@! #f1c232 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+@! #ebb719 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
 
-@! #f1c232 These guys don’t strike me as the type to have realtors or whatever ##
+@! #ebb719 These guys don’t strike me as the type to have realtors or whatever ##
 
 @! #9900ff ... ##
 
-@! #f1c232 Cheer up bud, i’m telling you it isn’t that bad ##
+@! #ebb719 Cheer up bud, i’m telling you it isn’t that bad ##
 
-@! #f1c232 Besides, anything’s better than the ## Battlefield, #f1c232 right? ##
+@! #ebb719 Besides, anything’s better than the ## Battlefield, #ebb719 right? ##
 
 @! #9900ff You got that right. ##
 		</args>
