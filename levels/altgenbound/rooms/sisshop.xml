@@ -9,7 +9,7 @@
     <asset name="aster" type="graphic">objects/npcs/astersprite.png</asset>
     <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
     <asset name="prospitan2" type="graphic">objects/npcs/prospitan2sprite.png</asset>
-    <asset name="male" type="graphic>objects/npcs/malesprite.png</asset>
+    <asset name="male" type="graphic">objects/npcs/malesprite.png</asset>
   </assets>
   <rooms>
 	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
