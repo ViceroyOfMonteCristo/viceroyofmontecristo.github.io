@@ -45,8 +45,7 @@
 		@vrachne_peevedcross Vrachne: Dickle. I’ll give you a solid 6 seconds to figure out why that is the single stupidest thing i’ve heard you say so far
 		@vrachne_peevedcross Vrachne: 6… 5… 4… 3… 2… 1…
 		@vrachne_peevedcross Vrachne: time's up. do you have an answer?
-		</args>
-		</action>
+	    </args>
 		<action command='presentAction'>
 		  <args>
 			<action command='talk' name='Answer.'>
@@ -73,6 +72,9 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
+			<action command="changeRoom">
+		<args>booth,1010,2400</args>
+	  	</action>
 			</action>
 			<action command='talk' name="Don't Answer.">
 			  <args>
@@ -99,13 +101,14 @@
 				@vrachne_talk Vrachne: but we’ll save fighting talk for later, we should really get on with this don’t you think?
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
-			</args>
-		</action>
-		<action command="changeRoom">
+			  </args>
+			<action command="changeRoom">
 		<args>booth,1010,2400</args>
 	  	</action>
+			</action>
 	    </args>
 	  </action>
+	</action>
 	</sprite>
 	</room>
   </rooms>

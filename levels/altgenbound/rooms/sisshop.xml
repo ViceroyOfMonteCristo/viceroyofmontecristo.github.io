@@ -4,15 +4,20 @@
   <assets>
     <asset name="sisshopBG" type="graphic">backgrounds/wallflower_interior/sisshop.png</asset>
     <asset name="sisshopMap" type="graphic">backgrounds/wallflower_interior/sisshopcoll.png</asset>
+    <asset name="sisshopFG" type="graphic">backgrounds/wallflower_interior/sisshop_fg.png</asset>
     <asset name="allay" type="graphic">objects/npcs/allaysprite2.png</asset>
     <asset name="aster" type="graphic">objects/npcs/astersprite.png</asset>
     <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
     <asset name="prospitan2" type="graphic">objects/npcs/prospitan2sprite.png</asset>
+    <asset name="male" type="graphic>objects/npcs/malesprite.png</asset>
   </assets>
   <rooms>
 	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
 	  <sprite name='sisshopBG'>
 	    <animation sheet='sisshopBG'/>
+	  </sprite>
+	  <sprite name="sisshopFG" depthing="2">
+		<animation sheet="sisshopFG" />
 	  </sprite>
 	<triggers>
 	<trigger>
@@ -22,6 +27,19 @@
 			</action>
   	</trigger>
 	</triggers>
+	<sprite name='maleplace' x='539' y='542' width='30' height='60' collidable='true'>
+	  <animation sheet='male' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@! Gurl ernyyl qb znxr n ybg bs gurfr cyhfuvrf, zl xvqf ybir rz ohg v qba’g ernyyl frr gur nccrny...
+
+Gurl nyy whfg fbegn ybbx gur fnzr gb zr, gurl gryy zr gurl znxr gurz onfrq bss enaqbz crbcyr gurl frr ohg v whfg qba’g ohl vg.
+
+Yvxr gurer’f ab jnl jr nyy ybbx guvf vqragvpny, evtug?
+
+		</args>
+		</action>
+	</sprite>
 	<sprite name='allayPlace' x='455' y='470' width='114' height='84' collidable='true'>
           <animation sheet='allay' x='-60' y='-50'/>
 		<action command='talk' name='Talk to Shop Clerk.'>

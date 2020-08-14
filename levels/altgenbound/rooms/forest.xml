@@ -244,7 +244,7 @@ safe than sorry.-->
   	<character class='karkat' x='670' y='1826'>
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
-  				@dickle_talk This is version 0.30.
+  				@dickle_talk This is version 0.31.
 				@dickle_airquotes Test.
 				@dickle_explaining Test.
 				@dickle_fingerguns Test.
