@@ -23,6 +23,43 @@
          			 <args>rooms/anticanon.xml,anticanon,540,370</args>
 			</action>
   	</trigger>
+	<trigger detonate='true'>
+	  <args>spriteProperty,char,y &lt; 250</args>
+	  <action command='talk'>
+		<args>
+		  @dickle_smug Dickle: i thought this alleyway seemed fishy!
+@dickle_excited Dickle: look at that! It’s like a big staticy cracky thing.
+@vrachne_concerned Vrachne: i don’t think this is supposed to be here
+@vrachne_concerned Vrachne: actually i don’t think we’re supposed to be here either
+@dickle_talk Dickle: well i coulda told you that
+@dickle_talk Dickle: we literally walked through a fence!
+@dickle_think Dickle: hmmm
+@dickle_think Dickle: what do you think would happen if we touched this thing?
+@vrachne_peevedcross Vrachne: Dickle.
+@vrachne_peevedcross Vrachne: i thought the elevator thing was the stupidest thing you were gonna say today, but you’re just full of surprises
+@vrachne_peevedcross Vrachne: it’s honestly inspiring
+@dickle_excited Dickle: you should learn to stop being so negative all the time!
+@dickle_excited Dickle: seriously it’s just a bunch of static what’s the worst that could happen?
+@vrachne_peevedcross Vrachne: i can think of a lot of things actually
+@vrachne_shrug Vrachne: you could just explode, or maybe if you’re really unlucky you’d become some sort of deformed abomination, maybe with some spider pieces poking out of you, who knows
+@dickle_smug Dickle: okay now you’re just being overdramatic 
+@dickle_smug Dickle: i got a hunch absolutely none of those things will happen
+@vrachne_talk Vrachne: and why’s that huh?
+@dickle_explaining Dickle: well if someone exploded right here there probably would be a bunch of ya know… uh goop yeah spider goop and blood and stuff like that all over the place!
+@dickle_explaining Dickle: people who worship abstract concepts like the sun probably aren’t known for keeping their hands to themselves if you know what i mean.
+@vrachne_smug Vrachne: i don’t think you know what the word abstract means dickle.
+@dickle_explaining Dickle: yeah but you probably don’t either. 
+@dickle_happy Dickle: so that’s something we have in common! Hehehe
+@dickle_excited Dickle: so come on, let’s just touch it and get this over with!
+@vrachne_armup Vrachne: sure fine whatever, don’t listen to me. I’m sure this won’t backfire in anyway whatsoever 
+@dickle_happy Dickle: hey if it does i’ll uh…. hmmm, oh yeah i got it! I’ll owe you a favor or something!
+@dickle_airquotes Dickle: ya know an “anything goes” kinda favor!
+@vrachne_smugcross Vrachne: deal!
+@vrachne_smugcross Vrachne: but i don’t think you know what you’re getting yourself into by saying that dickle. 
+@dickle_happy Dickle: well i guess we’ll cross that bridge when we come to it heh!
+		</args>
+	  </action>
+	</trigger>
 	</triggers>
 	</room>
   </rooms>

@@ -92,7 +92,7 @@ is entered for the first time. -->
 	<asset name='firstRoomMap' type='graphic'>backgrounds/forest/collision-map.png</asset>
   
   <!-- an item to be found in a chest, nothing special about it-->
-  <asset name='item1' type='graphic'>objects/items/item1.png</asset>
+  <asset name='item0' type='graphic'>objects/items/item0.png</asset>
 </assets>
 
 <!-- We create the sprite for this item outside of everything else
@@ -101,8 +101,8 @@ access it at some point in the future. This is a very common pattern. We
 do this for anything that will "eventually" be added to a room.
 
 Note: depthing='2' puts this in front of everything, including foreground elements! -->
-<sprite name='item1' depthing='3'>
-	<animation sheet='item1' x='-30' y='-30'/>
+<sprite name='item0' depthing='3'>
+	<animation sheet='item0' x='-30' y='-30'/>
 </sprite>
 
 <!-- We wrap all room tags in the rooms tag. This is mostly useless since it's
@@ -371,7 +371,20 @@ safe than sorry.-->
   	<sprite class='chest1' name='chest1' x='689' y='2004'>
 			<action command='openChest' name='Open.'>
 				<args>
-					chest1,item1, @! You got a CAN OF TAB!
+					chest1,item0, @! You got a IOU NOTE... Wait, what?
+
+It appears to be some kind of hand written note; it's surprisingly fancy too! It's written in cursive and everything!
+@! “Dear Friends, i’m sorry i couldn’t be there to say hello in person but i had some “urgent” business to take care of.
+
+I’m not just wandering the forest for no reason after all! I have an important duty i must fulfill and i will see to it that it is finished, no matter the toll it takes on my body...
+
+Again i am sorry i’m not there to say hello or point you in the right direction though, at the very least if you’re reading this that means you’re probably close to the place you’re looking for so take solace in that fact. 
+
+- Da-niver
+
+@! PS. if you get any trouble at the gate just mention me, Quincy owes me a favor.
+
+@! PPS. if someone asks where i am just don’t say anything and walk away. Thank you.”
 				</args>
 			</action>
 		</sprite>

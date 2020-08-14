@@ -27,7 +27,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<sprite name='maleplace' x='539' y='542' width='30' height='60' collidable='true'>
+	<sprite name='maleplace' x='362' y='542' width='30' height='60' collidable='true'>
 	  <animation sheet='male' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
