@@ -22,7 +22,7 @@
 			</action>
   	</trigger>
 	</triggers>
-	<character class='tt' x='450' y='365'>
+	<character class='tt' x='450' y='375'>
 	<action command="talk" name="Ta..alk?.">
 		<args>
 			@dickleANTI Dickle: he..y yo..u
@@ -52,15 +52,15 @@
 		</args>
 	</action>
 	</character>
-	<sprite class='chest3' name='chest3' x='261' y='314'>
+	<sprite class='chest3' name='chest3' x='285' y='320'>
 			<action command='openChest' name='Open.'>
 				<args>
-					chest3, item3, @!You got the ANTI FLINTSTONE GUMMIES.
+					chest3, item3, @! You got the ANTI FLINTSTONE GUMMIES.
 @! While your thoughts might be a bit frazzled here you can sure as hell tell what these are just off the shape and feel alone, these are flintstone gummies through and through. 
 
 Aside from the weird outlined look of it all it just seems to be a regular bottle of vitamin gummies which really calls into question what this place even is in the first place, is it like an anti version of the real world or maybe it’s some stupid game thing you certainly don’t remember this from any homestuck rereads… but you never really did pay attention to those.
 
-@!Ugh... you’re starting to hurt your head trying to wrap it around all this stuff but maybe that’s just a side effect of being made out of neon lines... 
+@! Ugh... you’re starting to hurt your head trying to wrap it around all this stuff but maybe that’s just a side effect of being made out of neon lines... 
 				</args>
 			</action>
 	</sprite>
