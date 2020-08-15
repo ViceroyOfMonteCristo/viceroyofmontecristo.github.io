@@ -24,7 +24,7 @@
 			</action>
   	</trigger>
 	<trigger detonate='true'>
-	  <args>spriteProperty,char,y &lt; 250</args>
+	  <args>spriteProperty,char,y &gt; 250</args>
 	  <action command='talk'>
 		<args>
 		  @dickle_smug Dickle: i thought this alleyway seemed fishy!
