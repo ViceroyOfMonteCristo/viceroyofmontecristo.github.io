@@ -52,7 +52,7 @@
 		</args>
 	</action>
 	</character>
-	<sprite class='chest3' name='chest3' x='689' y='2004'>
+	<sprite class='chest3' name='chest3' x='261' y='314'>
 			<action command='openChest' name='Open.'>
 				<args>
 					chest3, item3, @!You got the ANTI FLINTSTONE GUMMIES.
