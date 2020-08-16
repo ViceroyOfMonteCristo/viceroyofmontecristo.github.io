@@ -96,7 +96,7 @@ Yvxr gurer’f ab jnl jr nyy ybbx guvf vqragvpny, evtug?
 	</sprite>
 	<sprite name='dersite1Place' x='576' y='430' width='30' height='92' collidable='true'>
           <animation sheet='dersite1' x='-10' y='-10'/>
-		<action command='talk' name='Talk to Dersite and Prospitan.'>
+		<action command='talk' name='Listen in.'>
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
@@ -142,7 +142,7 @@ Yvxr gurer’f ab jnl jr nyy ybbx guvf vqragvpny, evtug?
 	</sprite>
 	<sprite name='prospitan2Place' x='610' y='430' width='30' height='92' collidable='true'>
           <animation sheet='prospitan2' x='-10' y='-10'/>
-		<action command='talk' name='Talk to Dersite and Prospitan.'>
+		<action command='talk' name='Listen in.'>
 		<args>
 		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
 
