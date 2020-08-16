@@ -45,7 +45,7 @@
 	</triggers>
 	<sprite name='discussion' x='800' y='675' width='63' height='58' collidable='true'>
 		<animation sheet='discussion' x='-20' y='-20'/>
-		<action command='Listen in.'>
+		<action command='talk' name='Listen in.'>
 		<args>@! #9900ff Did you ever end up reading ## #274e13 WORM ## #9900ff man?
 
 @! #ebb719 I would’ve but it doesn’t have any pictures so i’m not really that interested in it, i prefer my reading with a bit of a visual kick ya know?
@@ -69,7 +69,7 @@ There’s this lady who learns how to control bugs and stuff it’s wild, she ev
 	</sprite>
 	<sprite name='female' x='1300' y='855' width='30' height='60' collidable='true'>
 		<animation sheet='female' x='-20' y='-20'/>
-		<action command='Talk to spider.'>
+		<action command = 'talk' name='Talk to spider.'>
 		<args>@! Url hu, qba'g gryy ure v'ir orra qbvat guvf ohg v'ir orra ybbxvat guebhtu guvf ynqvrf jvaqbj sbe gur cnfg ubhe abj naq fur'f whfg orra fgnevat ng ure orq furrg.
 
 V xvaqn jnaan tb va gurer naq purpx ba ure ohg v qba'g xabj vg whfg frrzf ehqr gb onetr vagb fbzrbar'f ubhfr yvxr gung...
@@ -81,7 +81,7 @@ yvxr jung vs fur jnfa'g univat nal gebhoyr ng nyy naq vg'f whfg fbzrguvat fur qb
 	</sprite>
 	<sprite name='dersite3' x='1800' y='660' width='30' height='66' collidable='true'>
 		<animation sheet='dersite3' x='-20' y='-20'/>
-		<action command='Talk to Dersite.'>
+		<action command='talk' name='Talk to Dersite.'>
 		<args>@! I really should have bought a map or something. i’m completely lost! The layout of this city makes no sense at all! 
 
 I mean i guess i can commend them for building all this in a cave but did they really have to design it like this?
