@@ -34,7 +34,7 @@
 	</triggers>
 	<sprite name='child' x='1340' y='775' width='30' height='48' collidable='true'>
 		<animation sheet='child' x='-20' y='-20'/>
-		<action command='talk' name='Talk to spider.">
+		<action command='talk' name='Talk to spider.'>
 		<args>
 			@! Znzn gbyq zr vs v ybbx guebhtu genfu pnaf naq fryy gur vagrerfgvat fghss v pna or fhpprffshy whfg yvxr zf zny-zny!
 		</args>
@@ -42,7 +42,7 @@
 	</sprite>
 	<sprite name='female' x='930' y='865' width='30' height='48' collidable='true'>
 		<animation sheet='female' x='-20' y='-20'/>
-		<action command='talk' name='Talk to spider.">
+		<action command='talk' name='Talk to spider.'>
 		<args>
 			@! V jbhyqa'g ohl nalguvat urer, Zny'f n gbgny purncfxngr, nyy fur fryyf vf yvgreny genfu.
 
@@ -55,7 +55,7 @@ Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx
 	</sprite>
 	<sprite name='dersite1' x='1430' y='780' width='25' height='40' collidable='true'>
 		<animation sheet='dersite1' x='-20' y='-20'/>
-		<action command='talk' name='Talk to Dersite.">
+		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! I wanted #0b5394 ICE ##but all they have here is #0b5394 VPR ##, which happens to look suspiciously close to #0b5394 ICE##!
 
