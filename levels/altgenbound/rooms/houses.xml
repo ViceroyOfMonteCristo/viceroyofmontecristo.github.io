@@ -67,8 +67,8 @@ There’s this lady who learns how to control bugs and stuff it’s wild, she ev
 		</args>
 		</action>
 	</sprite>
-	<sprite name='female' x='1300' y='855' width='30' height='60' collidable='true'>
-		<animation sheet='female' x='-20' y='-20'/>
+	<sprite name='female' x='1300' y='875' width='30' height='60' collidable='true'>
+		<animation sheet='female' x='-30' y='-40'/>
 		<action command = 'talk' name='Talk to spider.'>
 		<args>@! Url hu, qba'g gryy ure v'ir orra qbvat guvf ohg v'ir orra ybbxvat guebhtu guvf ynqvrf jvaqbj sbe gur cnfg ubhe abj naq fur'f whfg orra fgnevat ng ure orq furrg.
 
@@ -79,7 +79,7 @@ yvxr jung vs fur jnfa'g univat nal gebhoyr ng nyy naq vg'f whfg fbzrguvat fur qb
 		</args>
 		</action>
 	</sprite>
-	<sprite name='dersite3' x='1800' y='660' width='30' height='66' collidable='true'>
+	<sprite name='dersite3' x='1850' y='660' width='30' height='66' collidable='true'>
 		<animation sheet='dersite3' x='-20' y='-20'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>@! I really should have bought a map or something. i’m completely lost! The layout of this city makes no sense at all! 

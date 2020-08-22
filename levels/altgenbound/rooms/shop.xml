@@ -6,6 +6,9 @@
     <asset name="shopMap" type="graphic">backgrounds/wallflower_exterior/map3coll.png</asset>
     <asset name="shopFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3_fg.png</asset>
     <asset name="log" type="graphic">objects/npcs/logsprite.png</asset>
+    <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
+    <asset name="child" type="graphic">objects/npcs/childsprite.png</asset>
+    <asset name="female" type="graphic">objects/npcs/femalesprite.png</asset>
   </assets>
   <rooms>
 	<room name='shop' walkableMap='shopMap' mapScale="1">
@@ -29,6 +32,37 @@
 			</action>
 		</trigger>
 	</triggers>
+	<sprite name='child' x='1340' y='775' width='30' height='48' collidable='true'>
+		<animation sheet='child' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.">
+		<args>
+			@! Znzn gbyq zr vs v ybbx guebhtu genfu pnaf naq fryy gur vagrerfgvat fghss v pna or fhpprffshy whfg yvxr zf zny-zny!
+		</args>
+		</action>
+	</sprite>
+	<sprite name='female' x='930' y='865' width='30' height='48' collidable='true'>
+		<animation sheet='female' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.">
+		<args>
+			@! V jbhyqa'g ohl nalguvat urer, Zny'f n gbgny purncfxngr, nyy fur fryyf vf yvgreny genfu.
+
+Fur hfrq gb gel naq cnja gur fghss fur tbg ba ure qrrc qvirf gb gur erfg bs gur crbcyr va gbja, gunaxshyyl abobql obhtug vagb ure penc, yrnfg gvyy gur gbhevfgf pnzr nebhaq.
+
+Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx ba ure snpr vs gung unccrarq.
+
+		</args>
+		</action>
+	</sprite>
+	<sprite name='dersite1' x='1430' y='780' width='25' height='40' collidable='true'>
+		<animation sheet='dersite1' x='-20' y='-20'/>
+		<action command='talk' name='Talk to Dersite.">
+		<args>
+			@! I wanted #0b5394 ICE ##but all they have here is #0b5394 VPR ##, which happens to look suspiciously close to #0b5394 ICE##!
+
+I don’t know what’s going on here, but I wouldn’t go sticking whatever this stuff is into your drinks, it’s probably not safe!
+		</args>
+		</action>
+	</sprite>
 	<sprite name='log' x='1742' y='867' width='30' height='48' collidable='true'>
 		<animation sheet='log' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
