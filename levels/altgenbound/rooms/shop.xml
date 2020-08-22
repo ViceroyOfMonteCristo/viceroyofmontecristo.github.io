@@ -33,7 +33,7 @@
 		</trigger>
 	</triggers>
 	<sprite name='child' x='1340' y='775' width='30' height='48' collidable='true'>
-		<animation sheet='child' x='-20' y='-20'/>
+		<animation sheet='child' x='-10' y='-10'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@! Znzn gbyq zr vs v ybbx guebhtu genfu pnaf naq fryy gur vagrerfgvat fghss v pna or fhpprffshy whfg yvxr zf zny-zny!
@@ -41,7 +41,7 @@
 		</action>
 	</sprite>
 	<sprite name='female' x='930' y='865' width='30' height='48' collidable='true'>
-		<animation sheet='female' x='-20' y='-20'/>
+		<animation sheet='female' x='-20' y='-30'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@! V jbhyqa'g ohl nalguvat urer, Zny'f n gbgny purncfxngr, nyy fur fryyf vf yvgreny genfu.
@@ -53,8 +53,8 @@ Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx
 		</args>
 		</action>
 	</sprite>
-	<sprite name='dersite1' x='1430' y='780' width='25' height='40' collidable='true'>
-		<animation sheet='dersite1' x='-20' y='-20'/>
+	<sprite name='dersite1' x='1430' y='785' width='25' height='40' collidable='true'>
+		<animation sheet='dersite1' x='-20' y='-25'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
 			@! I wanted #0b5394 ICE ##but all they have here is #0b5394 VPR ##, which happens to look suspiciously close to #0b5394 ICE##!
@@ -64,7 +64,7 @@ I don’t know what’s going on here, but I wouldn’t go sticking whatever thi
 		</action>
 	</sprite>
 	<sprite name='log' x='1742' y='867' width='30' height='48' collidable='true'>
-		<animation sheet='log' x='-20' y='-20'/>
+		<animation sheet='log' x='-20' y='-25'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
 			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
