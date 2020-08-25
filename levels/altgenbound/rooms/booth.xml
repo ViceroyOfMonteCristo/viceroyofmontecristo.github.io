@@ -78,9 +78,9 @@
 		@quincy_friendly Quincy: alright thats all i needed to hear
 		@quincy_friendly Quincy: let me get that gate for you
 	    </args>
-	</action>
 	<action command='removeSprite'>
         	<args>gateclosed,booth</args>
+	</action>
 	</action>
 	</trigger>
 	<trigger detonate='true'>
