@@ -16,12 +16,13 @@
 	  <sprite name='boothBG'>
 	    <animation sheet='boothBG'/>
 	  </sprite>
-	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='true'>
-		<animation sheet='gateclosed'/>
-	  </sprite>
 	<sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
 		<animation sheet='gateopen'/>
 	  </sprite>
+	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='true'>
+		<animation sheet='gateclosed'/>
+	  </sprite>
+	
 	<triggers>
 	<trigger detonate='true'>
           <args>spriteProperty,char,y &lt; 1240</args>
