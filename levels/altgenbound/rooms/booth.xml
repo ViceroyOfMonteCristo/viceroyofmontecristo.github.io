@@ -19,9 +19,6 @@
 	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='true'>
 		<animation sheet='gateclosed'/>
 	  </sprite>
-	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
-		<animation sheet='gateopen'/>
-	  </sprite>
 	<triggers>
 	<trigger detonate='true'>
           <args>spriteProperty,char,y &lt; 1240</args>
@@ -57,7 +54,7 @@
 		@quincy_friendly ???: i’m Quincy, nice to meet you folk!
 		@dickle_happy Dickle: nice to meet you quincy
 		@dickle_explaining Dickle: i’m Dickle and this is Vrachne!
-		@vrachne_concerned(or something along those lines) Vrachne: ...
+		@vrachne_peevedcross Vrachne: ...
 		@dickle_talk Dickle: she uhhh doesn’t talk much
 		@dickle_talk Dickle: anyway, this is a beautiful town you got here! 
 		@quincy_friendly Quincy: it sure is, guess that’s why we’re getting so many tourists now!
@@ -78,7 +75,7 @@
 		@quincy_friendly Quincy: let me get that gate for you
 	    </args>
 	<action command='removeSprite'>
-        	<args>secondRoomDoor,secondRoom</args>
+        	<args>gateclosed,booth</args>
 	</action>
 	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
 		<animation sheet='gateopen'/>
