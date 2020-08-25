@@ -19,10 +19,13 @@
 	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='true'>
 		<animation sheet='gateclosed'/>
 	  </sprite>
+	<sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
+		<animation sheet='gateopen'/>
+	  </sprite>
 	<triggers>
 	<trigger detonate='true'>
           <args>spriteProperty,char,y &lt; 1240</args>
-            <action command='talk' sprite='dickle'>
+            <action command='talk'>
 	    <args>
 		@dickle_glasses Dickle: is this a tollbooth?
 		@quincy_gruff ???: hey!!!
@@ -74,19 +77,20 @@
 		@quincy_friendly Quincy: alright thats all i needed to hear
 		@quincy_friendly Quincy: let me get that gate for you
 	    </args>
+	</action>
 	<action command='removeSprite'>
         	<args>gateclosed,booth</args>
 	</action>
-	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
-		<animation sheet='gateopen'/>
-	  </sprite>
+	</trigger>
+	<trigger detonate='true'>
+		<args>spriteProperty,char,y &lt; 1000</args>
+		<action command="talk">
 		<args>
-		@quincy_friendly Quincy: there you go!
 		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
 		@dickle_friendly Dickle: thanks man! Lindas be with you too
 		@dickle_explaining Dickle: Whatever that means.
 		</args>
-	</action>
+		</action>
 	</trigger>
 	<trigger>
   		<args>inBox2,char,880,45,1140,0</args>
