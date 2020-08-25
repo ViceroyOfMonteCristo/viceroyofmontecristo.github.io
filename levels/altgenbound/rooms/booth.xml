@@ -76,18 +76,20 @@
 		@dickle_talk Dickle: we’ll be on our best behaviour i promise!
 		@quincy_friendly Quincy: alright thats all i needed to hear
 		@quincy_friendly Quincy: let me get that gate for you
-		@quincy_friendly Quincy: there you go!
-		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
-		@dickle_friendly Dickle: thanks man! Lindas be with you too
-		@dickle_explaining Dickle: Whatever that means.
 	    </args>
-	  </action>
 	<action command='removeSprite'>
         	<args>secondRoomDoor,secondRoom</args>
 	</action>
 	  <sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='true'>
 		<animation sheet='gateopen'/>
 	  </sprite>
+		<args>
+		@quincy_friendly Quincy: there you go!
+		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
+		@dickle_friendly Dickle: thanks man! Lindas be with you too
+		@dickle_explaining Dickle: Whatever that means.
+		</args>
+	</action>
 	</trigger>
 	<trigger>
   		<args>inBox2,char,880,45,1140,0</args>
