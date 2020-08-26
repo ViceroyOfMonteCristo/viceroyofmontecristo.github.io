@@ -244,7 +244,7 @@ safe than sorry.-->
   	<character class='karkat' x='670' y='1826'>
   		<action command='talk' name='Dickle talksprite test.'>
   			<args>
-  				@dickle_talk This is version 0.36.
+  				@dickle_talk This is version 0.38.
 				@dickle_airquotes Test.
 				@dickle_explaining Test.
 				@dickle_fingerguns Test.
@@ -262,7 +262,7 @@ safe than sorry.-->
   		</action>
 			<action command="changeRoom" name="Move.">
 				<args>
-					booth,1010,2400
+					lift,600,800
 				</args>
 			</action>
 	</character>
