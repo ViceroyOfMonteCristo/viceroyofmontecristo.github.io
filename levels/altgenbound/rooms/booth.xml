@@ -34,10 +34,9 @@
 
 It’d be nice to lay down, get some rest and maybe ev--
 			</args>
-		<sprite name="cutscene" x='1000' y='2200' width='650' height='450'>
+		<sprite name="cutscene" x='600' y='1800' depthing='3'>
 			<animation sheet='cutscene'/>
 		</sprite>
-		</action>
 		<action command='talk'>
 			<args>@! Before you can finish your thoughts your eyes bear witness to something you weren’t at all expecting.
 
@@ -64,7 +63,7 @@ It’s then you realize that once again, you have more walking to do. How fun.
 		<action command='removeSprite'>
         	<args>cutscene,booth</args>
 	</action>
-			
+	</action>	
 	</trigger>
 	<trigger detonate='true'>
           <args>spriteProperty,char,y &lt; 1240</args>
