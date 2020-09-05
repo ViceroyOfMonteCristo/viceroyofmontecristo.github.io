@@ -1,0 +1,191 @@
+<sburb description="sisshop">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="sisshopBG" type="graphic">backgrounds/wallflower_interior/sisshop.png</asset>
+    <asset name="sisshopMap" type="graphic">backgrounds/wallflower_interior/sisshopcoll.png</asset>
+    <asset name="sisshopFG" type="graphic">backgrounds/wallflower_interior/sisshop_fg.png</asset>
+    <asset name="allay" type="graphic">objects/npcs/allaysprite2.png</asset>
+    <asset name="aster" type="graphic">objects/npcs/astersprite.png</asset>
+    <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
+    <asset name="prospitan2" type="graphic">objects/npcs/prospitan2sprite.png</asset>
+    <asset name="male" type="graphic">objects/npcs/malesprite.png</asset>
+  </assets>
+  <rooms>
+	<room name='sisshop' walkableMap='sisshopMap' mapScale="1">
+	  <sprite name='sisshopBG'>
+	    <animation sheet='sisshopBG'/>
+	  </sprite>
+	  <sprite name="sisshopFG" depthing="2">
+		<animation sheet="sisshopFG" />
+	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,411,627,465,589</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/houses.xml,houses,1065,714</args>
+			</action>
+  	</trigger>
+	</triggers>
+	<sprite name='maleplace' x='362' y='542' width='30' height='60' collidable='true'>
+	  <animation sheet='male' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@! Gurl ernyyl qb znxr n ybg bs gurfr cyhfuvrf, zl xvqf ybir rz ohg v qba’g ernyyl frr gur nccrny...
+
+Gurl nyy whfg fbegn ybbx gur fnzr gb zr, gurl gryy zr gurl znxr gurz onfrq bss enaqbz crbcyr gurl frr ohg v whfg qba’g ohl vg.
+
+Yvxr gurer’f ab jnl jr nyy ybbx guvf vqragvpny, evtug?
+
+		</args>
+		</action>
+	</sprite>
+	<sprite name='allayPlace' x='455' y='470' width='114' height='84' collidable='true'>
+          <animation sheet='allay' x='-60' y='-50'/>
+		<action command='talk' name='Talk to Shop Clerk.'>
+		<args>
+			@allay_talk ???: hello there! Welcome to the allay aster plushie parlor!
+@allay_talk ???: I’m Allay and she’s Aster!
+@allay_talk Allay: what can we help you with today!
+@dickle_talk Dickle: hallo! This is a pretty nice place you got here! 
+@dickle_confused Dickle: though uh shouldn’t you have like an “and” in the name?
+@allay_flustered Allay: about that we sorta uhhh…
+@allay_flustered Allay: how do i put this...
+@aster_talk: Aster: We ran out of A’s!
+@allay_aster Allay: get back to work aster or we’ll never get all these orders finished in time!
+@aster_talk Aster: alright but we’re swapping places after this one remember!
+@allay_aster Allay: i know i know.
+@allay_think Allay: now where was i?
+@allay_talk Allay: oh yeah! You two are tourists right? you gotta be!
+@dickle_talk Dickle: uhhh yeah sure i guess you could say that! though it’s more of a business sorta trip heh 
+@allay_talk Allay: ooooo if you don’t mind me asking, what sort of business is it?
+@dickle_talk Dickle: i’m sorta in the process of figuring that out myself but i think it’s pretty important
+@allay_talk Allay: well whatever kind of business it is i wish you the best of luck with it!
+@allay_talk Allay: now is there anything you’d like?
+@dickle_talk Dickle: uhhhhh i’m not sure! what do you guys sell here
+@aster_talk Aster: right what it says on the tin baby! Plush and plush accessories all day every day!
+@allay_aster Allay: Aster….
+@allay_flustered Allay: sorry about her she gets rowdy when she works the back
+@allay_talk Allay: we mostly make and sell our own plushies here!
+@dickle_excited Dickle: you make all these by hand?!
+@dickle_excited Dickle: that’s pretty cool!
+@aster_talk Aster: you bet your ass it is! hey Allay these are the coolest customers we’ve gotten in weeks!
+@allay_aster Allay: Aster! what did i tell you about using that kind of language in the workplace!
+@aster_talk Aster: sorry “boss” hehehehhehehe
+@allay_flustered Allay: again i’m so sorry about her i don’t know why she’s like this….
+@dickle_talk Dickle: it’s all good i’m used to that kinda talk anyway!
+@dickle_talk Dickle: anyway i’d love to get a plush but i’m sadly out of cash.
+@allay_talk Allay: awwww that’s too bad
+@allay_talk Allay: still feel free to look around! touching the merchandise is free after all! the only thing that costs money is taking it home!
+@allay_talk Allay: that and getting a custom made plush!
+@dickle_excited Dickle: whoa really?!
+@allay_talk Allay: mhm! actually most of our business comes from making custom plushies for people!
+@allay_talk  Allay: it’s a real hit with the kids and the tourists too! 
+@dickle_excited Dickle: that’s awesome!
+@dickle_talk Dickle: well if i ever do get some cash i’ll be sure to come back and take you up on that offer!
+@allay_flustered Allay: that would be lovely! It’d be so nice to work off of someone who looks so well “different” 
+@allay_talk Allay: actually if you don’t mind me asking whats your name?
+@dickle_talk Dickle: just call me Dickle! It’s what everyone calls me
+@allay_talk Allay: well it was a pleasure to meet you dickle feel free to come back anytime!
+@allay_talkAster: later dickie!
+		</args>
+		</action>
+	</sprite>
+	<sprite name='asterPlace' x='750' y='490' width='30' height='102'>
+          <animation sheet='aster' x='-10' y='-10'/>
+	</sprite>
+	<sprite name='dersite1Place' x='576' y='430' width='30' height='92' collidable='true'>
+          <animation sheet='dersite1' x='-10' y='-10'/>
+		<action command='talk' name='Listen in.'>
+		<args>
+		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
+
+@! #ebb719 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #ebb719 too ##
+
+@! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
+
+@! #ebb719 I mean there’s lots of nice local places in #674ea7 ONYX ## #ebb719 you just gotta know where to look. ##
+
+@! #ebb719 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+
+@! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
+
+@! #ebb719 What?! What’s so scary about a dude living his dre- ##
+
+@! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
+
+@! #ebb719 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+
+@! #ebb719 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+
+@! #ebb719 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+
+@! #ebb719 And lemme tell you, they learned how to make that thing crash proof. ##
+
+@! #ebb719 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #ebb719 and went “shit could that happen to us? We should do something about that”  ##
+
+@! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
+
+@! #ebb719 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+
+@! #ebb719 These guys don’t strike me as the type to have realtors or whatever ##
+
+@! #9900ff ... ##
+
+@! #ebb719 Cheer up bud, i’m telling you it isn’t that bad ##
+
+@! #ebb719 Besides, anything’s better than the ## Battlefield, #ebb719 right? ##
+
+@! #9900ff You got that right. ##
+		</args>
+		</action>
+	</sprite>
+	<sprite name='prospitan2Place' x='610' y='430' width='30' height='92' collidable='true'>
+          <animation sheet='prospitan2' x='-10' y='-10'/>
+		<action command='talk' name='Listen in.'>
+		<args>
+		@! #9900ff I love shopping in quaint little places like this, there’s really nothing else like it! ##
+
+@! #ebb719 Yeah it’s pretty nice but you could totally get stuff like this in #674ea7 ONYX ## #ebb719 too ##
+
+@! #9900ff No way! All the stuff over there has no soul you can totally tell it was made in like a factory or something! this stuff comes straight from the heart, you can tell from the stitching and the tags! ##
+
+@! #ebb719 I mean there’s lots of nice local places in #674ea7 ONYX ## #ebb719 you just gotta know where to look. ##
+
+@! #ebb719 You know i actually know a guy that does cybernetics stuff over there, he doesn’t need a permit to do it or anything! He just decided “hey i got nothing better to do, i worked with mechs and ships before, i’m gonna take that experience and try grafting that stuff into people” ##
+
+@! #9900ff How’s that supposed to make me feel better about anything over there?! That’s horrifying! ##
+
+@! #ebb719 What?! What’s so scary about a dude living his dre- ##
+
+@! #9900ff The fact that he can just do that without getting a certificate or something first?! I mean seriously it’s one thing to be selling stuff without some license or something but that’s just taking it too far! ##
+
+@! #ebb719 That’s just what it’s like over there man, everybody really just minds their own business unless you mess with em, ##
+
+@! #ebb719 Nobody’s gonna be asking to see your “diploma” or whatever when they go to get a robot arm or something. ##
+
+@! #ebb719 They’re gonna ask “hey how much is this gonna cost” and you’re gonna have to be the guy who strikes the right balance being too cheap or being so expensive that the only way you’d ever feasibly afford em would be to crash the stock market. ##
+
+@! #ebb719 And lemme tell you, they learned how to make that thing crash proof. ##
+
+@! #ebb719 I’m telling you someone over there running the place saw #cc0000 that one movie scene about the salamander stock crash ## #ebb719 and went “shit could that happen to us? We should do something about that”  ##
+
+@! #9900ff Yeah i’m never going back to #674ea7 ONYX ##
+
+@! #ebb719 Hey i ain’t gonna stop you but do you really have the cash to buy a house here? Heck i’m not even sure if you could buy a house here. ##
+
+@! #ebb719 These guys don’t strike me as the type to have realtors or whatever ##
+
+@! #9900ff ... ##
+
+@! #ebb719 Cheer up bud, i’m telling you it isn’t that bad ##
+
+@! #ebb719 Besides, anything’s better than the ## Battlefield, #ebb719 right? ##
+
+@! #9900ff You got that right. ##
+		</args>
+		</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>

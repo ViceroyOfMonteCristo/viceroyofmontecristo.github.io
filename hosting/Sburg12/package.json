@@ -1,0 +1,11 @@
+{
+  "name": "sburg",
+  "scripts": {
+    "start": "node_modules/http-server/bin/http-server projects",
+    "build": "./build.sh"
+  },
+  "dependencies": {
+    "http-server": "^0.11.1",
+    "jsmin": "^1.0.1"
+  }
+}

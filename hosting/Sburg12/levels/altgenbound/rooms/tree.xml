@@ -1,0 +1,127 @@
+<sburb description="tree">
+  <dependencies>
+	<dependency>rooms/forest.xml</dependency>
+  </dependencies>
+  <assets>
+    <asset name="treeFG" type="graphic">backgrounds/tree/foreground.png</asset>
+    <asset name="treeBG" type="graphic">backgrounds/tree/background.png</asset>
+    <asset name="treeMap" type="graphic">backgrounds/tree/collision-map.png</asset>
+    <asset name="moveTrigger" type="graphic">objects/misc/movetrigger.png</asset>
+  </assets>
+  <rooms>
+    <room name="tree" walkableMap="treeMap" mapScale="1">
+      <sprite name="treeFG" depthing="2">
+        <animation sheet="treeFG" />
+      </sprite>
+      <sprite name="treeBG">
+        <animation sheet="treeBG" />
+      </sprite>
+    <triggers>
+	<trigger>
+  		<args>inBox2,char,300,1250,450,1200</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/forest.xml,forest,2125,1000</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,300,650,450,600</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/cave.xml,cave,1015,2475</args>
+			</action>
+  	</trigger>
+      <trigger detonate='true'>
+        <args>spriteProperty,char,y &lt; 800</args>
+        <action sprite='dickle' command='talk'>
+	  <args>
+		@dickle_glasses Dickle: oh god is this it
+		@vrachne_talk Vrachne: judging by the fact that it’s a big tree, i’d say yes.
+		@dickle_excited Dickle: oh thank GOD FINALLY
+		@dickle_talk Dickle: this thing sure looks different up close eh vrachne?
+		@vrachne_explaining Vrachne: distance is a hell of a thing, the glasses probably didn’t help that much either.
+		@dickle_talk Dickle: you got that right
+		@dickle_smug Dickle: thing looks like a modern art sculpture hehehehe
+		@dickle_smug Dickle: whole lot of nothing around here though, are you sure this is the place we’re looking for?
+		@vrachne_armup Vrachne: trees don’t just grow like this dickle, someone or something must’ve made it like this.
+		@vrachne_armup Vrachne: maybe you should try actually looking around before declaring there’s “nothing” here.
+		@dickle_talk Dickle: alright alright fine let’s look around then
+	  </args>
+	</action>
+	<action sprite='!dickle' command='talk'>
+	  <args>
+		@vrachne_talk Vrachne: this is it, we’re here.
+		@vrachne_talk Vrachne: took us long enough.
+		@dickle_excited Dickle: woooooo finally!
+		@dickle_glasses Dickle: uhhhhh….
+		@dickle_glasses Dickle: hey are you sure this is the place vrachne? there seems to be a whole lot of nothing aside from the big modern art sculpture
+		@vrachne_peeved Vrachne: Dickle. it’s a giant tree with webs on it, in the middle of its own little important looking pond in an open clearing.
+		@vrachne_peeved Vrachne: this is the most obvious environmental sign posting i’ve ever seen.
+		@vrachne_amrup Vrachne: there’s gonna be something around here that’ll lead us where we need to go, probably a switch or maybe a hole who knows.
+		@vrachne_talk Vrachne: let’s look around.
+		@dickle_talk Dickle: alright lead the way!
+	  </args>
+	</action>
+      </trigger>
+      <trigger detonate='true'>
+	<args>spriteProperty,char,y &lt; 675</args>
+	<action sprite='dickle' command='talk'>
+	  <args>
+		@dickle_happy Dickle: oh hey wait there’s a hole here vrachne!
+		@vrachne_peeved Vrachne: i’m right behind you dickle you don’t need to yell
+		@dickle_talk Dickle: right, sorry.
+		@vrachne_peeved Vrachne: told you there was something here.
+		@dickle_flustered Dickle: yeah yeah you don’t have to rub it in.
+		@vrachne_smug Vrachne: oh i know, but i like doing it anyway.
+		@vrachne_smug Vrachne: it helps people learn important lessons!
+		@vrachne_smugshrug Vrachne: lessons like “how to actually use your eyes to see very obvious things”
+		@vrachne_smugcrossed Vrachne: which is a pretty niche lesson i do admit, but obviously it’s helped you out (::.
+		@dickle_angryflustered Dickle: Verpiss Dich! my glasses are all foggy, i’m tired and the tree is all one color! It all blended together!
+		@dickle_angryflustered Dickle: can we just get in this hole already?!
+		@vrachne_chuckle Vrachne: ahueahueahueahue 
+		@vrachne_smug Vrachne: you really do have a way with words dickle
+		@vrachne_smugairquotes Vrachne: but sure, i’d love to “explore” a hole with you.
+		@dickle_glasses Dickle: we might not like what we find in it.
+		@dickle_glasses Dickle: i learned that the hard way.
+		@vrachne_smugcross Vrachne: what’d you find in the last “weird hole” that you explored dickle? 
+		@dickle_talk Dickle: sword with porn on it.
+		@vrachne_talk Vrachne: you’re joking.
+		@dickle_talk Dickle: no really! It was my dad’s old porn sword actually
+		@dickle_explaining Dickle: it was really bad porn and i used it to make my sword that has slightly more acceptable porn on it!
+		@vrachne_laugh Vrachne: AHUEAHUEAHUEAHUEAHUE
+		@vrachne_laugh Vrachne: gosh your family sounds like an absolute “riot” dickle.
+		@dickle_talk Dickle: tell me about it! thankfully i don’t have a sister
+		@dickle_talk Dickle: shudder to think about what she’d put on a sword
+		@dickle_talk Dickle: anyway enough about me and my weird family
+		@dickle_talk Dickle: it’s time for cave explore!
+		@vrachne_smugcross Vrachne: you first, dickle.
+		@dickle_talk Dickle: wouldn’t have it any other way
+	    </args>
+	  </action>
+	<action sprite='!dickle' command='talk'>
+	  <args>
+		@dickle_sad Dickle: ugh my socks are all wet now...
+		@dickle_sad Dickle: thank god im wearing shorts.
+		@dickle_talk Dickle: hey have you found anything yet?
+		@vrachne_talk Vrachne: found it.
+		@vrachne_smug Vrachne: see? i told you there was more to this place!
+		@dickle_happy Dickle: oh niceeee 
+		@dickle_excited Dickle: it’s a hole!
+		@dickle_glasses Dickle: wait can we actually even fit in there?
+		@vrachne_armup Vrachne: i’d say it’s about the size of an overgrown spider that’s gotten the bright idea to stand on two of its legs so yes, might be a bit of a squeeze though
+		@dickle_fingerguns Dickle: alright let’s go, ladies first though eh?
+		@vrachne_peeved Vrachne: how courteous. 
+	    </args>
+	  </action>
+	</trigger>
+    </triggers>
+	<sprite name='moveTrigger'> x='350' y='625' width='50' height='50'>
+          <action command='talk' name='Enter.'>
+		<args>
+			<action command="changeRoom">
+          		<args>cave,1015,2494</args>
+			</action>
+		</args>
+       	 </action>
+	</sprite>
+    </room>
+  </rooms>
+</sburb>

@@ -1,0 +1,200 @@
+<sburb description="booth">
+  <dependencies>
+	<!--
+	<dependency>chars/squatter.xml</dependency>
+	-->
+	<dependency>chars/dersite2.xml</dependency>
+	<dependency>chars/dersite3.xml</dependency>
+	<dependency>chars/prospitan1.xml</dependency>
+	<dependency>chars/prospitan3.xml</dependency>
+	<dependency>chars/waverly.xml</dependency>
+	<dependency>chars/langley.xml</dependency>
+	<dependency>chars/log.xml</dependency>
+	<dependency>chars/allay.xml</dependency>
+	<dependency>chars/aster.xml</dependency>
+	<dependency>chars/prospitan2.xml</dependency>
+	<dependency>chars/dersite1.xml</dependency>
+	<dependency>chars/mal.xml</dependency>
+	<dependency>chars/quincy.xml</dependency>
+	<dependency>chars/tt.xml</dependency>
+	<dependency>chars/dickle.xml</dependency>
+	<dependency>chars/vrachne.xml</dependency>
+	<dependency>chars/karkat.xml</dependency> <!-- and karkat -->
+	<dependency>rooms/tree.xml</dependency>
+	<dependency>rooms/cave.xml</dependency>
+        <dependency>rooms/booth.xml</dependency>
+	<dependency>rooms/lift.xml</dependency>
+	<dependency>rooms/square.xml</dependency>
+	<dependency>rooms/shop.xml</dependency>
+	<dependency>rooms/church.xml</dependency>
+	<dependency>rooms/houses.xml</dependency>
+	<dependency>rooms/anticanon.xml</dependency>
+	<dependency>rooms/giftshop.xml</dependency>
+	<dependency>rooms/sisshop.xml</dependency>
+	<dependency>rooms/stonerhouse.xml</dependency>
+	<dependency>rooms/anticanonoutside.xml</dependency>
+  </dependencies>
+  <assets>
+    <asset name="gateopen" type="graphic">objects/misc/gateopen_object.png</asset>
+    <asset name="gateclosed" type="graphic">objects/misc/gate_object.png</asset>
+    <asset name="boothBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1.png</asset>
+    <asset name="boothFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map1_fg.png</asset>
+    <asset name="boothMap" type="graphic">backgrounds/wallflower_exterior/map1coll.png</asset>
+    <asset name="cutscene" type="graphic">backgrounds/wallflower_cutscene.png</asset>
+  </assets>
+  <rooms>
+	<room name='booth' walkableMap='boothMap' mapScale="1">
+	  <sprite name="boothFG" depthing="2">
+        <animation sheet="boothFG" />
+      </sprite>
+	  <sprite name='boothBG'>
+	    <animation sheet='boothBG'/>
+	  </sprite>
+	<sprite name="gateopen" x='865' y='806' width='330' height='352' collidable='false'>
+		<animation sheet='gateopen'/>
+	  </sprite>
+	  <sprite name="gateclosed" x='865' y='806' width='330' height='352' collidable='false'>
+		<animation sheet='gateclosed'/>
+	  </sprite>
+	
+	<triggers>
+	<trigger detonate='true'>
+	  <args>spriteProperty,char,y &gt; 0</args>
+		<action command='talk'>
+			<args>@! With a loud CLUNK the lever shifts into place and the elevator begins descending “swiftly” if your definition of swiftly is being a slow rickety piece of shit, you almost consider filing a complaint to the consort equivalent of OSHA before realizing that, One, that would be an incredibly silly thing to do, and two, You can’t write for shit.
+
+@! As you descend you begin to consider what actually awaits at the bottom of all this, with all the walking it took you to get here you hope at the very least they have a convenience store or something, maybe even a hotel!
+
+It’d be nice to lay down, get some rest and maybe ev--
+			</args>
+		<sprite name="cutscene" x='600' y='1800' depthing='3'>
+			<animation sheet='cutscene'/>
+		</sprite>
+		<action command='talk'>
+			<args>@! Before you can finish your thoughts your eyes bear witness to something you weren’t at all expecting.
+
+A sprawling city and a dazzling display of lights as far as your eyes can see, though considering the fact that you have to wear glasses to see 5 feet in front of you at any given moment, it’s probably less impressive than it sounds.
+
+
+Whatever the case you attempt to think of something to say to make the ride down less quiet but.. It’s nice to have moments of calm like this,  a sentiment your “partner” seems to share.
+
+@! It gives you time to think about other things, like the question of how they’d manage to build all this, you know in your heart that it’s all just game generated fancy scenery but it’s fun to try to give it all context.
+
+But an entire city underground just seems a bit ridiculous to put it politely.
+
+The logistics of it all is almost too much to think about, questions begin to surge like “how do they get power” and the only answer you can think of is water? you didn’t see any coming in but it could be there you guess?
+
+and where the hell is the light in this place even coming from?! you know they probably have lamps and stuff but that wouldn’t light this entire cavern would it?
+
+@! If you had to guess you’d probably say “oh the big church with the obnoxious sun on it is probably doing that” but that just seems so obvious, but then again something being obvious has never stopped it from being true has it?
+
+Eventually after you realize that all of your questions are ultimately pointless and don’t really matter that much in the grand scheme of things you finally arrive at the bottom of what could loosely be called an “elevator shaft” and exit the lift.
+
+It’s then you realize that once again, you have more walking to do. How fun.
+			</args>
+		</action>
+		<action command='removeSprite'>
+        	<args>cutscene,booth</args>
+	</action>
+	</action>	
+	</trigger>
+	<trigger detonate='true'>
+          <args>spriteProperty,char,y &lt; 1240</args>
+            <action command='talk'>
+	    <args>
+		@dickle_glasses Dickle: is this a tollbooth?
+		@quincy_gruff ???: hey!!!
+		@quincy_gruff ???: you two!
+		@quincy_gruff ???: what’s your business here?!
+		@dickle_smug Dickle: lemme handle this, i’ve got a real way with words
+		@vrachne_smug Vrachne: mhm whatever you say dickle.
+		@vrachne_smugcross Vrachne: try not to embarrass yourself too bad.
+		@dickle_smug Dickle: i’ll be fine!
+		@quincy_gruff ???: HEY! 
+		@quincy_gruff ???: is one of you gonna answer or what?!
+		@dickle_talk Dickle: sorry sorry i was just talking to my friend here
+		@dickle_talk Dickle: is this wallflower?
+		@quincy_armscrossed ???: yeah it is, you can see the sign over there
+		@quincy_armscrossed ???: you two tourists?
+		@dickle_talk Dickle: i don’t think so, why?
+		@quincy_armscrossed ???: we’ve gotten a lot of tourists round here recently
+		@quincy_armscrossed ???: pitch black and pitch white you know
+		@quincy_armscrossed ???: don’t know where they came from
+		@dickle_explaining Dickle: ahhhh
+		@dickle_explaining Dickle: me and my friend here aren’t tourists we’re looking for something related to the sun i think!
+		@dickle_explaining Dickle: we met a nice guy who told us to come here, he went by da-niver i think
+		@quincy_talk ???: that weirdo with the speech impediment?
+		@dickle_talkcrossed Dickle: that’s not a very nice thing to say about him but yeah that guy!
+		@quincy_talk ???: oh no don’t worry we’re good pals, he likes to riff on me for working at the gate so i like to riff on him by making fun of the silly way he talks
+		@dickle_talk Dickle: ohhhhh you sound like good buds
+		@quincy_talk???: ahahha yeah
+		@quincy_friendly ???: well any friend of da-niver is a friend of mine!
+		@quincy_friendly ???: i’m Quincy, nice to meet you folk!
+		@dickle_happy Dickle: nice to meet you quincy
+		@dickle_explaining Dickle: i’m Dickle and this is Vrachne!
+		@vrachne_peevedcross Vrachne: ...
+		@dickle_talk Dickle: she uhhh doesn’t talk much
+		@dickle_talk Dickle: anyway, this is a beautiful town you got here! 
+		@quincy_friendly Quincy: it sure is, guess that’s why we’re getting so many tourists now!
+		@quincy_friendly Quincy: you two said you were looking for something sun related yeah?
+		@dickle_explaining Dickle: yep we’ve got important business relating to it, i think.
+		@quincy_friendly Quincy: you must be looking for the #f6b26b Church of Lindas ## then! it’s the best church on the planet!
+		@quincy_friendly Quincy: Mostly because it’s the only one that’s actually still running heh!
+		@dickle_excited Dickle: yeah that sounds like the place!
+		@quincy_talk Quincy: it’s the big building up north you can’t miss it! 
+		@quincy_talk Quincy: it’s run by some great people, i’m sure they’ll be able to help you out with whatever you need!
+		@dickle_excited Dickle: gotcha! Thanks for all your help quincy!
+		@quincy_talk Quincy: no problem! just promise me something okay?
+		@quincy_talk Quincy: please don’t destroy anyone’s property 
+		@quincy_talk Quincy: most of the tourist people have been pretty nice but some are just… lets just say they’re TOO MUCH
+		@quincy_talk Quincy: if anything else gets broken i might be out of a job!
+		@dickle_talk Dickle: we’ll be on our best behaviour i promise!
+		@quincy_friendly Quincy: alright thats all i needed to hear
+		@quincy_friendly Quincy: let me get that gate for you
+	    </args>
+	<action command='playSound' noDelay='true'>
+            <args>openSound</args>
+          </action>
+	<action command='removeSprite'>
+        	<args>gateclosed,booth</args>
+	</action>
+	</action>
+	</trigger>
+	<trigger detonate='true'>
+		<args>spriteProperty,char,y &lt; 1000</args>
+		<action command="talk">
+		<args>
+		@quincy_friendly Quincy: hope you have a good time in town! Lindas be with you!
+		@dickle_happy Dickle: thanks man! Lindas be with you too
+		@dickle_explaining Dickle: Whatever that means.
+		</args>
+		</action>
+	</trigger>
+	<trigger>
+  		<args>inBox2,char,880,45,1140,0</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1008,2370</args>
+			</action>
+  	</trigger>
+	</triggers>
+	<character class='dickle' x='1010' y='2400'>
+		<action command='follow' sprite='vrachne' name='Follow.'>
+  			<args>dickle,vrachne</args>
+  			<action command='removeAction' noDelay='true'>
+  				<args>dickle,Follow.</args>
+  			</action>
+		</action>
+		<action command="talk" name="Ask a question.">
+				<args>
+					@dickle_think Dickle: What should I ask?		
+				</args>
+				<action command="presentAction">
+					<args>
+					</args>
+				</action>
+		</action>
+  	</character>
+        </room>
+  </rooms>
+</sburb>
+		
