@@ -72,8 +72,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command="changeRoom">
-		<args>booth,1010,2400</args>
+			<action command="goBack">
 	  	</action>
 			</action>
 			<action command='talk' name="Don't Answer.">
@@ -102,8 +101,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command="changeRoom">
-		<args>booth,1010,2400</args>
+			<action command="goBack">
 	  	</action>
 			</action>
 	    </args>
