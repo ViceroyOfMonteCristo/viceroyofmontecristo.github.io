@@ -5,6 +5,7 @@
     <asset name="liftBG" type="graphic">backgrounds/cave/lift_map.png</asset>
     <asset name="liftMap" type="graphic">backgrounds/cave/liftColl.png</asset>
     <asset name="lift_object" type="graphic">objects/misc/lift_object.png</asset>
+    <asset name="cutscene" type="graphic">backgrounds/wallflower_cutscene.png</asset>
   </assets>
   <rooms>
 	<room name='lift' walkableMap='liftMap' mapScale="1">
@@ -71,10 +72,41 @@
 				@vrachne_talk Vrachne: but we’ll save fighting talk for later, we should really get on with this don’t you think?
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
+				@! With a loud CLUNK the lever shifts into place and the elevator begins descending “swiftly” if your definition of swiftly is being a slow rickety piece of shit, you almost consider filing a complaint to the consort equivalent of OSHA before realizing that, One, that would be an incredibly silly thing to do, and two, You can’t write for shit.
+
+@! As you descend you begin to consider what actually awaits at the bottom of all this, with all the walking it took you to get here you hope at the very least they have a convenience store or something, maybe even a hotel!
+
+It’d be nice to lay down, get some rest and maybe ev--
 			  </args>
+				<sprite name='cutscene' x='520' y='400' depthing='3'>
+				<animation sheet='cutscene'/>
+				</sprite>
+			<action command='talk'>
+			<args>@! Before you can finish your thoughts your eyes bear witness to something you weren’t at all expecting.
+
+A sprawling city and a dazzling display of lights as far as your eyes can see, though considering the fact that you have to wear glasses to see 5 feet in front of you at any given moment, it’s probably less impressive than it sounds.
+
+
+Whatever the case you attempt to think of something to say to make the ride down less quiet but.. It’s nice to have moments of calm like this,  a sentiment your “partner” seems to share.
+
+@! It gives you time to think about other things, like the question of how they’d manage to build all this, you know in your heart that it’s all just game generated fancy scenery but it’s fun to try to give it all context.
+
+But an entire city underground just seems a bit ridiculous to put it politely.
+
+The logistics of it all is almost too much to think about, questions begin to surge like “how do they get power” and the only answer you can think of is water? you didn’t see any coming in but it could be there you guess?
+
+and where the hell is the light in this place even coming from?! you know they probably have lamps and stuff but that wouldn’t light this entire cavern would it?
+
+@! If you had to guess you’d probably say “oh the big church with the obnoxious sun on it is probably doing that” but that just seems so obvious, but then again something being obvious has never stopped it from being true has it?
+
+Eventually after you realize that all of your questions are ultimately pointless and don’t really matter that much in the grand scheme of things you finally arrive at the bottom of what could loosely be called an “elevator shaft” and exit the lift.
+
+It’s then you realize that once again, you have more walking to do. How fun.
+			</args>
 			<action command="changeRoom">
 		<args>booth,1010,2400</args>
 	  	</action>
+		</action>
 			</action>
 			<action command='talk' name="Don't Answer.">
 			  <args>
@@ -101,10 +133,41 @@
 				@vrachne_talk Vrachne: but we’ll save fighting talk for later, we should really get on with this don’t you think?
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
+				@! With a loud CLUNK the lever shifts into place and the elevator begins descending “swiftly” if your definition of swiftly is being a slow rickety piece of shit, you almost consider filing a complaint to the consort equivalent of OSHA before realizing that, One, that would be an incredibly silly thing to do, and two, You can’t write for shit.
+
+@! As you descend you begin to consider what actually awaits at the bottom of all this, with all the walking it took you to get here you hope at the very least they have a convenience store or something, maybe even a hotel!
+
+It’d be nice to lay down, get some rest and maybe ev--
 			  </args>
+		<sprite name='cutscene' x='520' y='400' depthing='3'>
+				<animation sheet='cutscene'/>
+				</sprite>
+			<action command='talk'>
+			<args>@! Before you can finish your thoughts your eyes bear witness to something you weren’t at all expecting.
+
+A sprawling city and a dazzling display of lights as far as your eyes can see, though considering the fact that you have to wear glasses to see 5 feet in front of you at any given moment, it’s probably less impressive than it sounds.
+
+
+Whatever the case you attempt to think of something to say to make the ride down less quiet but.. It’s nice to have moments of calm like this,  a sentiment your “partner” seems to share.
+
+@! It gives you time to think about other things, like the question of how they’d manage to build all this, you know in your heart that it’s all just game generated fancy scenery but it’s fun to try to give it all context.
+
+But an entire city underground just seems a bit ridiculous to put it politely.
+
+The logistics of it all is almost too much to think about, questions begin to surge like “how do they get power” and the only answer you can think of is water? you didn’t see any coming in but it could be there you guess?
+
+and where the hell is the light in this place even coming from?! you know they probably have lamps and stuff but that wouldn’t light this entire cavern would it?
+
+@! If you had to guess you’d probably say “oh the big church with the obnoxious sun on it is probably doing that” but that just seems so obvious, but then again something being obvious has never stopped it from being true has it?
+
+Eventually after you realize that all of your questions are ultimately pointless and don’t really matter that much in the grand scheme of things you finally arrive at the bottom of what could loosely be called an “elevator shaft” and exit the lift.
+
+It’s then you realize that once again, you have more walking to do. How fun.
+			</args>
 			<action command="changeRoom">
 		<args>booth,1010,2400</args>
 	  	</action>
+		</action>
 			</action>
 	    </args>
 	  </action>
