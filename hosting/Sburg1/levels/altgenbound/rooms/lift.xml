@@ -72,8 +72,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command="goBack">
-	  	</action>
+			<action command='fadeOut'/>
 			</action>
 			<action command='talk' name="Don't Answer.">
 			  <args>
@@ -101,8 +100,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command="goBack">
-	  	</action>
+			<action command='fadeOut'/>
 			</action>
 	    </args>
 	  </action>
