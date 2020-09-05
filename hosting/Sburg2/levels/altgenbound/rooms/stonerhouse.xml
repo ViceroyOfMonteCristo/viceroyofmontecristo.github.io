@@ -1,0 +1,62 @@
+<sburb description="stonerhouse">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="stonerhouseBG" type="graphic">backgrounds/wallflower_interior/stonerhouse.png</asset>
+    <asset name="stonerhouseMap" type="graphic">backgrounds/wallflower_interior/stonerhousecoll.png</asset>
+    <asset name="langley" type="graphic">objects/npcs/langleysprite.png</asset>
+    <asset name="waverly" type="graphic">objects/npcs/waverlysprite.png</asset>
+  </assets>
+  <rooms>
+	<room name='stonerhouse' walkableMap='stonerhouseMap' mapScale="1">
+	  <sprite name='stonerhouseBG'>
+	    <animation sheet='stonerhouseBG'/>
+	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,380,334,346,292</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/houses.xml,houses,935,909</args>
+			</action>
+  	</trigger>
+	</triggers>
+	<sprite name='langleyPlace' x='600' y='310' width='40' height='90' collidable='true'>
+          <animation sheet='langley' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+		@dickle_talk Dickle: hey there
+@langley_talk ???: .....
+@dickle_explaining Dickle: uhhhhh is it alright for me to be in here
+@langley_talk ???: dunno, ask her, she owns the place. 
+@langley_talk  ???: she gets pissy if i lock the door.
+@dickle_explaining Dickle: uh… okay.
+		</args>
+		</action>
+	</sprite>
+	<sprite name='waverlyPlace' x='790' y='310' width='40' height='90' collidable='true'>
+          <animation sheet='waverly' x='-20' y='-20'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+		@dickle_awkward Dickle: uhhh heyyyyyy..
+@waverly_talk ???: hey man, how’s it hangin
+@dickle_flustered Dickle: i’m doin good i guess, is it alright for me to be in here
+@waverly_talk ???: yeah man you’re goooooood
+@waverly_talk ???: it’s an “open house”
+@waverly_talk ???: because the house is open hehehehehehehe get it? 
+@waverly_talk ???: like usually an open house is what people call it when they’re sellin a house but i’m not sellin our house it’s just open hehehehe
+@dickle_talk Dickle: that’s a pretty solid joke
+@waverly_talk ???: thanks man
+@waverly_talk ???: yeah feel free to walk around if you wanna just don’t take anything kayyyyyy?
+@waverly_talk ???: i’m Waverly by the by
+@dickle_happy Dickle: it’s nice to meet ya waverly, i’m Dickle!
+@waverly_talk Waverly: that name’s wildddd mannn haha
+@dickle_talk Dickle: yeah i get that a lot heheheheh
+@waverly_talk Waverly: hahahahaha
+@waverly_talk Waverly: yeah man you can walk around and stuff just don’t mind my “roomy” he’s uptight hehehe
+@dickle_talk Dickle: thanks for the heads up i’ll keep it in mind
+		</args>
+		</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>

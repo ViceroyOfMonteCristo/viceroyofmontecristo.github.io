@@ -1,0 +1,37 @@
+<sburb description='quincy'>
+
+<classes>
+	<animation class='quincy-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='quincy' name='quincy' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='quincySheet' state='walkFront' facing='Front'></character>
+	
+	<action class='beQuincy' name='Be Quincy.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>quincy</args>
+				<action command='playSong' noDelay='true'>
+					<args>quincySong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='quincySheet' type='graphic'>chars/dickle/dickle.png</asset>
+	<asset name='quincySong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='quincy_talk' type='graphic'>dialogs/quincy/QuincyReg.png</asset>
+  <asset name='quincy_armscrossed' type='graphic'>dialogs/quincy/QuincyArmsCrossed.png</asset>
+  <asset name='quincy_friendly' type='graphic'>dialogs/quincy/QuincyFriendly.png</asset>
+  <asset name='quincy_gruff' type='graphic'>dialogs/quincy/QuincyGruff.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  		<animation name='quincy_talk' class='quincy-dialog' sheet='quincy_talk' length='2'/>
+      <animation name='quincy_armscrossed' class='quincy-dialog' sheet='quincy_armscrossed' length='2'/>
+      <animation name='quincy_friendly' class='quincy-dialog' sheet='quincy_friendly' length='2'/>
+      <animation name='quincy_gruff' class='quincy-dialog' sheet='quincy_gruff' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

@@ -1,0 +1,305 @@
+<!-- This file describes the first room. Normally I break each room into its
+own self-contained file. This isn't fundamentally necessary, but it's very
+natural. It also allows you to very easily load content only once a room 
+is entered for the first time. -->
+<sburb description="forest">
+
+<dependencies>
+	<dependency>chars/dickle.xml</dependency>
+	<dependency>chars/vrachne.xml</dependency>
+	<dependency>chars/quincy.xml</dependency>
+	<dependency>chars/karkat.xml</dependency> <!-- and karkat -->
+	<dependency>rooms/tree.xml</dependency>
+</dependencies>
+
+<assets>
+	<!-- This is the first half of a big optimization. Some people have a lot of
+	trouble rendering big images, even if only a small part is being requested. While
+	in development we often use the "full" image, but once we go into production we
+	slice up all the big background and foreground images into a grid so that it's
+	easier for end users' computer to pick out the parts we want.
+	All the images except for the bottom-most and right-most ones are 500x500. I
+	find that's a good compromise for performance/complexity. 
+	
+	utils/image_slice/ has a utility for doing this automatically. -->
+
+	<!--
+  <asset name='firstRoomBG_0_0' type='graphic'>backgrounds/slices/firstRoomBG_0_0.png</asset>
+	<asset name='firstRoomBG_0_1' type='graphic'>backgrounds/slices/firstRoomBG_0_1.png</asset>
+	<asset name='firstRoomBG_0_2' type='graphic'>backgrounds/slices/firstRoomBG_0_2.png</asset>
+	<asset name='firstRoomBG_1_0' type='graphic'>backgrounds/slices/firstRoomBG_1_0.png</asset>
+	<asset name='firstRoomBG_1_1' type='graphic'>backgrounds/slices/firstRoomBG_1_1.png</asset>
+	<asset name='firstRoomBG_1_2' type='graphic'>backgrounds/slices/firstRoomBG_1_2.png</asset>
+	<asset name='firstRoomBG_2_0' type='graphic'>backgrounds/slices/firstRoomBG_2_0.png</asset>
+	<asset name='firstRoomBG_2_1' type='graphic'>backgrounds/slices/firstRoomBG_2_1.png</asset>
+	<asset name='firstRoomBG_2_2' type='graphic'>backgrounds/slices/firstRoomBG_2_2.png</asset>
+	<asset name='firstRoomBG_3_0' type='graphic'>backgrounds/slices/firstRoomBG_3_0.png</asset>
+	<asset name='firstRoomBG_3_1' type='graphic'>backgrounds/slices/firstRoomBG_3_1.png</asset>
+	<asset name='firstRoomBG_3_2' type='graphic'>backgrounds/slices/firstRoomBG_3_2.png</asset>
+	-->
+	
+	<!-- note that there are missing images in the FG where transparent regions
+	have been discarded. This is handled correctly! -->
+
+	<!--
+	<asset name='firstRoomFG_1_0' type='graphic'>backgrounds/slices/firstRoomFG_1_0.png</asset>
+	<asset name='firstRoomFG_1_2' type='graphic'>backgrounds/slices/firstRoomFG_1_2.png</asset>
+	<asset name='firstRoomFG_2_0' type='graphic'>backgrounds/slices/firstRoomFG_2_0.png</asset>
+	<asset name='firstRoomFG_2_2' type='graphic'>backgrounds/slices/firstRoomFG_2_2.png</asset>
+	<asset name='firstRoomFG_3_0' type='graphic'>backgrounds/slices/firstRoomFG_3_0.png</asset>
+	<asset name='firstRoomFG_3_1' type='graphic'>backgrounds/slices/firstRoomFG_3_1.png</asset>
+	<asset name='firstRoomFG_3_2' type='graphic'>backgrounds/slices/firstRoomFG_3_2.png</asset>
+	-->
+
+	<asset name='firstRoomFG' type='graphic'>backgrounds/forest/foreground-2x.png</asset>
+	<asset name='firstRoomBG' type='graphic'>backgrounds/forest/background-2x.png</asset>
+	
+	<!-- The map is a special black-and-white image describing walkable areas in
+	a room. White pixels are walkable, black are unwalkable. This actually consumes
+	a very large amount of memory to use, so we keep the scaled down. I find 50%
+	scale is a good compromise for performance/accuracy. However in sufficiently
+	large rooms this is still too much, and 25% scale in necessary. This leads to
+	a substantial sarcifice in hit-detection quality, so avoid big rooms!-->
+
+	<asset name='firstRoomMap' type='graphic'>backgrounds/forest/collision-map.png</asset>
+  
+  <!-- an item to be found in a chest, nothing special about it-->
+  <asset name='item1' type='graphic'>objects/items/item1.png</asset>
+</assets>
+
+<!-- We create the sprite for this item outside of everything else
+because by default it isn't anywhere at all. We just want to be able to
+access it at some point in the future. This is a very common pattern. We
+do this for anything that will "eventually" be added to a room.
+
+Note: depthing='2' puts this in front of everything, including foreground elements! -->
+<sprite name='item1' depthing='3'>
+	<animation sheet='item1' x='-30' y='-30'/>
+</sprite>
+
+<!-- We wrap all room tags in the rooms tag. This is mostly useless since it's
+not good practice to keep multiple rooms in one file, but hey, better
+safe than sorry.-->
+<rooms>
+	<!-- Here we describe our room, note that here we are using the "map" we 
+	loaded in earlier. Also note the mapScale variable specifying how much this map
+	should be scaled up for it to reflect the actual room size. We also derive
+	the dimensions of the room from this, which is used to specify the area the
+	camera can see. However width and height can be explicitly
+	specified here if need be. The walkableMap is theoretically optional, but
+	it's incredibly useful and easy to use. -->
+  <room name='firstRoom' walkableMap='firstRoomMap' mapScale='2'>
+  
+  	<!-- here we drop in our character. Since we specified everything in 
+  	chars/meenah.xml, we don't have to do much here. We just need to specify
+  	her location. Note that class='meenah' will fill in all the values we
+  	didn't specify using the class in chars/meenah.xml, including any
+  	internal tags that may have been part of the class. Template classes
+  	are a great way to seperate logic and content, as well as recycle common
+  	patterns. -->
+  	<character class='dickle' x='692' y='2056'>
+  		<action class='beDickle'/>
+  	</character>
+  
+  	<character class='karkat' x='670' y='1826'>
+  		<action class='beKarkat'/>
+  		<action command='talk' name='Dickle talksprite test.'>
+  			<args>
+  				@dickle_talk Hey what're you doing in my sample. 
+  				@dickle_airquotes This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@dickle_explaining Hey what're you doing in my sample. 
+  				@dickle_fingerguns This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@dickle_flustered Hey what're you doing in my sample. 
+  				@dickle_think This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@dickle_glasses Hey what're you doing in my sample. 
+  				@dickle_tears This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@dickle_happy Hey what're you doing in my sample. 
+  				@dickle_sad This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+  				@karkat_talk what
+  				@dickle_talk%twitterBox ouuuuuuut
+  			</args>
+  		</action>
+			<action command='talk' name='Vrachne talksprite test.'>
+				<args>
+  				@vrachne_talk Hey what're you doing in my sample. 
+  				@vrachne_airquotes This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@vrachne_armup Hey what're you doing in my sample. 
+  				@vrachne_eye This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@vrachne_horror Hey what're you doing in my sample. 
+  				@vrachne_shrug This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+				</args>
+			</action>
+			<action command='talk' name='Quincy talksprite test.'>
+				<args>
+					@quincy_armscrossed Hey what're you doing in my sample. 
+  				@quincy_friendly This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+					@quincy_gruff Hey what're you doing in my sample. 
+  				@quincy_talk This is my sample I swear to god I will fight you. Get out. Get ouuuuuut.
+				</args>
+			</action>
+  	</character>
+
+		<character class='karkat' name='dialogueTest' x='600' y='2020'>
+			<action command='talk' name='Dialogue test.'>
+				<args>
+					@karkat_talk This is a dialogue test.
+				</args>
+				<action command='presentAction'>
+					<args>
+						<action command='talk' name='Yes.'>
+							<args>
+								@dickle_talk Yes.
+							</args>
+						</action>
+						<action command='talk' name='No.'>
+							<args>
+								@dickle_talk No.
+							</args>
+						</action>
+					</args>
+				</action>
+			</action>
+			<action command="changeRoom" name="Move.">
+				<args>
+					tree,351,1198
+				</args>
+			</action>
+		</character>
+  	
+  	<character class='vrachne' name='vrachne' x='1024' y='2038'>
+			<action class="beVrachne"/>
+  		<action command='follow' sprite='dickle' name='Follow.'>
+  			<args>vrachne,dickle</args>
+  			<action command='removeAction' noDelay='true'>
+  				<args>vrachne,Follow.</args>
+  			</action>
+  		</action>
+			<action command='unfollow' sprite='dickle' name='Stop following.'>
+				<args>vrachne</args>
+				<action command='toggleCollisions'>
+					<args>vrachne</args>
+				</action>
+			</action>
+			<action command="talk" name="Ask a question.">
+				<args>
+					@dickle_talk what should i ask about?
+				</args>
+				<action command="presentAction">
+					<args>
+						<action command="talk" name="What's being a sprite like?">
+							<args>
+								@dickle_talk hey vrachne can i ask you about some stuff real quick
+								@vrachne_talk is this about your quest again? Its really simple dickle i don’t know how you cant get it into that tiny head of yours
+								@dickle_talk no no it’s a question about you!
+								@vrachne_talk oh really now? Well go ahead then what do you wanna know about little ole me
+								@dickle_talk welllll its a pretty broad question but like, what’s being a sprite like?
+								@vrachne_talk what kind of question is that.
+								@dickle_talk i don’t know! Im trying my hardest here, i mean you’re like a kinda ghost kinda goo person so i’m just really curious about some stuff!
+								@vrachne_talk like what
+								@dickle_talk like uhhh do you have to eat! Or sleep ya know stuff like that!
+								@vrachne_talk i’ll sleep when im dead dickle and as for me having to eat
+								@vrachne_talk i don’t think im “supposed” to feel hunger but you never know how things will work out
+								@vrachne_talk things are pretty shoddy here if you couldn’t tell that already.
+								@dickle_talk huh?
+								@vrachne_talk this entire time we haven’t even run into a single underling! none. nada. ゼロ.
+								@vrachne_talk isn’t that a little weird to you?
+								@dickle_talk well i mean i just assumed we’d been really lucky so far! 
+								@dickle_talk honestly i’m kinda scared of what ya know enemies and stuff we’d run into yeah?
+								@dickle_talk because they like take after the first things we throw into the sprite thing right?
+								@vrachne_talk they’re called underlings dickle and yes they do take after whatever people throw into their kernelsprites
+								@vrachne_talk what, are you scared of getting assaulted by a long tongued poorly drawn imp? honestly the porn sword would probably scare them off or leave them too embarrassed to even fight properly HA
+								@dickle_talk it’s not that! i’m just scared of what the others are gonna put in when they get in ya know?
+								@vrachne_talk listen dickle i doubt they’ll put in anything TOO bad. If you think the worst possible thing is gonna happen every time you or someone else does something then you’ll never get anywhere
+								@dickle_talk yeah i guess
+								@dickle_talk thanks for the life advice vrachne
+								@vrachne_talk it’s on the house, this time.
+								@vrachne_talk anyway is there anything else you wanted to ask or can we finally get out of this stupid tree maze hellhole?
+							</args>
+						</action>
+						<action command="talk" name="Do you remember anything from your like parts?">
+							<args>
+								@dickle_talk oh actually i have another question
+								@dickle_talk it’s uh more personal this time if thats okay with you
+								@vrachne_talk ask away dickle i’m an open book
+								@dickle_talk well uh 
+								@dickle_talk do you have memories from like the parts that make you up? You know what i mean by that right
+								@vrachne_talk my memories are a big puddle of mush dickle, there’s some stuff that’s clear and some stuff that isn’t
+								@dickle_talk do you remember fighting any big green bad guys or maybe some weird purple haired hero and his weird snake lover person
+								@vrachne_talk yeah i do, i wouldn’t forget those fights not by a long shot.
+								@dickle_talk if you don’t mind me asking did you win those fights?
+								@vrachne_talk unfortunately i don’t remember how they ended just that i got into those fights.
+								@dickle_talk awwww that sucks
+								@vrachne_talk knowing me though i probably came out on top!
+								@vrachne_talk i’d never lose to an overgrown time traveling child or some wannabe hero and his pet snake!
+								@dickle_talk but uhhh what if you did?
+								@vrachne_talk are you doubting me dickle?
+								@dickle_talk no no it’s just that since you can’t really remember we cant know for sure right?
+								@vrachne_talk well dickle, even if i did die, it didn’t “stick”
+								@vrachne_talk it never does, i’ll always find a way back thats why im here, it’s one of those talents i told you about
+								@dickle_talk that’s a pretty busted talent vrachne
+								@vrachne_talk i suppose it is but i’m not complaining
+								@dickle_talk yeahh i guess i shouldn’t be complaining about it either
+								@dickle_talk anyway if you do remember could you tell me? I’m real curious!
+								@vrachne_talk sure, you’ll be the first to know dickle.
+								@dickle_talk sweeeeeet!
+							</args>
+						</action>
+						<action command="talk" name="What's your favorite food?">
+							<args>
+								@dickle_talk hey vrachne?
+								@vrachne_talk what.
+								@dickle_talk whats your favorite food?
+								@vrachne_talk didn’t i tell you i don’t have to eat? Or shouldn’t have to anyway
+								@dickle_talk yeah but not having to eat doesn’t mean you can’t eat stuff! You can eat for fun you know i do it all the time
+								@vrachne_talk well i guess that explains your figure heh
+								@dickle_talk hey i’m trying my hardest to lose it okay! I just really haven’t gotten out of the house much before i got into this mess
+								@vrachne_talk you’re not fooling anyone dickle
+								@vrachne_talk anyway, if i had to name a favorite food hmmmmm…. ham is pretty nice
+								@dickle_talk ham? really?
+								@vrachne_talk yes dickle, ham. whats wrong with liking ham?
+								@dickle_talk oh nothing! honestly i love a good ham sandwich especially if its like honey ham or something like that!
+								@dickle_talk any other foods you like a lot?
+								@vrachne_talk well there is something i really REALLY like, though it’s a bit out there.
+								@dickle_talk you know on second thought you don’t have to answer that!
+								@dickle_talk i have a lot of ham back at home, maybe once we’re done here we can go back and eat some sandwiches or something yeah?
+								@dickle_talk a lunch break is always important! People might say breakfast is the most important meal of the day but they just say that to make people wake up earlier and buy cereal boxes!
+								@dickle_talk its a conspiracy i tell you!
+								@vrachne_talk whatever you say dickle.
+							</args>
+						</action>
+					</args>
+				</action>
+			</action>
+  	</character>
+  	
+  	<!-- here we're adding a standard chest based on a template class found in
+  	etc/standardTemplates.xml -->
+
+  	<sprite class='chest1' name='chest1' x='400' y='2734'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest1,item1, @! You got a CAN OF TAB!
+				</args>
+			</action>
+		</sprite>
+
+   <!-- here we're adding in our BG and FG. This is the second half of our 
+   optimization. To avoid creating a dozen sprites for every single tile, we
+   specify that this image has been sliced up into tiles. Then we just specify
+   how many there are and how big they are, and the system will find all of them
+   and tile them correctly based on their names. This also makes it very easy
+   to transition from using one big image to a sliced up one. -->
+   
+   <!-- Note no depthing specification puts a sprite in the background. Not 
+   specifying coordinates also puts them at (0,0) by default (top-left corner). -->
+    <sprite name='firstRoomBG'>
+    	<animation sheet='firstRoomBG'/>
+    </sprite>
+
+		<!-- note depthing='2' is what puts this in the foreground -->
+		<sprite name='firstRoomFG' depthing='2'>
+    	<animation sheet='firstRoomFG'/>
+    </sprite>
+  </room>
+</rooms>
+</sburb>
