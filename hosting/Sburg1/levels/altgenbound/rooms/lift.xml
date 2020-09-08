@@ -76,7 +76,7 @@
 			<action command='talk'>
 				<args>
 				@! Proceed to the next page.
-				<args>
+				</args>
 			</action>
 			</action>
 			<action command='talk' name="Don't Answer.">
@@ -110,7 +110,7 @@
 			<action command='talk'>
 				<args>
 				@! Proceed to the next page.
-				<args>
+				</args>
 			</action>
 			</action>
 	    </args>
