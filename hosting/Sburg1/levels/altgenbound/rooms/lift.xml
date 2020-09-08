@@ -11,8 +11,8 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='620' y='400' width='126' height='446' collidable='true'>
-	  <animation sheet='lift_object' x='-100' y='-200'/>
+	<sprite name='lift_object' x='630' y='380' width='126' height='446' collidable='true'>
+	  <animation sheet='lift_object' x='-100' y='-220'/>
 	  <action command='talk' name='Use lift.'>
 	    <args>
 		@dickle_glasses Dickle: oh nice wood
@@ -73,9 +73,15 @@
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
 			<action command='fadeOut'/>
+			<action command='talk'>
+				<args>
+				@! Proceed to the next page.
+				<args>
+			</action>
 			</action>
 			<action command='talk' name="Don't Answer.">
 			  <args>
+				@dickle_think Dickle: Uhhhhh
 				@vrachne_horror Vrachne: IT’S BECAUSE I CAN FLOAT DICKLE
 				@vrachne_horror Vrachne: HOW MANY TIMES DO I HAVE TO TELL YOU I CAN FLOAT
 				@dickle_angryflustered Dickle: SORRY!!!!!
@@ -101,6 +107,11 @@
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
 			<action command='fadeOut'/>
+			<action command='talk'>
+				<args>
+				@! Proceed to the next page.
+				<args>
+			</action>
 			</action>
 	    </args>
 	  </action>
