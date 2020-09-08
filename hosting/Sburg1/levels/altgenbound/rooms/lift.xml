@@ -11,7 +11,7 @@
 	  <sprite name='liftBG'>
 	    <animation sheet='liftBG'/>
 	  </sprite>
-	<sprite name='lift_object' x='630' y='380' width='126' height='446' collidable='true'>
+	<sprite name='lift_object' x='635' y='380' width='126' height='446' collidable='true'>
 	  <animation sheet='lift_object' x='-100' y='-220'/>
 	  <action command='talk' name='Use lift.'>
 	    <args>
@@ -72,12 +72,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command='fadeOut'/>
-			<action command='talk'>
-				<args>
-				@! Proceed to the next page.
-				</args>
-			</action>
+			<action class='finish'/>
 			</action>
 			<action command='talk' name="Don't Answer.">
 			  <args>
@@ -106,12 +101,7 @@
 				@dickle_talk Dickle: oh right! 
 				@dickle_talk Dickle: got sidetracked again
 			  </args>
-			<action command='fadeOut'/>
-			<action command='talk'>
-				<args>
-				@! Proceed to the next page.
-				</args>
-			</action>
+			<action class='finish'/>
 			</action>
 	    </args>
 	  </action>
