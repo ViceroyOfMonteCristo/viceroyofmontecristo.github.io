@@ -5,6 +5,7 @@
     <asset name="churchBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5.png</asset>
     <asset name="churchFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5_fg.png</asset>
     <asset name="churchMap" type="graphic">backgrounds/wallflower_exterior/map5coll.png</asset>
+    <asset name="churchsprite" type="graphic">objects/npcs/churchsprite.png</asset>
   </assets>
   <rooms>
 	<room name='church' walkableMap='churchMap' mapScale="1">
@@ -29,6 +30,41 @@
 			</action>
   		</trigger>
 	</triggers>
+	<sprite name='churchsprite'>
+		<animation sheet='churchsprite'/>
+		<action command='talk'>
+			<args>
+@dickle_excited Dickle: oh wow, that is a BIGGGGG building!
+@dickle_explaining Dickle: what’s with churches always being so big?
+@vrachne_explaining Vrachne: people will do crazy things for faith, trust me i’d know
+@dickle_shrug Dickle: yeah i guess so, lets just hope these guys are as nice as quincy said they were
+@dickle_talk Dickle: uh hello?
+@elders_blue #4a86e8 ???: Yes child?
+@elders_red #cc0000 ???: what do you need of us
+@dickle_talk Dickle: i’m sorry if i’m interrupting anything but i’ve been told to come here for guidance regarding stuff
+@elders_blue #4a86e8  ???: Of course, we are all children of the mother in these blessed times
+@elders_red #cc0000 ???: Tell us, what ails you child.
+@dickle_explaining Dickle: well uh i’ve been looking to uhhh “bring the sun back” whatever that’s supposed to mean
+@dickle_explaining Dickle: do you guys know anything about that sorta stuff?
+@elders_blue #4a86e8 ???: …
+@elders_red #cc0000 ???: …
+@elders_blue #4a86e8 ???: Alas the reborn has arisen anew!
+@elders_red #cc0000 ???: Praise Lindas!
+@dickle_talk Dickle: uhhhhhh
+@dickle_talk Dickle: what’s going on?
+@elders_red #cc0000 ???: Come with us reborn of lindas!
+@elders_blue #4a86e8 ???: We shall explain everything!
+@dickle_talk Dickle: ummmm alright
+@! #6d9eeb *PING*
+@dickle_talk Dickle: ah CHRIST
+@dickle_happy Dickle: sorry but we’ll have to do this later! I’ve got important stuff to do!
+@elders_blue #4a86e8 ???: Reborn of Lindas wait!
+@elders_red #cc0000 ???: We shall await your return!
+@dickle_fingerguns Dickle: yeah i’ll be back i promise!
+</args>
+<action class='finish'/>
+</action>
+	</sprite>
 	</room>
   </rooms>
 </sburb>
