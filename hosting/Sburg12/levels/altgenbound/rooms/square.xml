@@ -5,7 +5,7 @@
     <asset name="squareFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2_fg.png</asset>
     <asset name="squareBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2.png</asset>
     <asset name="squareMap" type="graphic">backgrounds/wallflower_exterior/map2coll.png</asset>
-	    <asset name="brokentablet" type="graphic">objects/misc/brokentablet.png</asset>
+	    <asset name="triggerobject" type="graphic">objects/misc/movetrigger.png</asset>
   </assets>
   <rooms>
 	<room name='square' walkableMap='squareMap' mapScale="1">
@@ -16,7 +16,7 @@
 	    <animation sheet='squareBG'/>
 	  </sprite>
 	<sprite name="statuePlaque" x='1000' y='920' width='36' height='76' collidable='false' depthing="0">
-	  <animation sheet='brokentablet' x='-10' y='0'/>
+	  <animation sheet='triggerobject' x='-10' y='0'/>
 	  <action command='talk' name='Examine statue.'>
 	    <args>
               @! A pretty interesting statue depicting what appears to be a spider person holding a very #f6b26b “SUNNY” ## lance for lack of a better word. Whoever they are they seem pretty important or at least important enough to have a statue in the middle of town.
@@ -45,7 +45,7 @@ FB VG TBRF.##
 		<trigger>
 			<args>inBox2,char,880,60,1135,0</args>
 			<action command="changeRoomRemote">
-				<args>rooms/church.xml,church,1600,2475</args> 
+				<args>rooms/church.xml,church,1600,2400</args> 
 			</action>
 		</trigger>
 		<trigger>
