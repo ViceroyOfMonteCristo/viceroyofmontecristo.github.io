@@ -15,6 +15,21 @@
 	    <animation sheet='anticanonBG'/>
 	  </sprite>
 	<triggers>
+	<trigger detonate='true'>
+		<args>spriteProperty,char,y &gt; 0</args>
+		<action command='talk'>
+		<args>
+		@dickleANTI Dickle: h..uh..
+@dickleANTI Dickle: ah…. S h..it
+@dickleANTI Dickle: th..is place… su..cks.
+@dickleANTI Dickle: i gue..ss i owe… you th..at favor vrac..h-
+@vrachneANTI Vrachne: SPIRALING 👍︎☟︎🕆︎☼︎👍︎☟︎ STAIRCASE%^%^^$6^$
+@vrachneANTI Vrachne: SUN &^&%$^ SETTING 👌︎🕆︎☼︎☠︎✋︎☠︎☝︎  
+@dickleANTI Dickle: He..y are you… alr..ight?
+@vrachneANTI Vrachne: HEAD #^^^$^$^$6 ACHE!@%$#^#%%#%#
+		</args>
+		</action>
+	</trigger>
 	<trigger>
   		<args>inBox2,char,514,328,572,300</args>
   			<action command='changeRoomRemote'>
