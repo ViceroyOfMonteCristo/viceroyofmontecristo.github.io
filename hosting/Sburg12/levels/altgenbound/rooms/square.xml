@@ -19,7 +19,7 @@
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
-	<sprite name='child' x='885' y='1270' width='30' height='50' collidable='true'>
+	<sprite name='child' x='890' y='1270' width='30' height='30' collidable='true'>
 	  <animation sheet='child' x='-10' y='-10'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! zbzzn fnlf v'z abg fhccbfrq gb gnyx gb fgenatref ohg v yvxr terrgvat crbcyr fb...
@@ -28,7 +28,7 @@
 	  </action>
 	</sprite>
 	<sprite name='dersite1' x='900' y='925' width='30' height='50' collidable='true'>
-	  <animation sheet='dersite1' x='-10' y='-10'/>
+	  <animation sheet='dersite1' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to Dersite.'>
 		<args>@! Hey you two are tourists too right? I came here for the #f9cb9c ECTO## #8e7cc3 SOUP## concert but apparently i’m a day early just my luck eh?
 
@@ -39,13 +39,13 @@ You certainly don’t see stuff like this at #351c75 ONYX## that’s for sure, t
 	  </action>
 	</sprite>
 	<sprite name='prospitan2' x='1100' y='925' width='30' height='50' collidable='true'>
-	  <animation sheet='prospitan2' x='-10' y='-10'/>
+	  <animation sheet='prospitan2' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to Prospitan.'>
 		<args>@! Hmmm… maybe this statue would look better in ivory...
 
 @! Oh hello there! You two aren’t locals are you? You certainly don’t look like ones aside from the hair maybe.
 
-I’m trying to learn more about this #cfe2f3 LINDAS## person for my “exotic” cultures columum in the #351c75 ONYX TIMES##, but the church seems to be closed to the public today. 
+I’m trying to learn more about this #9fc5e8 LINDAS## person for my “exotic” cultures columum in the #351c75 ONYX TIMES##, but the church seems to be closed to the public today. 
 
 Apparently they’re expecting some important visitors or something like that. So interesting! I’ll have to write about this.
 		</args>

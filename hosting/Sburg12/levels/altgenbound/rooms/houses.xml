@@ -67,7 +67,7 @@ There’s this lady who learns how to control bugs and stuff it’s wild, she ev
 		</args>
 		</action>
 	</sprite>
-	<sprite name='female' x='1300' y='875' width='30' height='60' collidable='true'>
+	<sprite name='female' x='1300' y='880' width='30' height='60' collidable='true'>
 		<animation sheet='female' x='-30' y='-40'/>
 		<action command = 'talk' name='Talk to spider.'>
 		<args>@! Url hu, qba'g gryy ure v'ir orra qbvat guvf ohg v'ir orra ybbxvat guebhtu guvf ynqvrf jvaqbj sbe gur cnfg ubhe abj naq fur'f whfg orra fgnevat ng ure orq furrg.

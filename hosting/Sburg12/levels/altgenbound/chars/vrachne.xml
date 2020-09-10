@@ -37,7 +37,7 @@
 	<asset name='vrachne_smug' type='graphic'>dialogs/vrachne/vrachnesmug.png</asset>
 	<asset name='vrachne_surprised' type='graphic'>dialogs/vrachne/VrachneSurprised.png</asset>
 	<asset name='vrachne_two' type='graphic'>dialogs/vrachne/vrachnetwofingersup.png</asset>
-	<asset name='vrachne_anti' type='graphic'>dialogs/vrachne/vrachneAnti.png</asset>
+	<asset name='vrachneANTI' type='graphic'>dialogs/vrachne/vrachneAnti.png</asset>
 </assets>
 
 <hud>
@@ -59,7 +59,7 @@
 			<animation name='vrachne_smug' class='vrachne-dialog' sheet='vrachne_smug' length='2'/>
 			<animation name='vrachne_surprised' class='vrachne-dialog' sheet='vrachne_surprised' length='2'/>
 			<animation name='vrachne_two' class='vrachne-dialog' sheet='vrachne_two' length='2'/>
-			<animation name='vrachne_anti' class='vrachne-dialog' sheet='vrachne_anti' length='2'/>
+			<animation name='vrachneANTI' class='vrachne-dialog' sheet='vrachneANTI' length='2'/>
   </dialogsprites>
 </hud>
 </sburb>
