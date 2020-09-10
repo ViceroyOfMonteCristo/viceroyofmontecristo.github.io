@@ -20,14 +20,14 @@
 <assets>
 	<asset name='squatter_Sheet' type='graphic'>chars/squatter/squatter_sheet.png</asset>
 	<asset name='squatterSong' type='audio'>audio/music/grudge.mp3</asset>
-	<asset name='squatter_talk' type='graphic'>dialogs/squatter/squat.png</asset>
+	<asset name='squatter_squats' type='graphic'>dialogs/squatter/squat.png</asset>
  	<asset name='squatter_doubletime' type='graphic'>dialogs/squatter/squat_doubletime.png</asset>
 
 </assets>
 
 <hud>
 	<dialogsprites>	
-  	<animation name='squatter_talk' class='squatter-dialog' sheet='squatter_talk' length='4'/>
+  	<animation name='squatter_squats' class='squatter-dialog' sheet='squatter_squats' length='4'/>
       <animation name='squatter_doubletime' class='squatter-dialog' sheet='squatter_doubletime' length='2'/>
   </dialogsprites>
 </hud>

@@ -6,6 +6,7 @@
     <asset name="squareBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2.png</asset>
     <asset name="squareMap" type="graphic">backgrounds/wallflower_exterior/map2coll.png</asset>
 	    <asset name="triggerobject" type="graphic">objects/misc/movetrigger.png</asset>
+	    <asset name='squatter' type='graphic'>objects/npcs/squatsprite.png</asset>
   </assets>
   <rooms>
 	<room name='square' walkableMap='squareMap' mapScale="1">
@@ -15,6 +16,25 @@
 	  <sprite name='squareBG'>
 	    <animation sheet='squareBG'/>
 	  </sprite>
+	<sprite name="squatter" x='1200' y='860' width='36' height='76' collidable='false' depthing="0">
+	  <animation sheet='squatter' x='-10' y='-10'/>
+	  <action command='talk' name='Talk to spider.'>
+	    <args>
+		@dickle_talk Dickle: uh, what are you doing?
+@squatter_squats Squatter: I’M SQUATTING 
+@dickle_talk Dickle: oh, cool.
+@squatter_squats Squatter: I GOTTA KEEP SQUATTING
+@squatter_squats Squatter: THE LADIES DIG A MAN WHO SQUATS
+@dickle_talk Dickle: are you sure it’s safe to be squatting that fast?
+@dickle_explaining Dickle: you could pull a muscle or whatever the word is for messing up your body by working too hard
+@dickle_explaining Dickle: ya feel me?
+@squatter_squats Squatter: WHAT DO YOU KNOW YOU’VE PROBABLY NEVER SQUATTED A DAY IN YOUR LIFE
+@squatter_squats Squatter: JUST LOOK AT YOU
+@squatter_doubletime Squatter: I’LL GO EVEN FASTER JUST TO SPITE BOZOS LIKE YOU
+@dickle_angryflustered Dickle: whatever. dick.
+	    </args>
+	  </action>
+	</sprite>
 	<sprite name="statuePlaque" x='1000' y='920' width='36' height='76' collidable='false' depthing="0">
 	  <animation sheet='triggerobject' x='-10' y='0'/>
 	  <action command='talk' name='Examine statue.'>

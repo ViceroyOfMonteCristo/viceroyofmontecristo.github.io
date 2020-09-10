@@ -30,8 +30,8 @@
 			</action>
   		</trigger>
 	</triggers>
-	<sprite name='churchsprite'>
-		<animation sheet='churchsprite'/>
+	<sprite name='churchsprite' x='1560' y='540' width='' height='' collidable='true'>
+		<animation sheet='churchsprite' x='-20' y='-20'/>
 		<action command='talk'>
 			<args>
 @dickle_excited Dickle: oh wow, that is a BIGGGGG building!
