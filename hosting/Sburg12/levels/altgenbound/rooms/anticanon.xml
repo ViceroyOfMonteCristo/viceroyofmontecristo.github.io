@@ -5,7 +5,7 @@
     <asset name="anticanonBG" type="graphic">backgrounds/wallflower_interior/anti-canon_map.png</asset>
     <asset name="anticanonMap" type="graphic">backgrounds/wallflower_interior/anticanoncoll.png</asset>
     <asset name="item3" type='graphic'>objects/items/item3.png</asset>
-    <asset name="anticanonmusic" type='audio'>audio/music/anticanon.mp3</asset>
+
   </assets>
   <sprite name='item3' depthing='3'>
     <animation sheet='item3' x='-30' y='-30'/>
