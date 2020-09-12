@@ -21,6 +21,7 @@
   		<args>inBox2,char,671,641,778,521</args>
   			<action command='changeRoomRemote'>
          			 <args>rooms/anticanon.xml,anticanon,540,370</args>
+				<action command='playSong'>anticanon,0</action>
 			</action>
   	</trigger>
 	<trigger detonate='true'>
