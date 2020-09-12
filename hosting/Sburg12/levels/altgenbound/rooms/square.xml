@@ -10,6 +10,7 @@
 	    <asset name='child' type='graphic'>objects/npcs/childsprite.png</asset>
 	    <asset name='dersite1' type='graphic'>objects/npcs/dersite1sprite.png</asset>
 		<asset name='prospitan2' type='graphic'>objects/npcs/prospitan2sprite.png</asset>
+		<asset name='female' type='graphic'>objects/npcs/femalesprite.png</asset>
   </assets>
   <rooms>
 	<room name='square' walkableMap='squareMap' mapScale="1">
@@ -24,6 +25,18 @@
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! zbzzn fnlf v'z abg fhccbfrq gb gnyx gb fgenatref ohg v yvxr terrgvat crbcyr fb...
 		@! Jrypbzr gb jnyysybjre sevraq! v ubcr lbh yvxr vg urer!!
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='female' x='120' y='760' width='30' height='30' collidable='true'>
+	  <animation sheet='child' x='-10' y='-10'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! Url lbh pnzr sebz hc gbc evtug? qvq lbh frr Qn-avire hc gurer?
+
+Ur jnf fhccbfrq gb gnxr zr gb tb fbzrjurer ohg nccneragyl "fbzrguvat" pnzr hc naq ur unq gb pnapry.
+
+Jung n wrex!
+
 		</args>
 	  </action>
 	</sprite>
