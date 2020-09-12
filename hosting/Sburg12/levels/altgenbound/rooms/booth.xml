@@ -152,7 +152,7 @@
 				</action>
 		</action>
   	</character>
-	<character class='vrachne' name='vrachne' x='555' y='2723'>
+	<character class='vrachne' name='vrachne' x='1010' y='2350'>
   		<action command='follow' sprite='dickle' name='Follow.'>
   			<args>vrachne,dickle</args>
   			<action command='removeAction' noDelay='true'>
