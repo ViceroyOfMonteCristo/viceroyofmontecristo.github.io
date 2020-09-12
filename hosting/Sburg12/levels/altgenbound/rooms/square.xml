@@ -11,6 +11,9 @@
 	    <asset name='dersite1' type='graphic'>objects/npcs/dersite1sprite.png</asset>
 		<asset name='prospitan2' type='graphic'>objects/npcs/prospitan2sprite.png</asset>
 		<asset name='female' type='graphic'>objects/npcs/femalesprite.png</asset>
+		<asset name='femaleright' type='graphic'>objects/npcs/femalerightsprite.png</asset>
+		<asset name='maleright' type='graphic'>objects/npcs/malerightsprite.png</asset>
+		<asset name='childfront' type='graphic'>objects/npcs/childfrontsprite.png</asset>
   </assets>
   <rooms>
 	<room name='square' walkableMap='squareMap' mapScale="1">
@@ -25,6 +28,35 @@
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! zbzzn fnlf v'z abg fhccbfrq gb gnyx gb fgenatref ohg v yvxr terrgvat crbcyr fb...
 		@! Jrypbzr gb jnyysybjre sevraq! v ubcr lbh yvxr vg urer!!
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='femaleright' x='888' y='430' width='30' height='50' collidable='true'>
+	  <animation sheet='femaleright' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! vg'f sha gb onolfvg ohg v'z trggvat ernyyl gverq bs zl oebgure'f nggvghqr.
+
+ur pna'g whfg nqzvg ur jnf va gur jebat, znlor ur fubhyq'ir qbar jung abezny crbcyr qb naq svaq na bhgubhfr be fbzrguvat.
+
+bu lrnu qba'g yrg uvz xabj guvf ohg v xabj jung ur'f fnlvat evtug abj.
+
+jung n qbhpur abmmyr.
+		</args>
+	  </action>
+	</sprite>
+<sprite name='childfront' x='888' y='370' width='30' height='30' collidable='true'>
+	  <animation sheet='childfront' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! v yvxr lbhe urnq nezf! gurl'er fb cbvagl!
+		</args>
+	  </action>
+	</sprite>
+		<sprite name='maleright' x='888' y='330' width='30' height='50' collidable='true'>
+	  <animation sheet='maleright' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! Man, I hate kids, I’m just doing this for community service.
+
+Word of advice for you friend, don’t ever take a leak on one of the statues around here, you may think nobody is looking but trust me, they are.
 		</args>
 	  </action>
 	</sprite>
