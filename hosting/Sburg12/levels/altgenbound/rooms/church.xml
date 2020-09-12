@@ -32,7 +32,7 @@
 	</triggers>
 	<sprite name='churchsprite' x='1560' y='560' width='60' height='60' collidable='true'>
 		<animation sheet='churchsprite' x='-20' y='-30'/>
-		<action command='talk'>
+		<action command='talk' name='Talk to Church Elders.'>
 			<args>
 @dickle_excited Dickle: oh wow, that is a BIGGGGG building!
 @dickle_explaining Dickle: what’s with churches always being so big?
@@ -62,6 +62,7 @@
 @elders_red #cc0000 ???: We shall await your return!
 @dickle_fingerguns Dickle: yeah i’ll be back i promise!
 </args>
+<action class='finish'/>
 </action>
 	</sprite>
 	</room>
