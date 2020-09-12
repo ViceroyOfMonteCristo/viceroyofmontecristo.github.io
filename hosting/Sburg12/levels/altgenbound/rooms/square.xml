@@ -29,7 +29,7 @@
 	  </action>
 	</sprite>
 	<sprite name='female' x='120' y='760' width='30' height='30' collidable='true'>
-	  <animation sheet='child' x='-10' y='-10'/>
+	  <animation sheet='female' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! Url lbh pnzr sebz hc gbc evtug? qvq lbh frr Qn-avire hc gurer?
 
