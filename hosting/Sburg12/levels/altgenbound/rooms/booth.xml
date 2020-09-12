@@ -237,6 +237,32 @@
 @vrachne_talk Vrachne: i’ll be fine dickle, i can handle being a little hungry.
 							</args>
 						</action>
+						<action command="talk" name="About the lift ride">
+							<args>					
+@dickle_excited Dickle: yoooOOOO that was so sweet!!!!
+@dickle_excited Dickle: did you see that view vrachne?! It was incredible! This place is massive!
+@vrachne_talk Vrachne: ehhhhhh i’ve seen bigger.
+@vrachne_smugshrug Vrachne: in terms of “spider caves” i’d say this one is pretty average
+@vrachne_talk Vrachne: interesting place to make one though. I doubt they dug this all out themselves
+@vrachne_talk Vrachne: must of generated this way
+@dickle_excited Dickle: it’s still really cool no matter how you slice it!
+@dickle_happy Dickle: man it’s like i’m watching eva for the first time all over again
+@dickle_happy Dickle: except i’m there instead of just watching it, it’s wild!!
+@vrachne_peeved Vrachne: your references suck dickle.
+@dickle_glasses Dickle: the only reason you don’t like em is because you don’t get em!
+@dickle_glasses Dickle: you should really give evangelion a watch, it’s one of the greats!
+@dickle_glasses Dickle: best thing to come outta the japanese winning the second world war
+@vrachne_confused Vrachne: dickle i don’t think they won that war.
+@dickle_talk Dickle: oh i know that 
+@dickle_explaining Dickle: but they “won” in comparison to the germans i’d say
+@dickle_explaining Dickle: i don’t think germany will ever be able to recover from the stigma that era created, no matter how much they say sorry. 
+@dickle_shrug Dickle: so the japanese got off pretty easy with 2 big booms.
+@dickle_smugshrug Dickle: but then again, what do i know i flunked history HEH
+@vrachne_peevedcross Vrachne: righttttttt……
+@vrachne_peevedcross Vrachne: anyway dickle i’d love to sit here and talk about history but we have better things to do, don’t we?
+@dickle_talk Dickle: yeah you’re right
+							</args>
+						</action>
 						<action command="talk" name="About normal people things">
 							<args>
 								@dickle_talk Dickle: hey vrachne, what are things normal people talk about?
