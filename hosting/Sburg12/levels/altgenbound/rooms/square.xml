@@ -31,7 +31,7 @@
 		</args>
 	  </action>
 	</sprite>
-	<sprite name='femaleright' x='1590' y='735' width='30' height='50' collidable='true'>
+	<sprite name='femaleright' x='1590' y='820' width='30' height='50' collidable='true'>
 	  <animation sheet='femaleright' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! vg'f sha gb onolfvg ohg v'z trggvat ernyyl gverq bs zl oebgure'f nggvghqr.
@@ -44,14 +44,14 @@ jung n qbhpur abmmyr.
 		</args>
 	  </action>
 	</sprite>
-<sprite name='childfront' x='1600' y='760' width='30' height='30' collidable='true'>
+<sprite name='childfront' x='1630' y='830' width='30' height='30' collidable='true'>
 	  <animation sheet='childfront' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! v yvxr lbhe urnq nezf! gurl'er fb cbvagl!
 		</args>
 	  </action>
 	</sprite>
-		<sprite name='male' x='1590' y='800' width='30' height='50' collidable='true'>
+		<sprite name='male' x='1670' y='820' width='30' height='50' collidable='true'>
 	  <animation sheet='male' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! Man, I hate kids, I’m just doing this for community service.
