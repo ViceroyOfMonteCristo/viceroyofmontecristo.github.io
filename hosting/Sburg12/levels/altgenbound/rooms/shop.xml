@@ -35,7 +35,7 @@
 		<args>spriteProperty,char,x &lt; 900</args>
 		<action command='talk'>
 		<args>
-@dickle_talk	Dickle: wow this place just goes on and on doesn’t it!
+@dickle_talk Dickle: wow this place just goes on and on doesn’t it!
 @dickle_happy Dickle: we could explore this place all day, eh vrachne?
 @dickle_excited Dickle: Let’s ke-
 @vrachne_peevedcross Vrachne: dickle!
