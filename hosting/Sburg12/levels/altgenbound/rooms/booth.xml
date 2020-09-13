@@ -31,6 +31,7 @@
 	<dependency>rooms/sisshop.xml</dependency>
 	<dependency>rooms/stonerhouse.xml</dependency>
 	<dependency>rooms/anticanonoutside.xml</dependency>
+	<dependency>chars/elders.xml</dependency>
   </dependencies>
   <assets>
     <asset name="gateopen" type="graphic">objects/misc/gateopen_object.png</asset>
