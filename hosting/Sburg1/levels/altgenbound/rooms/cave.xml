@@ -121,7 +121,7 @@
 	<sprite class='chest0' name='chest0' x='1240' y='270'>
 			<action command='openChest' name='Open.'>
 				<args>
-					chest0,item4, @! You got a Weird looking bone?!
+					chest0, item4, @! You got a Weird looking bone?!
 
 Did you just open a casket by accident or something??? who leaves this kinda stuff just sitting in a chest?!
 

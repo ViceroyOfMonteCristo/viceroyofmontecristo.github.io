@@ -18,7 +18,7 @@
 </classes>
 
 <assets>
-	<asset name='elders_Sheet' type='graphic'>chars/elders/elders_sheet.png</asset>
+	<asset name='elders_sheet' type='graphic'>chars/elders/elders_sheet.png</asset>
 	<asset name='eldersSong' type='audio'>audio/music/grudge.mp3</asset>
 	<asset name='elders_talk' type='graphic'>dialogs/elders/elders_talk.png</asset>
 	<asset name='elders_blue' type='graphic'>dialogs/elders/elders_blue.png</asset>
