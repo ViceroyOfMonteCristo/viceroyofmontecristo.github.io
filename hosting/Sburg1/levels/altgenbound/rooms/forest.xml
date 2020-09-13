@@ -368,10 +368,10 @@ safe than sorry.-->
   	<!-- here we're adding a standard chest based on a template class found in
   	etc/standardTemplates.xml -->
 
-  	<sprite class='chest1' name='chest1' x='689' y='2004'>
+  	<sprite class='chest0' name='chest0' x='689' y='2004'>
 			<action command='openChest' name='Open.'>
 				<args>
-					chest1,item0, @! You got a IOU NOTE... Wait, what?
+					chest0,item0, @! You got a IOU NOTE... Wait, what?
 
 It appears to be some kind of hand written note; it's surprisingly fancy too! It's written in cursive and everything!
 @! “Dear Friends, i’m sorry i couldn’t be there to say hello in person but i had some “urgent” business to take care of.
