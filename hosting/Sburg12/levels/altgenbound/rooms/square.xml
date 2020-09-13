@@ -12,7 +12,7 @@
 		<asset name='prospitan2' type='graphic'>objects/npcs/prospitan2sprite.png</asset>
 		<asset name='female' type='graphic'>objects/npcs/femalesprite.png</asset>
 		<asset name='femaleright' type='graphic'>objects/npcs/femalerightsprite.png</asset>
-		<asset name='maleright' type='graphic'>objects/npcs/malerightsprite.png</asset>
+		<asset name='male' type='graphic'>objects/npcs/malesprite.png</asset>
 		<asset name='childfront' type='graphic'>objects/npcs/childfrontsprite.png</asset>
   </assets>
   <rooms>
@@ -31,7 +31,7 @@
 		</args>
 	  </action>
 	</sprite>
-	<sprite name='femaleright' x='888' y='430' width='30' height='50' collidable='true'>
+	<sprite name='femaleright' x='1590' y='735' width='30' height='50' collidable='true'>
 	  <animation sheet='femaleright' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! vg'f sha gb onolfvg ohg v'z trggvat ernyyl gverq bs zl oebgure'f nggvghqr.
@@ -44,14 +44,14 @@ jung n qbhpur abmmyr.
 		</args>
 	  </action>
 	</sprite>
-<sprite name='childfront' x='888' y='370' width='30' height='30' collidable='true'>
+<sprite name='childfront' x='1600' y='760' width='30' height='30' collidable='true'>
 	  <animation sheet='childfront' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! v yvxr lbhe urnq nezf! gurl'er fb cbvagl!
 		</args>
 	  </action>
 	</sprite>
-		<sprite name='maleright' x='888' y='330' width='30' height='50' collidable='true'>
+		<sprite name='maleright' x='1590' y='800' width='30' height='50' collidable='true'>
 	  <animation sheet='maleright' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! Man, I hate kids, I’m just doing this for community service.
