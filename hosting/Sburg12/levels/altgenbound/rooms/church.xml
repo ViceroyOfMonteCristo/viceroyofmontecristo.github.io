@@ -65,6 +65,23 @@
 <action class='finish'/>
 </action>
 	</sprite>
+	<sprite class='chest2' name='chest2' x='840' y='1000'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest2,item2, @! You got “From Prospit to Derse: How to hit on women with 100% success! By Rook Keane”
+
+It seems to be a dating advice book written by some little prospit chess person detailing tips and tricks on how to woo ladies of all shapes and sizes. 
+
+You don’t know why they’d really need something like this since they make their babies in labs or whatever but it’s the thought that counts and most of the advice in the book seems to be pretty solid at least from a quick speed read through all the pages….
+
+@! You doubt anyone in this house is getting any action and this book probably won’t change that, they probably won’t even notice this is gone….
+
+You sneakily captchalogue the book and your SHAME MODUS discreetly files it under “ MTV’S neXt bloopers & outtakes” 
+
+That’ll do modus. That’ll do.
+				</args>
+			</action>
+		</sprite>
 	</room>
   </rooms>
 </sburb>
