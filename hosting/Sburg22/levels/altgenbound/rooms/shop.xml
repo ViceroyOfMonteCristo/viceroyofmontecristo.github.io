@@ -70,7 +70,7 @@
 		<animation sheet='child' x='-10' y='-10'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
-			@! Znzn gbyq zr vs v ybbx guebhtu genfu pnaf naq fryy gur vagrerfgvat fghss v pna or fhpprffshy whfg yvxr zf zny-zny!
+			@! Mama told me if i look through trash cans and sell the interesting stuff i can be successful just like ms mal-mal!
 		</args>
 		</action>
 	</sprite>
@@ -78,11 +78,12 @@
 		<animation sheet='female' x='-20' y='-30'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
-			@! V jbhyqa'g ohl nalguvat urer, Zny'f n gbgny purncfxngr, nyy fur fryyf vf yvgreny genfu.
+			@! I wouldn't buy anything here, Mal's a total cheapskate, all she sells is literal trash.
 
-Fur hfrq gb gel naq cnja gur fghss fur tbg ba ure qrrc qvirf gb gur erfg bs gur crbcyr va gbja, gunaxshyyl abobql obhtug vagb ure penc, yrnfg gvyy gur gbhevfgf pnzr nebhaq.
+She used to try and pawn the stuff she got on her deep dives to the rest of the people in town, thankfully nobody bought into her crap, least till the tourists came around.
 
-Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx ba ure snpr vs gung unccrarq.
+If it wasn't for them she'd probably lose the building, I'd love to see the look on her face if that happened.
+
 
 		</args>
 		</action>
@@ -91,9 +92,11 @@ Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx
 		<animation sheet='dersite1' x='-20' y='-25'/>
 		<action command='talk' name='Talk to Dersite.'>
 		<args>
-			@! I wanted #0b5394 ICE ##but all they have here is #0b5394 VPR ##, which happens to look suspiciously close to #0b5394 ICE##!
+			@! I wanted ICE but all they have here is VP-
 
-I don’t know what’s going on here, but I wouldn’t go sticking whatever this stuff is into your drinks, it’s probably not safe!
+#4b516f ( blah blah ice drinks whatever, can you just stop talking, i don’t care and i don’t think i ever will.)
+
+(if nobody was looking i could totally get away with stuffing this “thing” into the ice box, now that’d be fun.)
 		</args>
 		</action>
 	</sprite>

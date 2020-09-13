@@ -26,28 +26,31 @@
 	<sprite name='child' x='890' y='1270' width='30' height='30' collidable='true'>
 	  <animation sheet='child' x='-10' y='-10'/>
 	  <action command='talk' name='Talk to spider.'>
-		<args>@! zbzzn fnlf v'z abg fhccbfrq gb gnyx gb fgenatref ohg v yvxr terrgvat crbcyr fb...
-		@! Jrypbzr gb jnyysybjre sevraq! v ubcr lbh yvxr vg urer!!
+		<args>@! momma says i'm not supposed to talk to strangers but i like greeting people so...
+
+@! Welcome to wallflower friend! i hope you like it here!!
+
 		</args>
 	  </action>
 	</sprite>
 	<sprite name='femaleright' x='1590' y='820' width='30' height='50' collidable='true'>
 	  <animation sheet='femaleright' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
-		<args>@! vg'f sha gb onolfvg ohg v'z trggvat ernyyl gverq bs zl oebgure'f nggvghqr.
+		<args>@! it's fun to babysit but i'm getting really tired of my brother's attitude.
 
-ur pna'g whfg nqzvg ur jnf va gur jebat, znlor ur fubhyq'ir qbar jung abezny crbcyr qb naq svaq na bhgubhfr be fbzrguvat.
+he can't just admit he was in the wrong, maybe he should've done what normal people do and find an outhouse or something.
 
-bu lrnu qba'g yrg uvz xabj guvf ohg v xabj jung ur'f fnlvat evtug abj.
+oh yeah don't let him know this but i know what he's saying right now.
 
-jung n qbhpur abmmyr.
+what a douche nozzle.
+
 		</args>
 	  </action>
 	</sprite>
 <sprite name='childfront' x='1630' y='830' width='30' height='30' collidable='true'>
 	  <animation sheet='childfront' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
-		<args>@! v yvxr lbhe urnq nezf! gurl'er fb cbvagl!
+		<args>@! i like your head arms! they're so pointy!
 		</args>
 	  </action>
 	</sprite>
@@ -63,11 +66,12 @@ Word of advice for you friend, don’t ever take a leak on one of the statues ar
 	<sprite name='female' x='120' y='760' width='30' height='30' collidable='true'>
 	  <animation sheet='female' x='-10' y='-30'/>
 	  <action command='talk' name='Talk to spider.'>
-		<args>@! Url lbh pnzr sebz hc gbc evtug? qvq lbh frr Qn-avire hc gurer?
+		<args>@! Hey you came from up top right? did you see Da-niver up there?
 
-Ur jnf fhccbfrq gb gnxr zr gb tb fbzrjurer ohg nccneragyl "fbzrguvat" pnzr hc naq ur unq gb pnapry.
+He was supposed to take me to go somewhere but apparently "something" came up and he had to cancel.
 
-Jung n wrex!
+What a jerk!
+
 
 		</args>
 	  </action>
@@ -75,11 +79,12 @@ Jung n wrex!
 	<sprite name='dersite1' x='900' y='925' width='30' height='50' collidable='true'>
 	  <animation sheet='dersite1' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to Dersite.'>
-		<args>@! Hey you two are tourists too right? I came here for the #f9cb9c ECTO## #8e7cc3 SOUP## concert but apparently i’m a day early just my luck eh?
+		<args>@! Hey you two are tourists too righ-
 
-It’s no biggie though, at first i thought a concert tour across the planets was a really stupid idea but it’s really given me some perspective, It’s fun to see other cultures! 
+#4b516f (blah blah blah ECTO SOUP blah blah blah perspective blah blah cultures
+Blah blah blah ONYX.)
 
-You certainly don’t see stuff like this at #351c75 ONYX## that’s for sure, the builders over there don’t like wood at all, all concrete and gravel, honestly it gets boring to look at.
+(go back and die in whatever vat you crawled out of, you waste of space.)
 		</args>
 	  </action>
 	</sprite>

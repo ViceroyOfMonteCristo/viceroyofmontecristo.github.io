@@ -70,11 +70,12 @@ There’s this lady who learns how to control bugs and stuff it’s wild, she ev
 	<sprite name='female' x='1300' y='880' width='30' height='60' collidable='true'>
 		<animation sheet='female' x='-30' y='-40'/>
 		<action command = 'talk' name='Talk to spider.'>
-		<args>@! Url hu, qba'g gryy ure v'ir orra qbvat guvf ohg v'ir orra ybbxvat guebhtu guvf ynqvrf jvaqbj sbe gur cnfg ubhe abj naq fur'f whfg orra fgnevat ng ure orq furrg.
+		<args>@! Hey uh, don't tell her i've been doing this but i've been looking through this ladies window for the past hour now and she's just been staring at her bed sheets.
 
-V xvaqn jnaan tb va gurer naq purpx ba ure ohg v qba'g xabj vg whfg frrzf ehqr gb onetr vagb fbzrbar'f ubhfr yvxr gung...
+I kinda wanna go in there and check on her but i don't know it just seems rude to barge into someone's house like that...
 
-yvxr jung vs fur jnfa'g univat nal gebhoyr ng nyy naq vg'f whfg fbzrguvat fur qbrf rirel qnl, v'q or fb rzoneenffrq…
+like what if she wasn't having any trouble at all and it's just something she does every day, i'd be so embarrassed…
+
 
 		</args>
 		</action>
@@ -82,13 +83,11 @@ yvxr jung vs fur jnfa'g univat nal gebhoyr ng nyy naq vg'f whfg fbzrguvat fur qb
 	<sprite name='dersite3' x='1850' y='660' width='30' height='66' collidable='true'>
 		<animation sheet='dersite3' x='-20' y='-20'/>
 		<action command='talk' name='Talk to Dersite.'>
-		<args>@! I really should have bought a map or something. i’m completely lost! The layout of this city makes no sense at all! 
+		<args>@! I really should have bought a map or something. I-
 
-I mean i guess i can commend them for building all this in a cave but did they really have to design it like this?
+#4b516f (bluh bluh city layout bluh bluh lost bluh bluh public transport)
 
-@! With road’s this wide you’d think they’d at least have something like public transport right? But they don’t! It’s madness pure and simple!!
-
-Never trust a travel brochure, i thought this was gonna be a fun trip but it’s just been a nightmare!
+(jump in front of a subway train and ruin everyone else’s commute, it’s about the only thing of impact you’d ever do in your life, you white eyed waste of ecto-slime.)
 		</args>
 		</action>
 	</sprite>
