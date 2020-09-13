@@ -1,0 +1,86 @@
+<sburb description="anticanon">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="anticanonBG" type="graphic">backgrounds/wallflower_interior/anti-canon_map.png</asset>
+    <asset name="anticanonMap" type="graphic">backgrounds/wallflower_interior/anticanoncoll.png</asset>
+    <asset name="item3" type='graphic'>objects/items/item3.png</asset>
+
+  </assets>
+  <sprite name='item3' depthing='3'>
+    <animation sheet='item3' x='-30' y='-30'/>
+  </sprite>
+  <rooms>
+	<room name='anticanon' walkableMap='anticanonMap' mapScale="1">
+	  <sprite name='anticanonBG'>
+	    <animation sheet='anticanonBG'/>
+	  </sprite>
+	<triggers>
+	<trigger detonate='true'>
+		<args>spriteProperty,char,y &gt; 0</args>
+		<action command='talk'>
+		<args>
+		@dickleANTI Dickle: h..uh..
+@dickleANTI Dickle: ah…. S h..it
+@dickleANTI Dickle: th..is place… su..cks.
+@dickleANTI Dickle: i gue..ss i owe… you th..at favor vrac..h-
+@vrachneANTI Vrachne: SPIRALING 👍︎☟︎🕆︎☼︎👍︎☟︎ STAIRCASE%^%^^$^$
+@vrachneANTI Vrachne: SUN ^%$^ SETTING 👌︎🕆︎☼︎☠︎✋︎☠︎☝︎  
+@dickleANTI Dickle: He..y are you… alr..ight?
+@vrachneANTI Vrachne: HEAD ^^^☟︎🕆︎$^$^$ ACHE!%$^%%%$✋︎☠︎☝︎%%%^
+		</args>
+		</action>
+	</trigger>
+	<trigger>
+  		<args>inBox2,char,514,328,572,300</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/anticanonoutside.xml,anticanonoutside,728,400</args>
+			<action command='playSong'>dickleSong,0</action>
+			</action>
+  	</trigger>
+	</triggers>
+	<character class='tt' x='450' y='375'>
+	<action command="talk" name="Ta..alk?.">
+		<args>
+			@dickleANTI Dickle: he..y yo..u
+@tt_wtf  ???: what the fuck?
+@tt_wtf  ???: who in the actual literal genuine hell are you!?
+@dickleANTI Dickle: u..h… i’m.. dic..kle..
+@dickleANTI Dickle: whe...re is th..-
+@tt_talk ???: firstly, what kind of name even is that?
+@tt_exasperated ???: secondly, where is this? open up your eyes, dude.
+@tt_talk ???: you’re in my friggin’ room.
+@dickleANTI Dickle: da...mn bu..ddy yo...u live li..ke th..is?
+@tt_talk ???:  yes.
+@tt_exasperated ???: did you come through that weird...crack in the wall?
+@dickleANTI Dickle: ye...ah someth..ing lik..e th..at 
+@tt_wtf ???: i...how? do these things teleport you? is that what they do?
+@dickleANTI Dickle: i.. don.’.t kno...w.. ma..y..be..?
+@dickleANTI Dickle: i ca...me fro..m wa.ll..flower..
+@tt_talk ???: wallflower? never heard of it...actually, let’s back up. let me introduce myself. you can call me TT.
+@tt_talk TT: you aren’t sounding so hot. you good?
+@dickleANTI Dickle: fir..st of a.lll wha.t kin..da na..me is tt..he h heh..h
+@dickleANTI  Dickle: and i ju...st fee...l fuz..zy i gue..ss
+@tt_frustrated TT:  it is a NICKNAME
+@tt_talk tt: but yeah, uh, i actually can’t help you. i only have food, no medicine.
+@dickleANTI  Dickle: i..’m fi..ne… i’ll prob..ably ju..st go.. now.
+@tt_talk TT: uh, good luck out there...strange dick person…?
+@dickleANTI  Dickle: tha..nks bud..go..od luc..k with you...r wei..rd apo..clay..pse stu..ff
+		</args>
+	</action>
+	</character>
+	<sprite class='chest3' name='chest3' x='285' y='320'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest3, item3, @! You got the ANTI FLINTSTONE GUMMIES.
+@! While your thoughts might be a bit frazzled here you can sure as hell tell what these are just off the shape and feel alone, these are flintstone gummies through and through. 
+
+Aside from the weird outlined look of it all it just seems to be a regular bottle of vitamin gummies which really calls into question what this place even is in the first place, is it like an anti version of the real world or maybe it’s some stupid game thing you certainly don’t remember this from any homestuck rereads… but you never really did pay attention to those.
+
+@! Ugh... you’re starting to hurt your head trying to wrap it around all this stuff but maybe that’s just a side effect of being made out of neon lines... 
+				</args>
+			</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>

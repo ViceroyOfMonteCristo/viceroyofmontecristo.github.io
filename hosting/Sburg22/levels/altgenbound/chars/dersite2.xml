@@ -1,0 +1,10 @@
+<sburb description='dersite2'>
+
+<classes>	
+	<character class='dersite2' name='dersite2' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='dersite2_sheet' state='walkFront' facing='Front'></character>
+</classes>
+
+<assets>
+	<asset name='dersite2_Sheet' type='graphic'>chars/dersite2/dersite2_sheet.png</asset>
+</assets>
+</sburb>

@@ -1,0 +1,41 @@
+<sburb description='vrachne'>
+
+<classes>
+	<animation class='vrachne-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='vrachne' name='vrachne' sx='-29' sy='-48' sWidth='58' sHeight='96' width='30' height='30' sheet='vrachneSheet' state='walkFront' facing='Front'></character>
+	
+	<action class='beVrachne' name='Be Vrachnesprite.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>vrachne</args>
+				<action command='playSong' noDelay='true'>
+					<args>vrachneSong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='vrachneSheet' type='graphic'>chars/vrachne/vrachne.png</asset>
+	<asset name='vrachneSong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='vrachne_talk' type='graphic'>dialogs/vrachne/VrachneReg.png</asset>
+	<asset name='vrachne_airquotes' type='graphic'>dialogs/vrachne/VrachneAirquotes.png</asset>
+	<asset name='vrachne_armup' type='graphic'>dialogs/vrachne/VrachneArmUp.png</asset>
+	<asset name='vrachne_eye' type='graphic'>dialogs/vrachne/VrachneEye.png</asset>
+	<asset name='vrachne_horror' type='graphic'>dialogs/vrachne/VrachneHorror.png</asset>
+	<asset name='vrachne_shrug' type='graphic'>dialogs/vrachne/VrachneShrug.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  		<animation name='vrachne_talk' class='vrachne-dialog' sheet='vrachne_talk' length='2'/>
+			<animation name='vrachne_airquotes' class='vrachne-dialog' sheet='vrachne_airquotes' length='2'/>
+			<animation name='vrachne_armup' class='vrachne-dialog' sheet='vrachne_armup' length='2'/>
+			<animation name='vrachne_eye' class='vrachne-dialog' sheet='vrachne_eye' length='2'/>
+			<animation name='vrachne_horror' class='vrachne-dialog' sheet='vrachne_horror' length='2'/>
+			<animation name='vrachne_shrug' class='vrachne-dialog' sheet='vrachne_shrug' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

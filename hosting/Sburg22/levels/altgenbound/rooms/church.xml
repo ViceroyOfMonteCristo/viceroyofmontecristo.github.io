@@ -1,0 +1,103 @@
+<sburb description="church">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="churchBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5.png</asset>
+    <asset name="churchFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5_fg.png</asset>
+    <asset name="churchMap" type="graphic">backgrounds/wallflower_exterior/map5coll.png</asset>
+    <asset name="churchsprite" type="graphic">objects/npcs/churchsprite.png</asset>
+	<asset name='item2' type='graphic'>objects/items/item2.png</asset>
+  </assets>
+  <rooms>
+	<room name='church' walkableMap='churchMap' mapScale="1">
+	  <sprite name='churchBG'>
+	    <animation sheet='churchBG'/>
+	  </sprite>
+	  <sprite name='churchFG' depthing='2'>
+	    <animation sheet='churchFG'/>
+	  </sprite>
+	<triggers>
+		<trigger detonate='true'>
+			<args>spriteProperty,char,y &lt; 800</args>
+			<action command='talk'>
+				<args>@! Entering the Church is the end of the flash!
+					If you have more you want to explore, go do that first!</args>
+			</action>
+		</trigger>
+		<trigger>
+  		<args>inBox2,char,1305,2555,1900,2450</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1000,150</args>
+			</action>
+  		</trigger>
+	</triggers>
+	<sprite name='churchsprite' x='1560' y='560' width='60' height='60' collidable='true'>
+		<animation sheet='churchsprite' x='-20' y='-30'/>
+		<action command='talk' name='Talk to Church Elders.'>
+			<args>
+@vrachne_talk Vrachne: pretty big church they have here
+@vrachne_smugcross Vrachne: Feels like Grangold all over again heh
+@dickle_talk Dickle: hmmmm i can see the resemblance i guess
+@dickle_talk Dickle: let’s just hope theres no big fight eh?
+@vrachne_smug Vrachne: i haven’t seen any snakes slinking around so we’ll probably be fine.
+@vrachne_talk Vrachne: anyway let’s go get those answers you’re looking for
+@dickle_talk Dickle: yep!
+@elders_blue #4a86e8 ???: Yes?
+@elders_red #cc0000 ???: hello oh mysterious creature, what do you need of us
+@vrachne_explaining Vrachne: are you the people who are in charge of this place?
+Vrachne: the church i mean.
+@elders_blue #4a86e8 ???: you could say that yes.
+@elders_red #cc0000 ???: but this church belongs to all who follow the path of Lindas.
+@vrachne_talk Vrachne: right right.
+@vrachne_shrug Vrachne: well, me and my partner here are on a bit of a quest. 
+@vrachne_airquotes Vrachne: something along the lines of “bringing the sun back”
+@vrachne_smugcross Vrachne: you wouldn’t happen to know anything about doing that right? 
+@elders_blue #4a86e8 ???: …
+@elders_red #cc0000 ???: …
+@elders_blue #4a86e8 ???: Alas the reborn has arisen anew!
+@elders_red #cc0000 ???: Praise Lindas!
+@vrachne_think Vrachne: oh.. (why am i not surprised, it’s “that” kind of religion.)
+@elders_red #cc0000 ???: this is a legendary day indeed, the reborn of Lindas must come with us!
+@elders_blue #4a86e8 ???: We shall explain everything!
+@! #6d9eeb *PING*
+@vrachne_smug Vrachne: i don’t think that’s happening
+@vrachne_smugcross Vrachne: we have more important things to do.
+@elders_blue #4a86e8 ???: you cannot keep Lindas from the people!
+@vrachne_peeved Vrachne: listen. i get it, you’ve probably been standing outside of this church just waiting for us to get here, i can tell by the way you’re talking but i’ll say this again, he has something more important to do than whatever this is.
+@elders_red #cc0000 ???: you do not understand this is of the upm-
+@vrachne_peevedcross Vrachne: no, i don’t think you understand.
+@vrachne_peevedcross Vrachne: I’m the one in charge of where he goes
+@vrachne_peevedcross Vrachne: not. You.
+@elders_blue #4a86e8 ???: bu-
+@vrachne_peevedcross Vrachne: I don’t care about your religion. i don’t care about your church and i don’t care about lindas.
+@vrachne_peevedcross Vrachne: we’ll come back when we feel like it.
+@elders_blue #4a86e8 ???: lbh uneybg! How dare you defy the will of Lindas!
+@elders_blue #4a86e8 ???: Mother wil-
+@elders_red #cc0000 ???: Sir Henrick, stop. 
+@elders_red #cc0000 ???: we cannot force the will of Lindas. We have waited so long, we can wait longer.
+@elders_blue #4a86e8 Henrick: hm. i see. 
+@elders_blue #4a86e8 Henrick: Tend to your business as you may, we will await your return.
+@vrachne_peevedcross Vrachne: like i said, we’ll come back when we feel like it, heinrich.
+</args>
+<action class='finish'/>
+</action>
+	</sprite>
+	<sprite name='item2' depthing='3'>
+	<animation sheet='item2' x='-30' y='-30'/>
+</sprite>
+	<sprite class='chest2' name='chest2' x='840' y='1000'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest2,item2, @! You got “From Prospit to Derse: How to hit on women with 100% success! By Rook Keane”
+
+Seems to be a book detailing the daily struggle of a carapacian man by the name of Rock Kean in his quest to destroy women.
+
+You aren’t really sure about the subject matter but the combat advice seems to be very solid at least judging from the pictures, lots of grappling moves and some stuff with the mouth too, it might be biting. You aren’t too sure.
+
+You’ll have to study this whenever you get the chance, maybe show it to dickle too. He could stand to learn a thing or two about fighting afterall.
+				</args>
+			</action>
+		</sprite>
+	</room>
+  </rooms>
+</sburb>

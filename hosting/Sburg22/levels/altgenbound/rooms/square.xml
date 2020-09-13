@@ -1,0 +1,160 @@
+<sburb description="square">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="squareFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2_fg.png</asset>
+    <asset name="squareBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map2.png</asset>
+    <asset name="squareMap" type="graphic">backgrounds/wallflower_exterior/map2coll.png</asset>
+	    <asset name="triggerobject" type="graphic">objects/misc/movetrigger.png</asset>
+	    <asset name='squatter' type='graphic'>objects/npcs/squatsprite.png</asset>
+	    <asset name='child' type='graphic'>objects/npcs/childsprite.png</asset>
+	    <asset name='dersite1' type='graphic'>objects/npcs/dersite1sprite.png</asset>
+		<asset name='prospitan2' type='graphic'>objects/npcs/prospitan2sprite.png</asset>
+		<asset name='female' type='graphic'>objects/npcs/femalesprite.png</asset>
+		<asset name='femaleright' type='graphic'>objects/npcs/femalerightsprite.png</asset>
+		<asset name='male' type='graphic'>objects/npcs/malesprite.png</asset>
+		<asset name='childfront' type='graphic'>objects/npcs/childfrontsprite.png</asset>
+  </assets>
+  <rooms>
+	<room name='square' walkableMap='squareMap' mapScale="1">
+	  <sprite name="squareFG" depthing="2">
+	    <animation sheet="squareFG"/>
+	  </sprite>
+	  <sprite name='squareBG'>
+	    <animation sheet='squareBG'/>
+	  </sprite>
+	<sprite name='child' x='890' y='1270' width='30' height='30' collidable='true'>
+	  <animation sheet='child' x='-10' y='-10'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! zbzzn fnlf v'z abg fhccbfrq gb gnyx gb fgenatref ohg v yvxr terrgvat crbcyr fb...
+		@! Jrypbzr gb jnyysybjre sevraq! v ubcr lbh yvxr vg urer!!
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='femaleright' x='1590' y='820' width='30' height='50' collidable='true'>
+	  <animation sheet='femaleright' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! vg'f sha gb onolfvg ohg v'z trggvat ernyyl gverq bs zl oebgure'f nggvghqr.
+
+ur pna'g whfg nqzvg ur jnf va gur jebat, znlor ur fubhyq'ir qbar jung abezny crbcyr qb naq svaq na bhgubhfr be fbzrguvat.
+
+bu lrnu qba'g yrg uvz xabj guvf ohg v xabj jung ur'f fnlvat evtug abj.
+
+jung n qbhpur abmmyr.
+		</args>
+	  </action>
+	</sprite>
+<sprite name='childfront' x='1630' y='830' width='30' height='30' collidable='true'>
+	  <animation sheet='childfront' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! v yvxr lbhe urnq nezf! gurl'er fb cbvagl!
+		</args>
+	  </action>
+	</sprite>
+		<sprite name='male' x='1670' y='820' width='30' height='50' collidable='true'>
+	  <animation sheet='male' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! Man, I hate kids, I’m just doing this for community service.
+
+Word of advice for you friend, don’t ever take a leak on one of the statues around here, you may think nobody is looking but trust me, they are.
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='female' x='120' y='760' width='30' height='30' collidable='true'>
+	  <animation sheet='female' x='-10' y='-30'/>
+	  <action command='talk' name='Talk to spider.'>
+		<args>@! Url lbh pnzr sebz hc gbc evtug? qvq lbh frr Qn-avire hc gurer?
+
+Ur jnf fhccbfrq gb gnxr zr gb tb fbzrjurer ohg nccneragyl "fbzrguvat" pnzr hc naq ur unq gb pnapry.
+
+Jung n wrex!
+
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='dersite1' x='900' y='925' width='30' height='50' collidable='true'>
+	  <animation sheet='dersite1' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to Dersite.'>
+		<args>@! Hey you two are tourists too right? I came here for the #f9cb9c ECTO## #8e7cc3 SOUP## concert but apparently i’m a day early just my luck eh?
+
+It’s no biggie though, at first i thought a concert tour across the planets was a really stupid idea but it’s really given me some perspective, It’s fun to see other cultures! 
+
+You certainly don’t see stuff like this at #351c75 ONYX## that’s for sure, the builders over there don’t like wood at all, all concrete and gravel, honestly it gets boring to look at.
+		</args>
+	  </action>
+	</sprite>
+	<sprite name='prospitan2' x='1100' y='925' width='30' height='50' collidable='true'>
+	  <animation sheet='prospitan2' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to Prospitan.'>
+		<args>@! Hmmm… maybe this statue would look better in ivory...
+
+@! Oh hello there! You two aren’t locals are you? You certainly don’t look like ones aside from the hair maybe.
+
+I’m trying to learn more about this #9fc5e8 LINDAS## person for my “exotic” cultures columum in the #351c75 ONYX TIMES##, but the church seems to be closed to the public today. 
+
+Apparently they’re expecting some important visitors or something like that. So interesting! I’ll have to write about this.
+		</args>
+	  </action>
+	</sprite>
+	<sprite name="squatter" x='1200' y='860' width='36' height='66' collidable='true'>
+	  <animation sheet='squatter' x='-10' y='-20'/>
+	  <action command='talk' name='Talk to spider.'>
+	    <args>
+		@dickle_talk Dickle: uh, what are you doing?
+@squatter_squats Squatter: I’M SQUATTING 
+@dickle_talk Dickle: oh, cool.
+@squatter_squats Squatter: I GOTTA KEEP SQUATTING
+@squatter_squats Squatter: THE LADIES DIG A MAN WHO SQUATS
+@dickle_talk Dickle: are you sure it’s safe to be squatting that fast?
+@dickle_explaining Dickle: you could pull a muscle or whatever the word is for messing up your body by working too hard
+@dickle_explaining Dickle: ya feel me?
+@squatter_squats Squatter: WHAT DO YOU KNOW YOU’VE PROBABLY NEVER SQUATTED A DAY IN YOUR LIFE
+@squatter_squats Squatter: JUST LOOK AT YOU
+@squatter_doubletime Squatter: I’LL GO EVEN FASTER JUST TO SPITE BOZOS LIKE YOU
+@dickle_angryflustered Dickle: whatever. dick.
+	    </args>
+	  </action>
+	</sprite>
+	<sprite name="statuePlaque" x='1000' y='930' width='36' height='76' collidable='false' depthing="0">
+	  <animation sheet='triggerobject' x='-10' y='0'/>
+	  <action command='talk' name='Examine statue.'>
+	    <args>
+              @! A pretty interesting statue depicting what appears to be a spider person holding a very #f6b26b “SUNNY” ## lance for lack of a better word. Whoever they are they seem pretty important or at least important enough to have a statue in the middle of town.
+
+		There appears to be an inscription on a plaque near the base of the statue as well.
+	      @! #9900ff N FUEVAR VA QRQVPNGVBA GB YVAQNF ANYXV GUR CEBTRAVGBE BS NYY JR UBYQ QRNE.
+
+URE CERFRAPR OEVATF HF PBHENTR. GUR FGERATGU GB PNEEL BA QRFCVGR GUBFR JUB JBHYQ FRRX GB PBZCEBZVFR HF GB N CREZNARAG RAQ.
+
+URE CERFRAPR OEVATF HF UBCR. GUR UBCR GB BAR QNL FRR GUR FHA EVFR VA NYY VGF TYBEL BAPR NTNVA.
+
+@! #9900ff URE CERFRAPR OEVATF HF YVTUG. N TYBJVAT ORNPBA VA GUR QNEXRFG BS UBHEF QRFGVARQ GB ERGHEA NAQ FUVAR HCBA HF BAPR ZBER.
+
+FB VG TBRF.##
+		@! ... You have no idea what any of this gibberish means. What a lousy plaque.
+		</args>
+	    </action>
+	  </sprite>
+	<triggers>
+		<trigger>
+			<args>inBox2,char,0,1024,65,770</args>
+			<action command="changeRoomRemote">
+				<args>rooms/shop.xml,shop,2300,1000</args> 
+			</action>
+		</trigger>
+		<trigger>
+			<args>inBox2,char,880,60,1135,0</args>
+			<action command="changeRoomRemote">
+				<args>rooms/church.xml,church,1600,2400</args> 
+			</action>
+		</trigger>
+		<trigger>
+			<args>inBox2,char,1950,1027,1995,775</args>
+			<action command="changeRoomRemote">
+				<args>rooms/houses.xml,houses,150,800</args> 
+			</action>
+		</trigger>
+	</triggers>
+	</room>
+  </rooms>
+</sburb>

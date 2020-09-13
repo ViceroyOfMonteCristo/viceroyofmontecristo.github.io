@@ -1,0 +1,123 @@
+<sburb description="shop">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="shopBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3.png</asset>
+    <asset name="shopMap" type="graphic">backgrounds/wallflower_exterior/map3coll.png</asset>
+    <asset name="shopFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map3_fg.png</asset>
+    <asset name="log" type="graphic">objects/npcs/logsprite.png</asset>
+    <asset name="dersite1" type="graphic">objects/npcs/dersite1sprite.png</asset>
+    <asset name="child" type="graphic">objects/npcs/childsprite.png</asset>
+    <asset name="female" type="graphic">objects/npcs/femalesprite.png</asset>
+  </assets>
+  <rooms>
+	<room name='shop' walkableMap='shopMap' mapScale="1">
+	<sprite name="shopFG" depthing="2">
+        <animation sheet="shopFG" />
+      </sprite>
+	  <sprite name='shopBG'>
+	    <animation sheet='shopBG'/>
+	  </sprite>
+	<triggers>
+		<trigger>
+  			<args>inBox2,char,2370,1130,2410,870</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,150,900</args>
+			</action>
+  		</trigger>
+		<trigger>
+			<args>inBox2,char,985,837,1043,786</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/giftshop.xml,giftshop,431,475</args>
+			</action>
+		</trigger>
+		<trigger detonate='true'>
+		<args>spriteProperty,char,x &lt; 900</args>
+		<action command='talk'>
+		<args>
+@dickle_talk Dickle: wow this place just goes on and on doesn’t it!
+@dickle_happy Dickle: we could explore this place all day, eh vrachne?
+@dickle_excited Dickle: Let’s ke-
+@vrachne_peevedcross Vrachne: dickle!
+@vrachne_peevedcross Vrachne: what do you think you’re doing?!
+@dickle_glasses Dickle:  huh?! What’d i do?!
+@vrachne_peevedcross Vrachne: ARE YOU BLIND?!
+@vrachne_peevedcross Vrachne: LOOK DOWN YOU IDIOT!!!!!!
+@dickle_glasses Dickle: uhhh
+@dickle_glasses Dickle: its a crack.
+@vrachne_talk Vrachne: yeah it is, dont you know what that means?!
+@dickle_think Dickle: uhhh i don’t really go outside that much so no not really
+@vrachne_talk Vrachne: stepping on cracks is bad luck dickle, i thought at least you’d know that.
+@dickle_talk Dickle: i’ll just step over it then. That works right?
+@vrachne_smug Vrachne: do you really wanna risk that dickle.
+@dickle_think Dickle well i mea-
+@vrachne_smug Vrachne: let me answer that question for you. NO. you dont.
+@vrachne_talk Vrachne: plus we’re already getting sidetracked enough as is.
+@vrachne_talk Vrachne: let’s just save this road for later.
+@dickle_angryflustered Dickle: alright alright jeez.
+	</args>
+	</action>
+	</trigger>
+	</triggers>
+	<sprite name='child' x='1340' y='775' width='30' height='48' collidable='true'>
+		<animation sheet='child' x='-10' y='-10'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@! Znzn gbyq zr vs v ybbx guebhtu genfu pnaf naq fryy gur vagrerfgvat fghss v pna or fhpprffshy whfg yvxr zf zny-zny!
+		</args>
+		</action>
+	</sprite>
+	<sprite name='female' x='930' y='865' width='30' height='48' collidable='true'>
+		<animation sheet='female' x='-20' y='-30'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@! V jbhyqa'g ohl nalguvat urer, Zny'f n gbgny purncfxngr, nyy fur fryyf vf yvgreny genfu.
+
+Fur hfrq gb gel naq cnja gur fghss fur tbg ba ure qrrc qvirf gb gur erfg bs gur crbcyr va gbja, gunaxshyyl abobql obhtug vagb ure penc, yrnfg gvyy gur gbhevfgf pnzr nebhaq.
+
+Vs vg jnfa'g sbe gurz fur'q cebonoyl ybfr gur ohvyqvat, V'q ybir gb frr gur ybbx ba ure snpr vs gung unccrarq.
+
+		</args>
+		</action>
+	</sprite>
+	<sprite name='dersite1' x='1430' y='785' width='25' height='40' collidable='true'>
+		<animation sheet='dersite1' x='-20' y='-25'/>
+		<action command='talk' name='Talk to Dersite.'>
+		<args>
+			@! I wanted #0b5394 ICE ##but all they have here is #0b5394 VPR ##, which happens to look suspiciously close to #0b5394 ICE##!
+
+I don’t know what’s going on here, but I wouldn’t go sticking whatever this stuff is into your drinks, it’s probably not safe!
+		</args>
+		</action>
+	</sprite>
+	<sprite name='log' x='1742' y='867' width='30' height='48' collidable='true'>
+		<animation sheet='log' x='-20' y='-25'/>
+		<action command='talk' name='Talk to spider.'>
+		<args>
+			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
+@log_talk ???: Same story as all the other fires recently, someone pushed their lights too hard and  then poof! up in smoke.
+@log_talk ???: Perhaps we were never meant to hold the power of the sun in such small glass prisons….
+@log_talk ???: hey wait a second you’re not from around here are you!? are you another tourist?
+@dickle_talkcrossed Dickle: uh no i’m just here on business i guess
+@dickle_talk Dickle: lots of talk in this town about tourists and stuff though do you get a lot of them around here?
+@log_talk ???: until recently this place was pretty quiet but nowadays you can’t even go a day without some rowdy rockers causing a scene! heck that’s the reason the pub is closed.
+@log_talk ???: real shame too, you never really know how much you’d miss happy hour until it’s gone.
+@dickle_talk Dickle: oof that sounds pretty rough, got any idea what caused the uptick in tourism? I’m curious
+@log_talk ???: they keep talking about some “war being called off” or something like that it’s wild stuff
+@log_talk ???: i’ve never heard about any wars! outside of like the old history stories and stuff
+@log_talk ???: but then again i’ve never really stepped foot out of town before so what do i know!
+@dickle_talk Dickle: the worlds a big place it’s crazy!
+@dickle_talk Dickle: hey do you mind if i ask you what your name is?
+@log_talk ???: only if you tell me yours first, that’s common courtesy!
+@dickle_happy Dickle: oh of course! I’m Dickle nice to meet cha
+@log_talk ???: I’m Logly but people just call me Log for short
+@log_talk Log: i make sure the buildings around here are up to snuff so to speak, if you want your buildings well kept i’m your guy!
+@dickle_talk Dickle: well i’ll give you if my house ever starts creaking heh
+@dickle_excited Dickle: it was nice talking to you man!  hope for your sake that things stop catching on fire.
+@log_talk Log: you and me both!
+		</args>
+		</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>
