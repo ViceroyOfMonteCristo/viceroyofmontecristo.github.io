@@ -8,6 +8,7 @@
     <asset name="caveMap" type="graphic">backgrounds/cave/cave-map.png</asset>
     <asset name="tablet" type="graphic">objects/misc/tablet.png</asset>
     <asset name="brokentablet" type="graphic">objects/misc/brokentablet.png</asset>
+	<asset name='item4' type='graphic'>objects/items/item4.png</asset>
   </assets>
   <rooms>
     <room name="cave" walkableMap="caveMap" mapScale="1">
