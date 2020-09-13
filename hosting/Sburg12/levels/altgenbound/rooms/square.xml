@@ -51,8 +51,8 @@ jung n qbhpur abmmyr.
 		</args>
 	  </action>
 	</sprite>
-		<sprite name='maleright' x='1590' y='800' width='30' height='50' collidable='true'>
-	  <animation sheet='maleright' x='-10' y='-20'/>
+		<sprite name='male' x='1590' y='800' width='30' height='50' collidable='true'>
+	  <animation sheet='male' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! Man, I hate kids, I’m just doing this for community service.
 
