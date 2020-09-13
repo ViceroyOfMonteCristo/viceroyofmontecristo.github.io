@@ -14,7 +14,7 @@
 	  </sprite>
 	<triggers>
 	<trigger>
-  		<args>inBox2,char,346,334,380,292</args>
+  		<args>inBox2,char,377,318,433,289</args>
   			<action command='changeRoomRemote'>
          			 <args>rooms/houses.xml,houses,935,909</args>
 			</action>

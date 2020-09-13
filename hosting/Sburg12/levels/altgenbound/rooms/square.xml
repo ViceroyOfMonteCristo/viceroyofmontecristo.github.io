@@ -61,7 +61,7 @@ Word of advice for you friend, don’t ever take a leak on one of the statues ar
 	  </action>
 	</sprite>
 	<sprite name='female' x='120' y='760' width='30' height='30' collidable='true'>
-	  <animation sheet='female' x='-10' y='-20'/>
+	  <animation sheet='female' x='-10' y='-30'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! Url lbh pnzr sebz hc gbc evtug? qvq lbh frr Qn-avire hc gurer?
 
@@ -96,8 +96,8 @@ Apparently they’re expecting some important visitors or something like that. S
 		</args>
 	  </action>
 	</sprite>
-	<sprite name="squatter" x='1200' y='860' width='36' height='76' collidable='true'>
-	  <animation sheet='squatter' x='-10' y='-10'/>
+	<sprite name="squatter" x='1200' y='860' width='36' height='66' collidable='true'>
+	  <animation sheet='squatter' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 	    <args>
 		@dickle_talk Dickle: uh, what are you doing?
