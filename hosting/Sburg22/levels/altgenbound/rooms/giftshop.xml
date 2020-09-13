@@ -26,20 +26,24 @@
           <animation sheet='mal' x='-60' y='-50'/>
 		<action command='talk' name='Talk to Gift Shop Clerk.'>
 		<args>
-			@dickle_talk Dickle: hi!
-			@mal_talk ???: hello there sir, how are you this fine overcast
-			@dickle_talk Dickle: i’m pretty good! this is a nice little shop place you have here!
-			@mal_talk ???: thank you, tourism is in this season so i thought what better way to make a good buck than to open up a gift shop, we got everything here you could want 
-			@mal_talk ???: clothes, a gun or two, attunements, fraymotifs, tacky nonsense barely relating to anything here.
-			@mal_talk ???: you know, the good stuff. 
-			@mal_talk ???: all of it is “locally sourced", and by that i mean i just find it when i’m diving around and decide what to sell and what to throw back into the lake i found it in.
-			@dickle_talk Dickle: wow that’s pretty cool
-			@mal_talk ???: yep. now are you here to buy something?
-			@dickle_talk Dickle: uh i actually don’t have any money.
-			@mal_peeved ???: oh. you can leave then.
-			@dickle_confused Dickle: excuse me?
-			@mal_peeved ???: door's right behind you. thank you for coming to “Mal’s gift emporium”.
-			@mal_peeved Mal: shpxvat gbhevfgf v fjrne…
+			@mal_talk ???: Welcome to Mal’s gift emporium your one stop shop for all your tourism needs
+@mal_talk Mal: we got anything you could want. at least 2 guns, attunements, fraymotiffs, and  snowglobes with trees in em.
+@vrachne_confused Vrachne: what the hell is an “attunement?”
+@mal_shrug Mal: hell if i know i’m just sellin them.
+@mal_peeved Mal: just found em in a fancy box in a lake, so they’re locally sourced 
+@mal_peeved Mal: and anyone with a business degree knows that anything locally sourced is usually pretty good.
+@mal_peeved Mal: i don’t know about you but i wouldn’t wanna stick any needles in me if i didn’t know where they came from
+@mal_peeved Mal: but these attunement needles are top of the line locally sourced yes mam
+@vrachne_smug Vrachne: lake needles huh? really a big ticket item, i’m sure they’ll fly off the shelves
+@mal_peeved Mal: are you fuzzing about what i’m selling in my shop?
+@mal_peeved Mal: where’s your business degree “missy” huh?
+@vrachne_talk Vrachne: wel-
+@mal_peeved Mal: oh wait don’t tell me i can already tell where it is.
+@mal_peeved Mal: it’s up your ass!
+@mal_peeved Mal: if you aren’t buying anything then fuck off.
+@mal_peeved Mal: you and your buddies malformed head arms are scaring off paying customers
+@vrachne_peevedcross Vrachne: i’m sure that attitude will catch up with you.
+@mal_peeved Mal: mhm whatever you say.  ghzbe purfg.
 		</args>
 		</action>
 	</sprite>

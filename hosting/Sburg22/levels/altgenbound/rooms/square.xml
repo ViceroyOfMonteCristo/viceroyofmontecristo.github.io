@@ -100,18 +100,7 @@ Apparently they’re expecting some important visitors or something like that. S
 	  <animation sheet='squatter' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 	    <args>
-		@dickle_talk Dickle: uh, what are you doing?
-@squatter_squats Squatter: I’M SQUATTING 
-@dickle_talk Dickle: oh, cool.
-@squatter_squats Squatter: I GOTTA KEEP SQUATTING
-@squatter_squats Squatter: THE LADIES DIG A MAN WHO SQUATS
-@dickle_talk Dickle: are you sure it’s safe to be squatting that fast?
-@dickle_explaining Dickle: you could pull a muscle or whatever the word is for messing up your body by working too hard
-@dickle_explaining Dickle: ya feel me?
-@squatter_squats Squatter: WHAT DO YOU KNOW YOU’VE PROBABLY NEVER SQUATTED A DAY IN YOUR LIFE
-@squatter_squats Squatter: JUST LOOK AT YOU
-@squatter_doubletime Squatter: I’LL GO EVEN FASTER JUST TO SPITE BOZOS LIKE YOU
-@dickle_angryflustered Dickle: whatever. dick.
+		@vrachne_peeved Vrachne: No.
 	    </args>
 	  </action>
 	</sprite>

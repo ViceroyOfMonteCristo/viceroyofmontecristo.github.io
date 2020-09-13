@@ -35,26 +35,33 @@
 		<args>spriteProperty,char,x &lt; 900</args>
 		<action command='talk'>
 		<args>
-@dickle_talk Dickle: wow this place just goes on and on doesn’t it!
-@dickle_happy Dickle: we could explore this place all day, eh vrachne?
-@dickle_excited Dickle: Let’s ke-
-@vrachne_peevedcross Vrachne: dickle!
-@vrachne_peevedcross Vrachne: what do you think you’re doing?!
-@dickle_glasses Dickle:  huh?! What’d i do?!
-@vrachne_peevedcross Vrachne: ARE YOU BLIND?!
-@vrachne_peevedcross Vrachne: LOOK DOWN YOU IDIOT!!!!!!
-@dickle_glasses Dickle: uhhh
-@dickle_glasses Dickle: its a crack.
-@vrachne_talk Vrachne: yeah it is, dont you know what that means?!
-@dickle_think Dickle: uhhh i don’t really go outside that much so no not really
-@vrachne_talk Vrachne: stepping on cracks is bad luck dickle, i thought at least you’d know that.
-@dickle_talk Dickle: i’ll just step over it then. That works right?
-@vrachne_smug Vrachne: do you really wanna risk that dickle.
-@dickle_think Dickle well i mea-
-@vrachne_smug Vrachne: let me answer that question for you. NO. you dont.
-@vrachne_talk Vrachne: plus we’re already getting sidetracked enough as is.
-@vrachne_talk Vrachne: let’s just save this road for later.
-@dickle_angryflustered Dickle: alright alright jeez.
+@vrachne_surprised Vrachne: god do these roads ever end?!
+@vrachne_surprised Vrachne: i’m getting tired of floating around this place.
+@dickle_happy Dickle: VRACHNE WAIT!!
+@dickle_happy Dickle: there’s a crack!
+@vrachne_confused Vrachne: what about it?
+@dickle_excited Dickle: those things aren’t good to go over ya know!
+@dickle_excited Dickle: there’s a saying about it and everything!
+@vrachne_peevedcross Vrachne: mhm yeah. sure there is.
+@dickle_talk Dickle: i’m not joking, i’m being completely serious, honest!
+@vrachne_smug Vrachne: what’s the saying then huh?
+@dickle_talk Dickle: alright it goes something like uh.
+@dickle_talk Dickle: Wenn du auf einem Riss gehst, brichst du deiner Mutter den Rücken!
+@dickle_talk Dickle: to put that into like english that’s uh “if you walk on a crack you break your mama’s back!” or something along those lines
+@vrachne_peevedcross Vrachne: I FLOAT.
+@dickle_talk Dickle: that’s even worse! Because there’s a totally different saying for that exact sorta thing!
+@dickle_talk Dickle: Wenn Sie über einem Riss schweben, Sie brechen sich den Rücken!
+@dickle_talk Dickle: “When you hover over a crack, you break your own back!”
+@vrachne_peevedcross Vrachne: I DONT HAVE BONES.
+@dickle_talk Dickle: still is that something you really wanna risk?!
+@dickle_talk Dickle: those kinda haunted sayings have a way of catching up with you, trust me i’d know! And don’t ask me how i know because i really rather not go into it!
+@dickle_talk Dickle: plus i’m sure we’ll get totally lost if we wander off too far so let’s just stay here okay?
+@vrachne_talk Vrachne: you didn’t have to go into that entire spiel about cracks if that’s all you wanted to tell me.
+@dickle_talk Dickle: yeah but that’s way less fun hehe
+@dickle_talk Dickle: plus i bet you would get on my case too if i started wandering too far off, so it’s only fair!
+@dickle_talk Vrachne: i woul-
+@vrachne_peeved Vrachne: honestly you know what? forget it. I don’t care anymore, this place sucks anyway let’s just go back.
+@dickle_excited Dickle: fine by me! there’s still plenty of stuff to explore in this part of town anyway!
 	</args>
 	</action>
 	</trigger>
@@ -94,27 +101,7 @@ I don’t know what’s going on here, but I wouldn’t go sticking whatever thi
 		<animation sheet='log' x='-20' y='-25'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
-			@dickle_talk Dickle: oh dang crispy looking house you got here is it alright if i asked what happened to it?
-@log_talk ???: Same story as all the other fires recently, someone pushed their lights too hard and  then poof! up in smoke.
-@log_talk ???: Perhaps we were never meant to hold the power of the sun in such small glass prisons….
-@log_talk ???: hey wait a second you’re not from around here are you!? are you another tourist?
-@dickle_talkcrossed Dickle: uh no i’m just here on business i guess
-@dickle_talk Dickle: lots of talk in this town about tourists and stuff though do you get a lot of them around here?
-@log_talk ???: until recently this place was pretty quiet but nowadays you can’t even go a day without some rowdy rockers causing a scene! heck that’s the reason the pub is closed.
-@log_talk ???: real shame too, you never really know how much you’d miss happy hour until it’s gone.
-@dickle_talk Dickle: oof that sounds pretty rough, got any idea what caused the uptick in tourism? I’m curious
-@log_talk ???: they keep talking about some “war being called off” or something like that it’s wild stuff
-@log_talk ???: i’ve never heard about any wars! outside of like the old history stories and stuff
-@log_talk ???: but then again i’ve never really stepped foot out of town before so what do i know!
-@dickle_talk Dickle: the worlds a big place it’s crazy!
-@dickle_talk Dickle: hey do you mind if i ask you what your name is?
-@log_talk ???: only if you tell me yours first, that’s common courtesy!
-@dickle_happy Dickle: oh of course! I’m Dickle nice to meet cha
-@log_talk ???: I’m Logly but people just call me Log for short
-@log_talk Log: i make sure the buildings around here are up to snuff so to speak, if you want your buildings well kept i’m your guy!
-@dickle_talk Dickle: well i’ll give you if my house ever starts creaking heh
-@dickle_excited Dickle: it was nice talking to you man!  hope for your sake that things stop catching on fire.
-@log_talk Log: you and me both!
+			@vrachne_concerned Vrachne: Damn. You hate to see it.
 		</args>
 		</action>
 	</sprite>

@@ -24,12 +24,28 @@
           <animation sheet='langley' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
-		@dickle_talk Dickle: hey there
-@langley_talk ???: .....
-@dickle_explaining Dickle: uhhhhh is it alright for me to be in here
-@langley_talk ???: dunno, ask her, she owns the place. 
-@langley_talk  ???: she gets pissy if i lock the door.
-@dickle_explaining Dickle: uh… okay.
+		@vrachne_talk Vrachne: so im just going to assume little miss fuzzy there is your “acquaintance”
+@langley_talk ???: that’s one word for it.
+@vrachne_talk Vrachne: sucks to be you eh?
+@langley_talk ???: god don’t even get me started
+@langley_talk ???: she pulls stunts like this every goddamn day
+@langley_talk ???: i honestly don’t know how much more of this i can take
+@langley_talk ???: though it’s not like i can kick her out or anything like that because she owns the damn house
+@langley_talk ???: “oh go room with somebody near the church Langley you’ll get lots of money and be successful”
+@langley_talk Langley: last time i ever listen to my sisters advice, that arrogant ska-
+@vrachne_peevedcross Vrachne: i don’t remember asking for your life story.
+@langley_talk Langley: ugh
+@langley_talk Langley: who even are you people? are you friends of hers?!
+@vrachne_talk Vrachne: Do you really need to know.
+@vrachne_talk Vrachne: I doubt we’ll be seeing each other again.
+@langley_talk  Langley: whatever.
+@langley_talk  Langley: You’re with that shaggy haired kid aren’t you?
+@vrachne_peeved Vrachne: how’d ya figure that one out “brainiac” 
+@langley_talk  Langley: He’s following around like his life depended on it so i just put two and two together
+@langley_talk  Langley: You his mom or something?
+@vrachne_talk Vrachne: i guess you could say that
+@langley_talk Langley: Well whatever you are, could you teach him not to barge into random peoples houses? Thanks.
+@vranche_smug Vrachne: i’ll be sure to get rightttttt on that.
 		</args>
 		</action>
 	</sprite>
@@ -37,23 +53,15 @@
           <animation sheet='waverly' x='-20' y='-20'/>
 		<action command='talk' name='Talk to spider.'>
 		<args>
-		@dickle_awkward Dickle: uhhh heyyyyyy..
-@waverly_talk ???: hey man, how’s it hangin
-@dickle_flustered Dickle: i’m doin good i guess, is it alright for me to be in here
-@waverly_talk ???: yeah man you’re goooooood
-@waverly_talk ???: it’s an “open house”
-@waverly_talk ???: because the house is open hehehehehehehe get it? 
-@waverly_talk ???: like usually an open house is what people call it when they’re sellin a house but i’m not sellin our house it’s just open hehehehe
-@dickle_talk Dickle: that’s a pretty solid joke
-@waverly_talk ???: thanks man
-@waverly_talk ???: yeah feel free to walk around if you wanna just don’t take anything kayyyyyy?
-@waverly_talk ???: i’m Waverly by the by
-@dickle_happy Dickle: it’s nice to meet ya waverly, i’m Dickle!
-@waverly_talk Waverly: that name’s wildddd mannn haha
-@dickle_talk Dickle: yeah i get that a lot heheheheh
-@waverly_talk Waverly: hahahahaha
-@waverly_talk Waverly: yeah man you can walk around and stuff just don’t mind my “roomy” he’s uptight hehehe
-@dickle_talk Dickle: thanks for the heads up i’ll keep it in mind
+		@waverly_talk ???: Heyyyy welcome to the humble abodeeee
+@waverly_talk ???: hows it hanginnnnn heh
+@vrachne_confused Vrachne: fine i guess?
+@waverly_talk ???: are you sure you’re all goodddddd whats goin on with your chesttt
+@vrachne_peevedcross Vrachne: excuse me?
+@waverly_talk ???: do you got like cancer or somethin that sucksssssss
+@waverly_talk ???: my grandma had that they had to like cut off her arms or something it was wildddddd
+@waverly_talk ???: feel free to keep loookin arounddddd if you wanna keep your mind off it mannnnnn
+@vrachne_peeved Vrachne: ….. (god this place SUCKSSSSSS)
 		</args>
 		</action>
 	</sprite>
