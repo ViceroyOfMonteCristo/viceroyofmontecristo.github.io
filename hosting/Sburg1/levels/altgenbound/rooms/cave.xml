@@ -119,6 +119,10 @@
 		</args>
 	    </action>
 	  </sprite>
+	<sprite name='item4' depthing='3'>
+	<animation sheet='item4' x='-30' y='-30'/>
+</sprite>
+
 	<sprite class='chest1' name='chest1' x='1240' y='270'>
 			<action command='openChest' name='Open.'>
 				<args>
