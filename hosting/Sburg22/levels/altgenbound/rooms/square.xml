@@ -24,7 +24,7 @@
 	    <animation sheet='squareBG'/>
 	  </sprite>
 	<sprite name='child' x='890' y='1270' width='30' height='30' collidable='true'>
-	  <animation sheet='child' x='-10' y='-10'/>
+	  <animation sheet='child' x='-10' y='-20'/>
 	  <action command='talk' name='Talk to spider.'>
 		<args>@! momma says i'm not supposed to talk to strangers but i like greeting people so...
 
