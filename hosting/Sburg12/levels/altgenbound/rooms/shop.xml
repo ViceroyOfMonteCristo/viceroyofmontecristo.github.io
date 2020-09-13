@@ -31,6 +31,33 @@
          			 <args>rooms/giftshop.xml,giftshop,431,475</args>
 			</action>
 		</trigger>
+		<trigger detonate=true>
+		<args>spriteProperty,char,x &lt; 900</args>
+		<action command='talk'>
+		<args>
+@dickle_talk	Dickle: wow this place just goes on and on doesn’t it!
+@dickle_happy Dickle: we could explore this place all day, eh vrachne?
+@dickle_excited Dickle: Let’s ke-
+@vrachne_peevedcross Vrachne: dickle!
+@vrachne_peevedcross Vrachne: what do you think you’re doing?!
+@dickle_glasses Dickle:  huh?! What’d i do?!
+@vrachne_peevedcross Vrachne: ARE YOU BLIND?!
+@vrachne_peevedcross Vrachne: LOOK DOWN YOU IDIOT!!!!!!
+@dickle_glasses Dickle: uhhh
+@dickle_glasses Dickle: its a crack.
+@vrachne_talk Vrachne: yeah it is, dont you know what that means?!
+@dickle_think Dickle: uhhh i don’t really go outside that much so no not really
+@vrachne_talk Vrachne: stepping on cracks is bad luck dickle, i thought at least you’d know that.
+@dickle_talk Dickle: i’ll just step over it then. That works right?
+@vrachne_smug Vrachne: do you really wanna risk that dickle.
+@dickle_think Dickle well i mea-
+@vrachne_smug Vrachne: let me answer that question for you. NO. you dont.
+@vrachne_talk Vrachne: plus we’re already getting sidetracked enough as is.
+@vrachne_talk Vrachne: let’s just save this road for later.
+@dickle_angryflustered Dickle: alright alright jeez.
+	</args>
+	</action>
+	</trigger>
 	</triggers>
 	<sprite name='child' x='1340' y='775' width='30' height='48' collidable='true'>
 		<animation sheet='child' x='-10' y='-10'/>
