@@ -1,0 +1,141 @@
+<sburb description="cave">
+  <dependencies>
+	<dependency>rooms/tree.xml</dependency>
+  </dependencies>
+  <assets>
+    <asset name="caveFG" type="graphic">backgrounds/cave/cave-x2-foreground.png</asset>
+    <asset name="caveBG" type="graphic">backgrounds/cave/cave-x2-bg.png</asset>
+    <asset name="caveMap" type="graphic">backgrounds/cave/cave-map.png</asset>
+    <asset name="tablet" type="graphic">objects/misc/tablet.png</asset>
+    <asset name="brokentablet" type="graphic">objects/misc/brokentablet.png</asset>
+	<asset name='item4' type='graphic'>objects/items/item4.png</asset>
+  </assets>
+  <rooms>
+    <room name="cave" walkableMap="caveMap" mapScale="1">
+      <sprite name="caveFG" depthing="2">
+        <animation sheet="caveFG" />
+      </sprite>
+      <sprite name="caveBG">
+        <animation sheet="caveBG" />
+      </sprite>
+      <triggers>
+	<trigger>
+  		<args>inBox2,char,970,2600,1060,2560</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/tree.xml,tree,350,700</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,1050,180,1180,150</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/lift.xml,lift,600,830</args>
+			</action>
+  	</trigger>
+      </triggers>
+	<sprite name="tabletOne" x='1045' y='1200' width='36' height='76' collidable='true'>
+	  <animation sheet='tablet' x='-10' y='-30'/>
+	  <action command='talk' name='Examine tablet.'>
+	    <args>
+              @! There seems to be a bunch of stuff written on this tablet.
+				@! #2e4a6a   vf guvf jung v’ir orra erqhprq gb
+				  gur yvtug jvguva zr vf qrnq
+				  ebggvat
+				  jvgurevat njnl vagb gur rgure
+				  va n qrfcrengr ubcr gung vg’yy or hfrshy ntnva
+				
+				  tebja vafnar ol ahzoref
+				  nf vgf ubfg'f jvyy qvrf, fb gbb qbrf vg
+				  vgf pevrf nyy ohg zbnaf
+				  n fbsg, ohg pehry gbar
+				  fheryl vg jvyy or bire va qhr gvzr.
+				@dickle_glasses Dickle: this…. what is this?
+				@vrachne_shrug Vrachne: looks like a bunch of gibberish to me.
+				@dickle_glasses Dickle: but why is it here? Who puts something like this in the middle of a cave?!
+				@vrachne_shrug Vrachne: probably some kind of generation error or something who knows
+				@vrachne_smugshrug Vrachne: we’re in a pretty topsy turvy world dickle.
+				@dickle_glasses Dickle:  i guess… it just feels like there has to be something more to it though ya know?
+				@dickle_think Dickle: maybe this is like some sorta weird spider language or something? 
+				@vrachne_talk Vrachne: maybe. 
+				@vrachne_explaining Vrachne: but i’m sure we won’t find any answers by just standing in this cave all day, let’s just get a move on and worry about it on the way out.
+				@dickle_talk Dickle: that sounds fine.
+		</args>
+	    </action>
+	  </sprite>
+	<sprite name="tabletTwo" x='1600' y='1025' width='36' height='55' collidable='true'>
+	  <animation sheet='tablet' x='-10' y='-34'/>
+	  <action command='talk' name='Examine tablet.'>
+	    <args>
+              @! There seem to be a bunch of things written on this stone.
+		@! #2e4a6a   Bar zber jnfgr va guvf jbeyq bs ## #ff9900 "Yvtug" ##
+		#2e4a6a  v ubcr #a4c2f4 fur'f ## unccl.
+
+		  gur fha vf pehry. naq guebhtu vg'f pehrygl jr ner erobea. fb vg tbrf.
+		@! There appears to be two spiders craved onto the tablet; one with longer scruffy hair, and one with shorter hair.
+	@vrachne_peeved Vrachne: oh my, gibberish on rocks how evocative
+@dickle_talkcrossed Dickle: mhmmm real neat. 
+@vrachne_shrug Vrachne: you ever wonder what possesses someone to waste their time making crap like this? 
+@dickle_think Dickle: eh maybe they just don’t have that much to do around here? I’d probably do this sorta thing if i had nothing better to do ya know?
+@vrachne_think Vrachne: maybe they should try getting a hobby.
+@dickle_explaining Dickle i don’t know messing with rocks might already be a hobby.
+@dickle_explaining Dickle: You know with archaeology and all that yeah?
+@vrachne_peevedcross Vrachne: Dickle there’s a difference between archaeology and just craving useless information into rocks for the hell of it
+@vrachne_peeved Vrachne: ones a profession and the other is something you do to fill the void in your heart once you realize that everything you’ve done in your entire life is meaningless and the only way you’ll have a lasting impact is craving stupid trash into rocks in the hopes that somebody will care enough to both look for it and translate it.
+@dickle_talk Dickle: wow uh that’s a one way to put it i guess. 
+@dickle_talk Dickle: i mean it’s pretty dumb all things considered but i don’t think it’s THAT dumb. 
+@dickle_talk Dickle: though who i am to judge my “hobbies” aren’t that much better
+@vrachne_surprised Vrachne: oh you actually have a hobby?
+@dickle_happy Dickle: if you would call making people angry on the internet a hobby then yeah!
+@vrachne_smug Vrachne: well that depends….
+@vrachne_smug Vrachne: do you have a reason for doing it?
+@dickle_smug Dickle: not really no.
+@dickle_smug Dickle: it just makes me feel better about myself sometimes plus people never improve if you don’t tell em their faults.
+@vrachne_smug Vrachne: that sounds like a okay hobby to me, better than craving rocks in caves anway.
+@dickle_smug Dickle: heh niceee.
+@dickle_explaining Dickle: oh actually vrachne do you have any hobbies?
+@vrachne_peevedcross Vrachne: dickle do you really wanna know or are you just asking to be nice.
+@vrachne_talk Vrachne: if you’re just asking to be nice i appreciate it but we should really get going.
+@vrachne_talk Vrachne: we can talk about this stuff later if you really want to
+@dickle_talkcrossed Dickle: that’s fine by meeee
+		</args>
+	    </action>
+	  </sprite>
+	<sprite name="tabletThree" x='400' y='1600' width='36' height='76' collidable='true'>
+	  <animation sheet='brokentablet' x='-10' y='-10'/>
+	  <action command='talk' name='Examine tablet.'>
+	    <args>
+              @! There seem to be a bun- oh wait, most of the rock is broken. You can still make out some of the words though.
+	      @! #a4c2f4 Prerf ## naq #6fa8dc Irfgn ## naq nyy gur yvggyr ebpxf zvtug unir orra n cynarg gbtrgure, vs vg jnfa'g sbe #ff9900 Whcvgre ##.
+	@dickle_glasses Dickle: oh boy a rock with glowy text that i can’t read on it, how exciting!
+@vrachne_peeved Vrachne: woooooo.
+@dickle_smug Dickle: ya know, someone around here must really hate rocks.
+@vrachne_smug Vrachne: poor thing never stood a chance, it almost brings tears to my eyes. almost.
+@dickle_fingerguns Dickle: you really gotta wonder who’s committing all these wanton rock murderers i mean seriously!
+@vrachne_smugcross Vrachne: probably a bunch of “minors” that are too young to know any better yeah?
+@dickle_smug Dickle: hehehehe yeahhhh…
+@dickle_excited Dickle: wait i can totally come up with another joke about this
+@vrachne_smug Vrachne: don’t bother dickle i think we mined this one for all its worth.
+@vrachne_laugh Vrachne: ahue ahue ahue
+@dickle_smug Dickle: pffffft yeah alright.
+		</args>
+	    </action>
+	  </sprite>
+	<sprite name='item4' depthing='3'>
+	<animation sheet='item4' x='-30' y='-30'/>
+</sprite>
+
+	<sprite class='chest1' name='chest1' x='1240' y='270'>
+			<action command='openChest' name='Open.'>
+				<args>
+					chest1, item4, @! You got the SPINNEKIN SKULL!
+
+A skull belonging to one of the consorts on this planet, it seems to have been here for quite a while at least judging from how old and dirty it looks, maybe it’s connected to the mural.
+
+You’d think about it more but you remember it’s related to the stupid irrelevent spider people and swiftly toss it back into old crickety chest you whisked it out of.
+
+@! Good riddance.
+				</args>
+			</action>
+		</sprite>
+    </room>
+  </rooms>
+</sburb>

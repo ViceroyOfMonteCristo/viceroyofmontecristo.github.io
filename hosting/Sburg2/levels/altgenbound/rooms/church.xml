@@ -1,0 +1,34 @@
+<sburb description="church">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="churchBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5.png</asset>
+    <asset name="churchFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map5_fg.png</asset>
+    <asset name="churchMap" type="graphic">backgrounds/wallflower_exterior/map5coll.png</asset>
+  </assets>
+  <rooms>
+	<room name='church' walkableMap='churchMap' mapScale="1">
+	  <sprite name='churchBG'>
+	    <animation sheet='churchBG'/>
+	  </sprite>
+	  <sprite name='churchFG' depthing='2'>
+	    <animation sheet='churchFG'/>
+	  </sprite>
+	<triggers>
+		<trigger detonate='true'>
+			<args>spriteProperty,char,y &lt; 800</args>
+			<action command='talk'>
+				<args>@! Entering the Church is the end of the flash!
+					If you have more you want to explore, go do that first!</args>
+			</action>
+		</trigger>
+		<trigger>
+  		<args>inBox2,char,1305,2555,1900,2450</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1000,150</args>
+			</action>
+  		</trigger>
+	</triggers>
+	</room>
+  </rooms>
+</sburb>

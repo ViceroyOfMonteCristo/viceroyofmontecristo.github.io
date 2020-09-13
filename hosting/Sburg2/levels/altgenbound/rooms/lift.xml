@@ -1,0 +1,69 @@
+<sburb description="lift">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="liftBG" type="graphic">backgrounds/cave/lift_map.png</asset>
+    <asset name="liftMap" type="graphic">backgrounds/cave/liftColl.png</asset>
+    <asset name="lift_object" type="graphic">objects/misc/lift_object.png</asset>
+  </assets>
+  <rooms>
+	<room name='lift' walkableMap='liftMap' mapScale="1">
+	  <sprite name='liftBG'>
+	    <animation sheet='liftBG'/>
+	  </sprite>
+	<sprite name='lift_object' x='640' y='380' width='126' height='446' collidable='true'>
+	  <animation sheet='lift_object' x='-100' y='-220'/>
+	  <action command='talk' name='Use lift.'>
+	    <args>
+@vrachne_talk Vrachne: i’m guessing this is the entrance to where we’re headed
+@dickle_talk Dickle: oh cool it’s an elevator!
+@vrachne_talk Vrachne: elevators usually have buttons dickle, i’d say this looks like more of a lift
+@dickle_shrug Dickle: elevator, lift, it’s the same thing just with a different word because english is dumb sometimes
+@dickle_excited Dickle: but enough about semantics and stuff, let’s rock!
+@vrachne_talk Vrachne: wow dickle you seem awfully excited about this
+@dickle_excited Dickle: i’ve been walking around a stupid forest for what felt like a fu-friggin year so of course i’m excited for a change of scenery!
+@dickle_excited Dickle: should i not be?
+@vrachne_shrug Vrachne: we’re about to descend into what i’m assuming to be a giant spiders nest, i’m just surprised you aren’t scared out of your mind!
+@vrachne_smug Vrachne: you strike me as the kinda person who might have “Arachnophobia” ahue ahue
+@dickle_explaining Dickle: nahh i grew out of being scared of spiders, once you learn that spiders don’t really mess with you unless you mess with them and that they kill most other annoying asshole bugs you learn to like them!
+@vrachne_smugcross Vrachne: you’re pretty knowledgeable about spiders dickle, do you have some kind of fascination with them or something
+@dickle_explaining Dickle: i mean it’s nothing like that really, at first i tried to learn about them so i wouldn’t be scared of them anymore, but once i wasn’t scared i wanted to find out more about them because they’re actually pretty cool!
+@dickle_explaining Dickle: did you know some spiders can use their webbing to glide around to places! It’s crazy!
+@dickle_think Dickle: oh wait actually! now that i put two and two together that explains all the weird snow stuff that isn’t snow! they must use that to get around!
+@dickle_flustered Dickle: oh... now i feel kinda gross for putting that stuff on my tongue bleh!
+@vrachne_laugh Vrachne: great job dickle ahue ahue
+@vrachne_smug Vrachne: wellllll if spiders don’t scare you, what does?
+@dickle_talk Dickle: does it have to be a bug or just in general
+@vrachne_smugcross Vrachne: let’s just keep it to bugs for now
+@dickle_excited Dickle: it’s gotta be ants! 100%
+@vrachne_surprised Vrachne: ants?!
+@dickle_explaining Dickle: yeah ants! 
+@dickle_excited Dickle: it’s gotta be ants! 100%
+@vrachne_confused  Vrachne: why ants of all things?
+@dickle_angryflustered Dickle: because they have brains! they have objectives and stuff!
+@dickle_angryflustered Dickle: the reason a giant ant is way scarier than a giant spider is because there’s a pretty big chance that unless you wander into its web a giant spider will probably just leave you to do your business unless they’re really hungry
+@dickle_angryflustered Dickle: but a giant ant? they’d eat you alive just for being in their way, they’re ruthless they have OBJECTIVES and they will see to it that those objectives get completed and nothing will stand in the way of that
+@dickle_angryflustered Dickle: did you know that ants will EAT EACH OTHER IF THEY’RE IN THE WAY OF EACH OTHER?!
+@dickle_angryflustered Dickle: THEY’RE PSYCHOPATHS, CANNIBALISTIC PSYCHOS WHO WILL NOT REST UNTIL EVERYTHING ELSE IN THE WORLD IS DEAD
+@dickle_angryflustered Dickle: NORMAL ANTS COULD KILL A MAN IF THEY WANTED TO BUT THEY DECIDE NOT TO BECAUSE THEY’RE SMART ENOUGH TO KNOW THAT PEOPLE ARE A LONG TERM FOOD SOURCE
+@dickle_angryflustered Dickle: BUT IF THEY GREW BIGGER THAN US? OH GOD WE WOULDN’T STAND A CHANCE WE’D BE DOOMED
+@dickle_angryflustered Dickle: THEY’D HAVE LIKE ONE BIG UNIFIED QUEEN ANT THAT WOULD SOMEHOW TRUMP THE MILITARY
+@dickle_angryflustered Dickle: THEY’D MAKE GIANT ANT HILLS IN VOLCANOS WE COULDN’T BOMB UNLESS WE WANTED TO START AN ICE AGE
+@dickle_angryflustered Dickle: THEY’D FIGURE OUT A WAY TO GET THAT WEIRD ZOMBIE ANT FUNGUS TO INFECT PEOPLE TOO, I’VE PLAYED VIDEOGAMES AND I KNOW WHAT HAPPENS WHEN THAT HAPPENS, IT ISN’T GOOD! NOT BY A LONG SHOT!!! 
+@dickle_angryflustered Dickle: AND THEN IN RECOVER THE RESTARTS THEY’D RA...
+@vrachne_peeved Vrachne: Alright alright i get it you can stop!!!!!!
+@vrachne_peevedcross Vrachne: didn’t realise you had such wild opinions on ants
+@dickle_explaining Dickle: yeah they’re scary!
+@dickle_talk Dickle: sorry for uh “sidetracking” us with that, you can start the elevator now if you want to!
+@dickle_talk Dickle: lift, i meant lift.
+@vrachne_talk Vrachne: alright
+@dickle_excited Dickle: down to wallshower we go! I think that’s what da-niver called it
+			<action class='finish'/>
+			</action>
+	    </args>
+	  </action>
+	</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>

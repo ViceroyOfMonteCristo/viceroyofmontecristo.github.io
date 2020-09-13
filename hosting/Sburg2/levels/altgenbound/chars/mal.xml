@@ -1,0 +1,33 @@
+<sburb description='mal'>
+
+<classes>
+	<animation class='mal-dialog' frameInterval='6' x='-150' y='-450'/>
+	
+	<character class='mal' name='mal' sx='-29' sy='-98' sWidth='58' sHeight='96' width='30' height='30' sheet='mal_sheet' state='walkFront' facing='Front'></character>
+	
+	<action class='bemal' name='Be Mal.' command='macro'>
+		<args>
+			<action command='changeChar' noDelay='true'>
+				<args>mal</args>
+				<action command='playSong' noDelay='true'>
+					<args>malSong,0</args>
+				</action>
+			</action>
+		</args>
+	</action>
+</classes>
+
+<assets>
+	<asset name='mal_sheet' type='graphic'>chars/mal/mal_sheet.png</asset>
+	<asset name='malSong' type='audio'>audio/music/grudge.mp3</asset>
+	<asset name='mal_talk' type='graphic'>dialogs/Mal/Mal_regular.png</asset>
+	<asset name='mal_peeved' type='graphic'>dialogs/Mal/Mal_Peeved.png</asset>
+</assets>
+
+<hud>
+	<dialogsprites>	
+  	<animation name='mal_talk' class='mal-dialog' sheet='mal_talk' length='2'/>
+      <animation name='mal_peeved' class='mal-dialog' sheet='mal_peeved' length='2'/>
+  </dialogsprites>
+</hud>
+</sburb>

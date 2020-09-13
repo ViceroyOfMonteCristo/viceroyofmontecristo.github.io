@@ -1,0 +1,97 @@
+<sburb description="houses">
+  <dependencies>
+  </dependencies>
+  <assets>
+    <asset name="housesBG" type="graphic">backgrounds/wallflower_exterior/wallflower_map4.png</asset>
+    <asset name="housesFG" type="graphic">backgrounds/wallflower_exterior/wallflower_map4_fg.png</asset>
+    <asset name="housesMap" type="graphic">backgrounds/wallflower_exterior/map4coll.png</asset>
+    <asset name='discussion' type='graphic'>objects/npcs/discussionsprite.png</asset>
+    <asset name='female' type='graphic'>objects/npcs/femalesprite.png</asset>
+    <asset name='dersite3' type='graphic'>objects/npcs/dersite3sprite.png</asset>
+  </assets>
+  <rooms>
+	<room name='houses' walkableMap='housesMap' mapScale="1">
+	  <sprite name="housesFG" depthing="2">
+          <animation sheet="housesFG" />
+          </sprite>
+	  <sprite name='housesBG'>
+	    <animation sheet='housesBG'/>
+	  </sprite>
+	<triggers>
+	<trigger>
+  		<args>inBox2,char,20,940,70,690</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/square.xml,square,1800,902</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,1036,623,1089,576</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/sisshop.xml,sisshop,437,565</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,910,1026,958,983</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/stonerhouse.xml,stonerhouse,409,365</args>
+			</action>
+  	</trigger>
+	<trigger>
+  		<args>inBox2,char,1780,1999,1894,1966</args>
+  			<action command='changeRoomRemote'>
+         			 <args>rooms/anticanonoutside.xml,anticanonoutside,730,100</args>
+			</action>
+  	</trigger>
+	</triggers>
+	<sprite name='discussion' x='800' y='675' width='63' height='58' collidable='true'>
+		<animation sheet='discussion' x='-20' y='-20'/>
+		<action command='talk' name='Listen in.'>
+		<args>@! #9900ff Did you ever end up reading ## #274e13 WORM ## #9900ff man?
+
+@! #ebb719 I would’ve but it doesn’t have any pictures so i’m not really that interested in it, i prefer my reading with a bit of a visual kick ya know?
+
+@! #9900ff I’m telling you man it’s really worth reading, you’ll get into it so hard you won’t need pictures!
+There’s this lady who learns how to control bugs and stuff it’s wild, she even gets a cool super suit for it and everything
+
+@! #ebb719 I don’t know i’m not really into super hero stuff…
+
+@! #9900ff Whatever dude, sorry that it’s not that dead comic you love talking about so much.
+
+@! #ebb719 It’s. Not. Dead.
+
+@! #9900ff It hasn’t had a new issue in months dude.
+
+@! #ebb719 Yeah so?! Good stuff takes time, i’m sure it’ll come back.
+
+@! #9900ff Whatever you say man.
+		</args>
+		</action>
+	</sprite>
+	<sprite name='female' x='1300' y='875' width='30' height='60' collidable='true'>
+		<animation sheet='female' x='-30' y='-40'/>
+		<action command = 'talk' name='Talk to spider.'>
+		<args>@! Url hu, qba'g gryy ure v'ir orra qbvat guvf ohg v'ir orra ybbxvat guebhtu guvf ynqvrf jvaqbj sbe gur cnfg ubhe abj naq fur'f whfg orra fgnevat ng ure orq furrg.
+
+V xvaqn jnaan tb va gurer naq purpx ba ure ohg v qba'g xabj vg whfg frrzf ehqr gb onetr vagb fbzrbar'f ubhfr yvxr gung...
+
+yvxr jung vs fur jnfa'g univat nal gebhoyr ng nyy naq vg'f whfg fbzrguvat fur qbrf rirel qnl, v'q or fb rzoneenffrq…
+
+		</args>
+		</action>
+	</sprite>
+	<sprite name='dersite3' x='1850' y='660' width='30' height='66' collidable='true'>
+		<animation sheet='dersite3' x='-20' y='-20'/>
+		<action command='talk' name='Talk to Dersite.'>
+		<args>@! I really should have bought a map or something. i’m completely lost! The layout of this city makes no sense at all! 
+
+I mean i guess i can commend them for building all this in a cave but did they really have to design it like this?
+
+@! With road’s this wide you’d think they’d at least have something like public transport right? But they don’t! It’s madness pure and simple!!
+
+Never trust a travel brochure, i thought this was gonna be a fun trip but it’s just been a nightmare!
+		</args>
+		</action>
+	</sprite>
+	</room>
+  </rooms>
+</sburb>
