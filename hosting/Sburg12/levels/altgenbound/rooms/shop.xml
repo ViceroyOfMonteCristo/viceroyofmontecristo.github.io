@@ -31,7 +31,7 @@
          			 <args>rooms/giftshop.xml,giftshop,431,475</args>
 			</action>
 		</trigger>
-		<trigger detonate=true>
+		<trigger detonate='true'>
 		<args>spriteProperty,char,x &lt; 900</args>
 		<action command='talk'>
 		<args>
