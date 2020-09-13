@@ -64,9 +64,9 @@
 	<args>spriteProperty,char,y &lt; 675</args>
 	<action sprite='dickle' command='talk'>
 	  <args>
-		@dickle_peeved Dickle: ugh my socks are all wet now..
-@dickle_peeved Dickle: thank god im wearing shorts.
-@dickle_talkcrossed Dickle: hey have you found anything yet?
+		@dickle_glasses Dickle: ugh my socks are all wet now..
+@dickle_glasses Dickle: thank god im wearing shorts.
+@dickle_smug Dickle: hey have you found anything yet?
 @vrachne_talk Vrachne: found it
 @vrachne_talk Vrachne: see? i told you there was more to this place!
 @dickle_excited Dickle: oh niceeee 

@@ -58,8 +58,8 @@
 @dickle_talk Dickle: lift, i meant lift.
 @vrachne_talk Vrachne: alright
 @dickle_excited Dickle: down to wallshower we go! I think that’s what da-niver called it
-			<action class='finish'/>
-	    </args>
+		    </args>		
+	<action class='finish'/>
 	  </action>
 	</sprite>
 	</room>

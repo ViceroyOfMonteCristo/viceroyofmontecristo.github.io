@@ -135,8 +135,8 @@ safe than sorry.-->
 		<trigger detonate='true'>
 			<args>spriteProperty,char,y &lt; 900</args>
 			<action command='talk'>
-				<args>@! Is Vrachne following you?
-					If not, go back and grab her!</args>
+				<args>@! Is Dickle following you?
+					If not, go back and grab him!</args>
 			</action>
 		</trigger>
 	</triggers>
