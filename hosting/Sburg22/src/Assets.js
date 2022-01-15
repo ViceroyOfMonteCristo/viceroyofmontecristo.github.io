@@ -177,8 +177,11 @@ Sburb.AssetManager.prototype.loadAsset = function(assetObj) {
 
 //log that the asset was added
 Sburb.AssetManager.prototype.assetAdded = function(name) {
-    this.totalAssets++;
-    this.loaded[name] = false;
+	if (!(name in this.loaded))
+	{
+		this.totalAssets++;
+		this.loaded[name] = false;
+	}
 }
 
 //log that the asset was loaded
